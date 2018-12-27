@@ -7,9 +7,13 @@ import math
 import unicodedata
 import types
 import math
+import os
 
 SOURCE_FILENAME    = "src/routed-gothic-stroke-source.sfd"
 DIST_DIRECTORY     = "dist"
+DIST_TTF_DIRECTORY = DIST_DIRECTORY + "/ttf"
+DIST_SFD_DIRECTORY = DIST_DIRECTORY + "/sfd"
+DIST_EOT_DIRECTORY = DIST_DIRECTORY + "/eot"
 FONT_FILE_BASENAME = "routed-gothic"
 
 CAP_HEIGHT = 736  # from bottom of lower stroke to top of upper stroke
@@ -447,21 +451,32 @@ def generate(italic_deg = 0,
     if condensed_scale != 1:
         # separate family names for condensed variants.  don't
         # remember why.
-        font.familyname  = font.familyname    + " " + condensed_name.replace("-", " ")
+        font.familyname  = font.familyname + " " + condensed_name.replace("-", " ")
         
-        font.fontname    = font.fontname      +       condensed_name.replace("-", "").replace(" ", "")
-        font.fullname    = font.fullname      + " " + condensed_name.replace("-", " ")
-        basename         = font_file_basename + "-" + condensed_name.lower().replace(" ", "-")
+        font.fontname    = font.fontname   +       condensed_name.replace("-", "").replace(" ", "")
+        font.fullname    = font.fullname   + " " + condensed_name.replace("-", " ")
+
+        basename         = basename        + "-" + condensed_name.lower().replace(" ", "-")
 
     if italic_deg:
-        font.fontname    = font.fontname      + "-" + italic_name.replace(" ", "-")
-        font.fullname    = font.fullname      + " " + italic_name.replace("-", " ")
-        basename         = font_file_basename + "-" + italic_name.lower().replace(" ", "-")
+        font.fontname    = font.fontname   + "-" + italic_name.replace(" ", "-")
+        font.fullname    = font.fullname   + " " + italic_name.replace("-", " ")
+
+        basename         = basename        + "-" + italic_name.lower().replace(" ", "-")
         
         font.italicangle = -ITALIC_ANGLE_DEG
 
-    sfd_filename = DIST_DIRECTORY + "/" + basename + ".sfd"
-    ttf_filename = DIST_DIRECTORY + "/" + basename + ".ttf"
+    sfd_filename = DIST_SFD_DIRECTORY + "/" + basename + ".sfd"
+    ttf_filename = DIST_TTF_DIRECTORY + "/" + basename + ".ttf"
+
+    sfd_dir = os.path.dirname(sfd_filename)
+    ttf_dir = os.path.dirname(ttf_filename)
+    if not os.path.exists(sfd_dir):
+        print "makedirs " + sfd_dir
+        os.makedirs(sfd_dir)
+    if not os.path.exists(ttf_dir):
+        print "makedirs " + ttf_dir
+        os.makedirs(ttf_dir)
 
     print "Saving " + sfd_filename + " ..."
     font.save(sfd_filename)
