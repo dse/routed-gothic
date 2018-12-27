@@ -442,6 +442,7 @@ def generate(italic_deg = 0,
     font.fullname    = family_name
     font.weight      = weight_name
     font.italicangle = italic_deg
+    basename         = font_file_basename
 
     if condensed_scale != 1:
         # separate family names for condensed variants.  don't
