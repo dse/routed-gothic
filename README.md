@@ -53,3 +53,9 @@ Punctuation block for common typographic symbols, and then some.
 
 -   [Proxima Soft](https://www.fontspring.com/fonts/mark-simonson-studio/proxima-soft) —
     A rounded version of Proxima Nova, a Gotham lookalike.
+
+-   [DIN 17 SB](https://www.myfonts.com/font/efscangraphic/din-17-sb/) — A rounded DIN font.
+
+-   [DIN 17 / TGL 0-17](https://www.typografie.info/3/Schriften/fonts.html/din-17tgl-0-17-r623/) and
+    [DIN 16 / TGL 0-16](https://www.typografie.info/3/Schriften/fonts.html/din-16tgl-0-16-r622/) —
+    Italic and upright versions of the medium ISO 3098/1 (DIN 6776) font.
