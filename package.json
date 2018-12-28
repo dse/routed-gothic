@@ -1,0 +1,33 @@
+{
+  "name": "routed-gothic",
+  "version": "1.0.0",
+  "description": "Routed Gothic font",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dse/routed-gothic.git"
+  },
+  "author": "Darren Embry",
+  "license": "OFL-1.1",
+  "bugs": {
+    "url": "https://github.com/dse/routed-gothic/issues"
+  },
+  "homepage": "https://github.com/dse/routed-gothic#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "browser-sync": "^2.26.3",
+    "foundation-sites": "^6.5.1",
+    "gulp": "^4.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.3.1",
+    "motion-ui": "^2.0.3",
+    "what-input": "^5.1.3"
+  }
+}

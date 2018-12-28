@@ -1,0 +1,7 @@
+source          : web/src
+destination     : web/_site
+collections_dir : web
+plugins_dir     : web/_plugins
+layouts_dir     : web/_layouts
+data_dir        : web/_data
+includes_dir    : web/_includes

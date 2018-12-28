@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'routed-gothic';
+    src: url('../../../dist/ttf/routed-gothic.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'routed-gothic--half-italic';
+    src: url('../../../dist/ttf/routed-gothic-half-italic.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'routed-gothic--italic';
+    src: url('../../../dist/ttf/routed-gothic-italic.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'routed-gothic--narrow';
+    src: url('../../../dist/ttf/routed-gothic-narrow.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'routed-gothic--narrow--half-italic';
+    src: url('../../../dist/ttf/routed-gothic-narrow-half-italic.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'routed-gothic--narrow--italic';
+    src: url('../../../dist/ttf/routed-gothic-narrow-italic.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'routed-gothic--wide';
+    src: url('../../../dist/ttf/routed-gothic-wide.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'routed-gothic--wide--half-italic';
+    src: url('../../../dist/ttf/routed-gothic-wide-half-italic.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'routed-gothic--wide--italic';
+    src: url('../../../dist/ttf/routed-gothic-wide-italic.ttf') format('opentype');
+}
+
+.font--routed-gothic {
+    font-family: 'routed-gothic';
+}
+.font--routed-gothic--half-italic {
+    font-family: 'routed-gothic--half-italic';
+}
+.font--routed-gothic--italic {
+    font-family: 'routed-gothic--italic';
+}
+.font--routed-gothic--narrow {
+    font-family: 'routed-gothic--narrow';
+}
+.font--routed-gothic--narrow--half-italic {
+    font-family: 'routed-gothic--narrow--half-italic';
+}
+.font--routed-gothic--narrow--italic {
+    font-family: 'routed-gothic--narrow--italic';
+}
+.font--routed-gothic--wide {
+    font-family: 'routed-gothic--wide';
+}
+.font--routed-gothic--wide--half-italic {
+    font-family: 'routed-gothic--wide--half-italic';
+}
+.font--routed-gothic--wide--italic {
+    font-family: 'routed-gothic--wide--italic';
+}
+
+@font-face {
+    font-family: 'Routed Gothic';
+    src: url('../../../dist/ttf/routed-gothic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Routed Gothic Half Italic';
+    src: url('../../../dist/ttf/routed-gothic-half-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'Routed Gothic';
+    src: url('../../../dist/ttf/routed-gothic-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Routed Gothic';
+    src: url('../../../dist/ttf/routed-gothic-narrow.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Routed Gothic Half Italic';
+    src: url('../../../dist/ttf/routed-gothic-narrow-half-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'Routed Gothic';
+    src: url('../../../dist/ttf/routed-gothic-narrow-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Routed Gothic';
+    src: url('../../../dist/ttf/routed-gothic-wide.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: expanded;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Routed Gothic Half Italic';
+    src: url('../../../dist/ttf/routed-gothic-wide-half-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: expanded;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'Routed Gothic';
+    src: url('../../../dist/ttf/routed-gothic-wide-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: expanded;
+    font-style: italic;
+}
+
+.font-family-routed-gothic {
+    font-family: "Routed Gothic";
+}
+.font-family-routed-gothic-half-italic {
+    font-family: "Routed Gothic Half Italic";
+}
