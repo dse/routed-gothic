@@ -12,6 +12,8 @@ some FontForge Python scripting.
 
 Other keywords I want people to use to find this font include: Wrico.
 
+![avionics diagram stolen from a Stack Overflow post](avionics-diagram)
+
 ## Notes
 
 The “italic” fonts of this typeface are literally slanted 22.5°, as a
@@ -60,6 +62,12 @@ Punctuation block for common typographic symbols, and then some.
     [DIN 16 / TGL 0-16](https://www.typografie.info/3/Schriften/fonts.html/din-16tgl-0-16-r622/) —
     Italic and upright versions of the medium ISO 3098/1 (DIN 6776) font.
 
+-   [osifont](https://github.com/hikikomori82/osifont)
+
+-   [Engineering Plot](https://www.dafont.com/engineering-plot.font)
+
+-   [Engineer](https://www.myfonts.com/font/nowak/engineer/)
+
 ## Other Aircraft Instrumentation Fonts
 
 -   [United States Military Standard 33558](http://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=41902),
@@ -69,3 +77,5 @@ Punctuation block for common typographic symbols, and then some.
     Implementation by Derek Higgs [archived here](https://webonastick.com/fonts/other/mil-spec-33558/).
 
 -   [Futura](https://en.wikipedia.org/wiki/Futura_%28typeface%29), ATF Spartan, etc.
+
+avionics-diagram: https://github.com/
