@@ -6674,31 +6674,58 @@ ol.list-upper-roman {
   src: url("../../../dist/ttf/routed-gothic-wide-italic.ttf") format("opentype"); }
 
 .font--routed-gothic {
-  font-family: 'routed-gothic'; }
+  font-family: 'routed-gothic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
 .font--routed-gothic--half-italic {
-  font-family: 'routed-gothic--half-italic'; }
+  font-family: 'routed-gothic--half-italic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
 .font--routed-gothic--italic {
-  font-family: 'routed-gothic--italic'; }
+  font-family: 'routed-gothic--italic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
 .font--routed-gothic--narrow {
-  font-family: 'routed-gothic--narrow'; }
+  font-family: 'routed-gothic--narrow', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
 .font--routed-gothic--narrow--half-italic {
-  font-family: 'routed-gothic--narrow--half-italic'; }
+  font-family: 'routed-gothic--narrow--half-italic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
 .font--routed-gothic--narrow--italic {
-  font-family: 'routed-gothic--narrow--italic'; }
+  font-family: 'routed-gothic--narrow--italic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
 .font--routed-gothic--wide {
-  font-family: 'routed-gothic--wide'; }
+  font-family: 'routed-gothic--wide', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
 .font--routed-gothic--wide--half-italic {
-  font-family: 'routed-gothic--wide--half-italic'; }
+  font-family: 'routed-gothic--wide--half-italic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
 .font--routed-gothic--wide--italic {
-  font-family: 'routed-gothic--wide--italic'; }
+  font-family: 'routed-gothic--wide--italic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
 @font-face {
   font-family: 'Routed Gothic';
@@ -6764,7 +6791,7 @@ ol.list-upper-roman {
   font-style: italic; }
 
 .font-family-routed-gothic {
-  font-family: "Routed Gothic"; }
+  font-family: "Routed Gothic", sans-serif; }
 
 .font-family-routed-gothic-half-italic {
-  font-family: "Routed Gothic Half Italic"; }
+  font-family: "Routed Gothic Half Italic", sans-serif; }
