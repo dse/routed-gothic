@@ -54,7 +54,7 @@ superclean: clean
 	find dist -type f -exec rm {} +
 
 .PHONY: web
-web: includes sass jekyll
+web: sass jekyll
 
 .PHONY: sass
 sass:
