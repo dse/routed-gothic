@@ -66,4 +66,6 @@ Punctuation block for common typographic symbols, and then some.
     Numerals and Letters, Aircraft Instrument Dial, Standard Form of —
     It’s the font you’ve seen on old aircraft instruments.
 
+    Implementation by Derek Higgs [archived here](https://webonastick.com/fonts/other/mil-spec-33558/).
+
 -   [Futura](https://en.wikipedia.org/wiki/Futura_%28typeface%29), ATF Spartan, etc.
