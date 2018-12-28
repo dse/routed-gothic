@@ -51,7 +51,13 @@ clean:
 superclean: clean
 	find dist -type f -exec rm {} +
 
+web/src/_includes/%.inc.html: %.md
+	mkdir -p "$$(dirname "$@")"
+	markdown $< >$@.tmp
+	mv $@.tmp $@
+
 web:
+	make web/src/_includes/README.inc.html
 	gulp sass
 	jekyll build
 
