@@ -26,8 +26,8 @@ them. I might make hints later though.
 
 ## License
 
-Routed Gothic is now distributed under the terms of the
-[LICENSE.md](SIL Open Font License 1.1).
+Routed Gothic is now distributed under the terms of the [SIL Open Font
+License 1.1](https://opensource.org/licenses/OFL-1.1).
 
 ## Coverage
 
