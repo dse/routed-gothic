@@ -249,16 +249,16 @@ textarea {
   height: 2.4375rem;
   margin: 0 0 1rem;
   padding: 0.5rem;
-  border: 1px solid #cacaca;
+  border: 1px solid #ffffff;
   border-radius: 0;
-  background-color: #fefefe;
+  background-color: inherit;
   -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
           box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   font-family: inherit;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
+  color: inherit;
   -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
   transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
@@ -269,8 +269,8 @@ textarea {
   [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus,
   textarea:focus {
     outline: none;
-    border: 1px solid #8a8a8a;
-    background-color: #fefefe;
+    border: 1px solid #ffffff;
+    background-color: inherit;
     -webkit-box-shadow: 0 0 5px #cacaca;
             box-shadow: 0 0 5px #cacaca;
     -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
@@ -286,7 +286,7 @@ textarea {
 input:disabled, input[readonly],
 textarea:disabled,
 textarea[readonly] {
-  background-color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0.5);
   cursor: not-allowed; }
 
 [type='submit'],
@@ -301,16 +301,16 @@ input[type='search'] {
           box-sizing: border-box; }
 
 ::-webkit-input-placeholder {
-  color: #cacaca; }
+  color: rgba(255, 255, 255, 0.5); }
 
 :-ms-input-placeholder {
-  color: #cacaca; }
+  color: rgba(255, 255, 255, 0.5); }
 
 ::-ms-input-placeholder {
-  color: #cacaca; }
+  color: rgba(255, 255, 255, 0.5); }
 
 ::placeholder {
-  color: #cacaca; }
+  color: rgba(255, 255, 255, 0.5); }
 
 [type='file'],
 [type='checkbox'],
@@ -340,8 +340,8 @@ label {
   margin: 0;
   font-size: 0.875rem;
   font-weight: normal;
-  line-height: 1.8;
-  color: #0a0a0a; }
+  line-height: 1.5;
+  color: inherit; }
   label.middle {
     margin: 0 0 1rem;
     padding: 0.5625rem 0; }
@@ -447,14 +447,14 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: 1px solid #cacaca;
+  border: 1px solid #ffffff;
   border-radius: 0;
   background-color: #fefefe;
   font-family: inherit;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
+  color: inherit;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
   background-origin: content-box;
   background-position: right -1rem center;
@@ -470,8 +470,8 @@ select {
       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNrEkckNgDAMBBfRkEt0ObRBBdsGXUDgmQfK4XhH2m8czQAAy27R3tsw4Qfe2x8uOO6oYLb6GlOor3GF+swURAOmUJ+RwtEJs9WvTGEYxBXqI1MQAZhCfUQKRzDMVj+TwrAIV6jvSUEkYAr1LSkcyTBb/V+KYfX7xAeusq3sLDtGH3kEGACPWIflNZfhRQAAAABJRU5ErkJggg=="); } }
   select:focus {
     outline: none;
-    border: 1px solid #8a8a8a;
-    background-color: #fefefe;
+    border: 1px solid #ffffff;
+    background-color: inherit;
     -webkit-box-shadow: 0 0 5px #cacaca;
             box-shadow: 0 0 5px #cacaca;
     -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
@@ -479,7 +479,7 @@ select {
     transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
     transition: box-shadow 0.5s, border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s; }
   select:disabled {
-    background-color: #e6e6e6;
+    background-color: rgba(0, 0, 0, 0.5);
     cursor: not-allowed; }
   select::-ms-expand {
     display: none; }
@@ -3663,7 +3663,7 @@ a.thumbnail {
     line-height: 1;
     text-decoration: none;
     display: block;
-    padding: 0 1rem; }
+    padding: 0.25rem 0.5rem; }
   .menu input,
   .menu select,
   .menu a,
@@ -3837,7 +3837,7 @@ a.thumbnail {
           -ms-flex-pack: start;
               justify-content: flex-start; }
   .menu .menu-text {
-    padding: 0 1rem;
+    padding: 0.25rem 0.5rem;
     font-weight: bold;
     line-height: 1;
     color: inherit; }
@@ -3911,10 +3911,10 @@ a.thumbnail {
   width: 100%; }
 
 .accordion-menu a {
-  padding: 0 1rem; }
+  padding: 0.25rem 0.5rem; }
 
 .accordion-menu .is-accordion-submenu a {
-  padding: 0 1rem; }
+  padding: 0.25rem 0.5rem; }
 
 .accordion-menu .nested.is-accordion-submenu {
   margin-right: 0;
@@ -4010,7 +4010,7 @@ a.thumbnail {
     transition: height 0.5s; }
 
 .drilldown a {
-  padding: 0 1rem;
+  padding: 0.25rem 0.5rem;
   background: #fefefe; }
 
 .drilldown .is-drilldown-submenu {
@@ -4035,7 +4035,7 @@ a.thumbnail {
         -ms-transform: translateX(100%);
             transform: translateX(100%); }
   .drilldown .is-drilldown-submenu a {
-    padding: 0 1rem; }
+    padding: 0.25rem 0.5rem; }
 
 .drilldown .nested.is-drilldown-submenu {
   margin-right: 0;
@@ -4129,7 +4129,7 @@ a.thumbnail {
   outline: 0; }
 
 .dropdown.menu > li > a {
-  padding: 0 1rem; }
+  padding: 0.25rem 0.5rem; }
 
 .dropdown.menu > li.is-active > a {
   background: transparent;
@@ -4329,7 +4329,7 @@ a.thumbnail {
   border: 1px solid #cacaca;
   background: #fefefe; }
   .dropdown .is-dropdown-submenu a {
-    padding: 0 1rem; }
+    padding: 0.25rem 0.5rem; }
   .is-dropdown-submenu .is-dropdown-submenu-parent > a::after {
     right: 14px; }
   .is-dropdown-submenu .is-dropdown-submenu-parent.opens-left > a::after {
@@ -6666,41 +6666,74 @@ footer {
   padding-top: 1rem;
   background-color: rgba(0, 0, 0, 0.5); }
 
+textarea.try-routed-gothic.font-stretch--normal.font-style--normal {
+  font-family: 'routed-gothic'; }
+
+textarea.try-routed-gothic.font-stretch--normal.font-style--half-italic {
+  font-family: 'routed-gothic--half-italic'; }
+
+textarea.try-routed-gothic.font-stretch--normal.font-style--italic {
+  font-family: 'routed-gothic--italic'; }
+
+textarea.try-routed-gothic.font-stretch--narrow.font-style--normal {
+  font-family: 'routed-gothic--narrow'; }
+
+textarea.try-routed-gothic.font-stretch--narrow.font-style--half-italic {
+  font-family: 'routed-gothic--narrow--half-italic'; }
+
+textarea.try-routed-gothic.font-stretch--narrow.font-style--italic {
+  font-family: 'routed-gothic--narrow--italic'; }
+
+textarea.try-routed-gothic.font-stretch--wide.font-style--normal {
+  font-family: 'routed-gothic--wide'; }
+
+textarea.try-routed-gothic.font-stretch--wide.font-style--half-italic {
+  font-family: 'routed-gothic--wide--half-italic'; }
+
+textarea.try-routed-gothic.font-stretch--wide.font-style--italic {
+  font-family: 'routed-gothic--wide--italic'; }
+
+textarea.try-routed-gothic.font-size--large {
+  font-size: 200%; }
+
+textarea.try-routed-gothic.font-size--x-large {
+  font-size: 400%; }
+
 @font-face {
   font-family: 'routed-gothic';
-  src: url("../../dist/ttf/routed-gothic.ttf") format("opentype"); }
+  src: url("../fonts/routed-gothic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--half-italic';
-  src: url("../../dist/ttf/routed-gothic-half-italic.ttf") format("opentype"); }
+  src: url("../fonts/routed-gothic-half-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--italic';
-  src: url("../../dist/ttf/routed-gothic-italic.ttf") format("opentype"); }
+  src: url("../fonts/routed-gothic-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--narrow';
-  src: url("../../dist/ttf/routed-gothic-narrow.ttf") format("opentype"); }
+  src: url("../fonts/routed-gothic-narrow.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--narrow--half-italic';
-  src: url("../../dist/ttf/routed-gothic-narrow-half-italic.ttf") format("opentype"); }
+  src: url("../fonts/routed-gothic-narrow-half-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--narrow--italic';
-  src: url("../../dist/ttf/routed-gothic-narrow-italic.ttf") format("opentype"); }
+  src: url("../fonts/routed-gothic-narrow-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--wide';
-  src: url("../../dist/ttf/routed-gothic-wide.ttf") format("opentype"); }
+  src: url("../fonts/routed-gothic-wide.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--wide--half-italic';
-  src: url("../../dist/ttf/routed-gothic-wide-half-italic.ttf") format("opentype"); }
+  src: url("../fonts/routed-gothic-wide-half-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--wide--italic';
-  src: url("../../dist/ttf/routed-gothic-wide-italic.ttf") format("opentype"); }
+  src: url("../fonts/routed-gothic-wide-italic.ttf") format("opentype"); }
 
 .font--routed-gothic {
   font-family: 'routed-gothic', sans-serif;
@@ -6758,63 +6791,63 @@ footer {
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../dist/ttf/routed-gothic.ttf") format("opentype");
+  src: url("../fonts/routed-gothic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Routed Gothic Half Italic';
-  src: url("../../dist/ttf/routed-gothic-half-italic.ttf") format("opentype");
+  src: url("../fonts/routed-gothic-half-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: normal;
   font-style: oblique; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../dist/ttf/routed-gothic-italic.ttf") format("opentype");
+  src: url("../fonts/routed-gothic-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../dist/ttf/routed-gothic-narrow.ttf") format("opentype");
+  src: url("../fonts/routed-gothic-narrow.ttf") format("opentype");
   font-weight: normal;
   font-stretch: condensed;
   font-style: normal; }
 
 @font-face {
   font-family: 'Routed Gothic Half Italic';
-  src: url("../../dist/ttf/routed-gothic-narrow-half-italic.ttf") format("opentype");
+  src: url("../fonts/routed-gothic-narrow-half-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: condensed;
   font-style: oblique; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../dist/ttf/routed-gothic-narrow-italic.ttf") format("opentype");
+  src: url("../fonts/routed-gothic-narrow-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: condensed;
   font-style: italic; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../dist/ttf/routed-gothic-wide.ttf") format("opentype");
+  src: url("../fonts/routed-gothic-wide.ttf") format("opentype");
   font-weight: normal;
   font-stretch: expanded;
   font-style: normal; }
 
 @font-face {
   font-family: 'Routed Gothic Half Italic';
-  src: url("../../dist/ttf/routed-gothic-wide-half-italic.ttf") format("opentype");
+  src: url("../fonts/routed-gothic-wide-half-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: expanded;
   font-style: oblique; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../dist/ttf/routed-gothic-wide-italic.ttf") format("opentype");
+  src: url("../fonts/routed-gothic-wide-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: expanded;
   font-style: italic; }
