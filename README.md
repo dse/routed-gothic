@@ -12,7 +12,11 @@ some FontForge Python scripting.
 
 Other keywords I want people to use to find this font include: Wrico.
 
-<img src="images/avionics-diagram.png">
+<div class="grid-x grid-padding-x">
+    <div class="cell medium-8 medium-offset-2 large-4 large-offset-4">
+        <img src="images/avionics-diagram.png">
+    </div>
+</div>
 
 ## Notes
 
