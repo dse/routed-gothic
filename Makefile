@@ -12,24 +12,15 @@ TTF_FONTS = \
 	dist/ttf/routed-gothic-wide-italic.ttf
 
 EOT_FONTS = \
-	dist/eot/routed-gothic.ttf2eot.eot \
-	dist/eot/routed-gothic.mkeot.eot \
-	dist/eot/routed-gothic-half-italic.ttf2eot.eot \
-	dist/eot/routed-gothic-half-italic.mkeot.eot \
-	dist/eot/routed-gothic-italic.ttf2eot.eot \
-	dist/eot/routed-gothic-italic.mkeot.eot \
-	dist/eot/routed-gothic-narrow.ttf2eot.eot \
-	dist/eot/routed-gothic-narrow.mkeot.eot \
-	dist/eot/routed-gothic-narrow-half-italic.ttf2eot.eot \
-	dist/eot/routed-gothic-narrow-half-italic.mkeot.eot \
-	dist/eot/routed-gothic-narrow-italic.ttf2eot.eot \
-	dist/eot/routed-gothic-narrow-italic.mkeot.eot \
-	dist/eot/routed-gothic-wide.ttf2eot.eot \
-	dist/eot/routed-gothic-wide.mkeot.eot \
-	dist/eot/routed-gothic-wide-half-italic.ttf2eot.eot \
-	dist/eot/routed-gothic-wide-half-italic.mkeot.eot \
-	dist/eot/routed-gothic-wide-italic.ttf2eot.eot \
-	dist/eot/routed-gothic-wide-italic.mkeot.eot
+	dist/eot/routed-gothic.eot \
+	dist/eot/routed-gothic-half-italic.eot \
+	dist/eot/routed-gothic-italic.eot \
+	dist/eot/routed-gothic-narrow.eot \
+	dist/eot/routed-gothic-narrow-half-italic.eot \
+	dist/eot/routed-gothic-narrow-italic.eot \
+	dist/eot/routed-gothic-wide.eot \
+	dist/eot/routed-gothic-wide-half-italic.eot \
+	dist/eot/routed-gothic-wide-italic.eot
 
 FONTS = $(TTF_FONTS)
 
@@ -47,12 +38,9 @@ eot-fonts: $(EOT_FONTS)
 $(TTF_FONTS): $(SOURCE) Makefile bin/generate-fonts.py
 	bin/generate-fonts.py
 
-dist/eot/%.ttf2eot.eot: dist/ttf/%.ttf Makefile
-	mkdir -p "$$(dirname "$@")"
-	ttf2eot "$<" >"$@.tmp.eot"
-	mv "$@.tmp.eot" "$@"
-
-dist/eot/%.mkeot.eot: dist/ttf/%.ttf Makefile
+# why I chose mkeot over ttf2eot:
+# https://lists.w3.org/Archives/Public/www-font/2010JanMar/0015.html
+dist/eot/%.eot: dist/ttf/%.ttf Makefile
 	mkdir -p "$$(dirname "$@")"
 	mkeot "$<" >"$@.tmp.eot"
 	mv "$@.tmp.eot" "$@"
@@ -60,5 +48,11 @@ dist/eot/%.mkeot.eot: dist/ttf/%.ttf Makefile
 clean:
 	find . -type f -name '*.tmp' -o -name '*.tmp.*' -exec rm {} +
 
-superclean:
+superclean: clean
 	find dist -type f -exec rm {} +
+
+web:
+	gulp sass
+	jekyll build
+
+.PHONY: web superclean clean
