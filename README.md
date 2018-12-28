@@ -14,7 +14,7 @@ Other keywords I want people to use to find this font include: Wrico.
 
 <div class="grid-x grid-padding-x align-center">
     <div class="cell medium-8 large-6">
-        <img src="images/avionics-diagram.png">
+        <p><img src="images/avionics-diagram.png"></p>
     </div>
 </div>
 
