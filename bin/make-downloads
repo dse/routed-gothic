@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -o errexit
+set -o pipefail
+
+declare -a cmd
+declare -a versions
+
+cd "$(dirname "$0")"
+cd "$(git rev-parse --show-toplevel)"
+
+mkdir -p download
+mapfile -t versions < <(git tag --list --sort=v:refname | grep '^v[0-9]')
+
+if (( ! ${#versions[@]} )) ; then
+    >&2 echo "No version archives to create.  :-("
+    exit 1
+fi
+
+latest=""
+for version in "${versions[@]}" ; do
+    latest="${version}"
+done
+
+for version in "${versions[@]}" ; do
+    (
+        cd dist/ttf
+        prefix="routed-gothic-ttf-${version}/"
+        zipfile="../../download/routed-gothic-ttf-${version}.zip"
+        rm "${zipfile}" || true
+        cmd=(
+            git archive "--prefix=${prefix}" -o "${zipfile}" "${version}" .
+        )
+        >&2 echo "+ ${cmd[@]}"
+        "${cmd[@]}"
+    )
+done
+ln -n -f -s "routed-gothic-ttf-${latest}.zip" download/routed-gothic-ttf.zip
