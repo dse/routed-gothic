@@ -25,13 +25,13 @@ EOT_FONTS = \
 FONTS = $(TTF_FONTS)
 
 .PHONY: default
-default: ttf-fonts eot-fonts
+default: ttf eot web
 
-.PHONY: ttf-fonts
-ttf-fonts: $(firstword $(TTF_FONTS))
+.PHONY: ttf
+ttf: $(firstword $(TTF_FONTS))
 
-.PHONY: eot-fonts
-eot-fonts: $(EOT_FONTS)
+.PHONY: eot
+eot: $(EOT_FONTS)
 
 ###############################################################################
 
@@ -45,9 +45,11 @@ dist/eot/%.eot: dist/ttf/%.ttf Makefile
 	mkeot "$<" >"$@.tmp.eot"
 	mv "$@.tmp.eot" "$@"
 
+.PHONY: clean
 clean:
 	find . -type f -name '*.tmp' -o -name '*.tmp.*' -exec rm {} +
 
+.PHONY: superclean
 superclean: clean
 	find dist -type f -exec rm {} +
 
@@ -56,9 +58,20 @@ web/src/_includes/%.inc.html: %.md
 	markdown $< >$@.tmp
 	mv $@.tmp $@
 
-web:
-	make web/src/_includes/README.inc.html
+.PHONY: web
+web: includes sass jekyll
+
+.PHONY: includes
+includes: \
+	web/src/_includes/README.inc.html \
+	web/src/_includes/COPYING.inc.html
+
+.PHONY: sass
+sass:
 	gulp sass
+
+.PHONY: jekyll
+jekyll:
 	jekyll build
 
 .PHONY: web superclean clean
