@@ -8,10 +8,24 @@
     </head>
     <body>
 
-        <header class="grid-container">
-            <div class="grid-x grid-padding-x">
-                <div class="cell">
+        <header>
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell">
 
+                        <ul class="menu align-center">
+                            <li>
+                                <a href="./">Home</a>
+                            </li>
+                            <li>
+                                <a href="samples.html">Samples</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://github.com/dse/routed-gothic">GitHub</a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
         </header>
@@ -21,6 +35,10 @@
                 <div class="cell">
 
                     <main>
+                        <h1 class="page-title">
+                            {{ page.title }}
+                        </h1>
+
                         {{ content }}
                     </main>
 
@@ -28,10 +46,12 @@
             </div>
         </div>
 
-        <footer class="grid-container">
-            <div class="grid-x grid-padding-x">
-                <div class="cell">
+        <footer>
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell">
 
+                    </div>
                 </div>
             </div>
         </footer>

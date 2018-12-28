@@ -90,7 +90,7 @@ $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
-$global-menu-padding: 0.7rem 1rem;
+$global-menu-padding: 0 1rem;
 $global-menu-nested-margin: $global-margin;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -470,7 +470,7 @@ $mediaobject-image-width-stacked: 100%;
 // 23. Menu
 // --------
 
-$menu-margin: 0;
+$menu-margin: $global-margin; /* not used :-( */
 $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 1rem;

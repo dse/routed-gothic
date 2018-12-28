@@ -1,1 +1,21 @@
-@import url('fonts.css');
+.page-title {
+    text-align: center;
+}
+.border-width-1  { border-width: 1px !important; }
+.border-width-2  { border-width: 2px !important; }
+.border-radius-1 { border-radius: 1px !important; }
+.border-radius-2 { border-radius: 2px !important; }
+.menu {
+    margin-bottom: $global-margin;
+}
+header {
+    padding-top: $global-margin;
+    background-color: rgba(black, 0.5);
+}
+main {
+    padding-top: $global-margin;
+}
+footer {
+    padding-top: $global-margin;
+    background-color: rgba(black, 0.5);
+}

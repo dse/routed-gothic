@@ -1,11 +1,11 @@
 @charset "UTF-8";
+/* not used :-( */
 /**
  * Foundation for Sites by ZURB
  * Version 6.5.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
-@import url("fonts.css");
 @media print, screen and (min-width: 40em) {
   .reveal, .reveal.tiny, .reveal.small, .reveal.large {
     right: auto;
@@ -3663,7 +3663,7 @@ a.thumbnail {
     line-height: 1;
     text-decoration: none;
     display: block;
-    padding: 0.7rem 1rem; }
+    padding: 0 1rem; }
   .menu input,
   .menu select,
   .menu a,
@@ -3837,7 +3837,7 @@ a.thumbnail {
           -ms-flex-pack: start;
               justify-content: flex-start; }
   .menu .menu-text {
-    padding: 0.7rem 1rem;
+    padding: 0 1rem;
     font-weight: bold;
     line-height: 1;
     color: inherit; }
@@ -3911,10 +3911,10 @@ a.thumbnail {
   width: 100%; }
 
 .accordion-menu a {
-  padding: 0.7rem 1rem; }
+  padding: 0 1rem; }
 
 .accordion-menu .is-accordion-submenu a {
-  padding: 0.7rem 1rem; }
+  padding: 0 1rem; }
 
 .accordion-menu .nested.is-accordion-submenu {
   margin-right: 0;
@@ -4010,7 +4010,7 @@ a.thumbnail {
     transition: height 0.5s; }
 
 .drilldown a {
-  padding: 0.7rem 1rem;
+  padding: 0 1rem;
   background: #fefefe; }
 
 .drilldown .is-drilldown-submenu {
@@ -4035,7 +4035,7 @@ a.thumbnail {
         -ms-transform: translateX(100%);
             transform: translateX(100%); }
   .drilldown .is-drilldown-submenu a {
-    padding: 0.7rem 1rem; }
+    padding: 0 1rem; }
 
 .drilldown .nested.is-drilldown-submenu {
   margin-right: 0;
@@ -4129,7 +4129,7 @@ a.thumbnail {
   outline: 0; }
 
 .dropdown.menu > li > a {
-  padding: 0.7rem 1rem; }
+  padding: 0 1rem; }
 
 .dropdown.menu > li.is-active > a {
   background: transparent;
@@ -4329,7 +4329,7 @@ a.thumbnail {
   border: 1px solid #cacaca;
   background: #fefefe; }
   .dropdown .is-dropdown-submenu a {
-    padding: 0.7rem 1rem; }
+    padding: 0 1rem; }
   .is-dropdown-submenu .is-dropdown-submenu-parent > a::after {
     right: 14px; }
   .is-dropdown-submenu .is-dropdown-submenu-parent.opens-left > a::after {
@@ -6637,41 +6637,70 @@ ol.list-upper-roman {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
+.page-title {
+  text-align: center; }
+
+.border-width-1 {
+  border-width: 1px !important; }
+
+.border-width-2 {
+  border-width: 2px !important; }
+
+.border-radius-1 {
+  border-radius: 1px !important; }
+
+.border-radius-2 {
+  border-radius: 2px !important; }
+
+.menu {
+  margin-bottom: 1rem; }
+
+header {
+  padding-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+main {
+  padding-top: 1rem; }
+
+footer {
+  padding-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 @font-face {
   font-family: 'routed-gothic';
-  src: url("../../../dist/ttf/routed-gothic.ttf") format("opentype"); }
+  src: url("../../dist/ttf/routed-gothic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--half-italic';
-  src: url("../../../dist/ttf/routed-gothic-half-italic.ttf") format("opentype"); }
+  src: url("../../dist/ttf/routed-gothic-half-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--italic';
-  src: url("../../../dist/ttf/routed-gothic-italic.ttf") format("opentype"); }
+  src: url("../../dist/ttf/routed-gothic-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--narrow';
-  src: url("../../../dist/ttf/routed-gothic-narrow.ttf") format("opentype"); }
+  src: url("../../dist/ttf/routed-gothic-narrow.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--narrow--half-italic';
-  src: url("../../../dist/ttf/routed-gothic-narrow-half-italic.ttf") format("opentype"); }
+  src: url("../../dist/ttf/routed-gothic-narrow-half-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--narrow--italic';
-  src: url("../../../dist/ttf/routed-gothic-narrow-italic.ttf") format("opentype"); }
+  src: url("../../dist/ttf/routed-gothic-narrow-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--wide';
-  src: url("../../../dist/ttf/routed-gothic-wide.ttf") format("opentype"); }
+  src: url("../../dist/ttf/routed-gothic-wide.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--wide--half-italic';
-  src: url("../../../dist/ttf/routed-gothic-wide-half-italic.ttf") format("opentype"); }
+  src: url("../../dist/ttf/routed-gothic-wide-half-italic.ttf") format("opentype"); }
 
 @font-face {
   font-family: 'routed-gothic--wide--italic';
-  src: url("../../../dist/ttf/routed-gothic-wide-italic.ttf") format("opentype"); }
+  src: url("../../dist/ttf/routed-gothic-wide-italic.ttf") format("opentype"); }
 
 .font--routed-gothic {
   font-family: 'routed-gothic', sans-serif;
@@ -6729,63 +6758,63 @@ ol.list-upper-roman {
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../../dist/ttf/routed-gothic.ttf") format("opentype");
+  src: url("../../dist/ttf/routed-gothic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Routed Gothic Half Italic';
-  src: url("../../../dist/ttf/routed-gothic-half-italic.ttf") format("opentype");
+  src: url("../../dist/ttf/routed-gothic-half-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: normal;
   font-style: oblique; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../../dist/ttf/routed-gothic-italic.ttf") format("opentype");
+  src: url("../../dist/ttf/routed-gothic-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../../dist/ttf/routed-gothic-narrow.ttf") format("opentype");
+  src: url("../../dist/ttf/routed-gothic-narrow.ttf") format("opentype");
   font-weight: normal;
   font-stretch: condensed;
   font-style: normal; }
 
 @font-face {
   font-family: 'Routed Gothic Half Italic';
-  src: url("../../../dist/ttf/routed-gothic-narrow-half-italic.ttf") format("opentype");
+  src: url("../../dist/ttf/routed-gothic-narrow-half-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: condensed;
   font-style: oblique; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../../dist/ttf/routed-gothic-narrow-italic.ttf") format("opentype");
+  src: url("../../dist/ttf/routed-gothic-narrow-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: condensed;
   font-style: italic; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../../dist/ttf/routed-gothic-wide.ttf") format("opentype");
+  src: url("../../dist/ttf/routed-gothic-wide.ttf") format("opentype");
   font-weight: normal;
   font-stretch: expanded;
   font-style: normal; }
 
 @font-face {
   font-family: 'Routed Gothic Half Italic';
-  src: url("../../../dist/ttf/routed-gothic-wide-half-italic.ttf") format("opentype");
+  src: url("../../dist/ttf/routed-gothic-wide-half-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: expanded;
   font-style: oblique; }
 
 @font-face {
   font-family: 'Routed Gothic';
-  src: url("../../../dist/ttf/routed-gothic-wide-italic.ttf") format("opentype");
+  src: url("../../dist/ttf/routed-gothic-wide-italic.ttf") format("opentype");
   font-weight: normal;
   font-stretch: expanded;
   font-style: italic; }
