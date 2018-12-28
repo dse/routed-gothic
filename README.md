@@ -59,3 +59,11 @@ Punctuation block for common typographic symbols, and then some.
 -   [DIN 17 / TGL 0-17](https://www.typografie.info/3/Schriften/fonts.html/din-17tgl-0-17-r623/) and
     [DIN 16 / TGL 0-16](https://www.typografie.info/3/Schriften/fonts.html/din-16tgl-0-16-r622/) —
     Italic and upright versions of the medium ISO 3098/1 (DIN 6776) font.
+
+## Other Aircraft Instrumentation Fonts
+
+-   [United States Military Standard 33558](http://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=41902),
+    Numerals and Letters, Aircraft Instrument Dial, Standard Form of —
+    It’s the font you’ve seen on old aircraft instruments.
+
+-   [Futura](https://en.wikipedia.org/wiki/Futura_(typeface)), ATF Spartan, etc.
