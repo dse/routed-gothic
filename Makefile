@@ -63,3 +63,16 @@ sass:
 .PHONY: jekyll
 jekyll:
 	jekyll build
+
+WEB_REMOTE_USER=dse@webonastick.com
+WEB_REMOTE_ROOT=/www/webonastick.com/htdocs/fonts/routed-gothic-new
+
+.PHONY: publish
+publish: downloads
+	rsync -avCc --delete --exclude=download --exclude=fonts _site/    $(WEB_REMOTE_USER):$(WEB_REMOTE_ROOT)/
+	rsync -avCc --delete                                    download/ $(WEB_REMOTE_USER):$(WEB_REMOTE_ROOT)/download/
+	rsync -avCc --delete                                    dist/ttf/ $(WEB_REMOTE_USER):$(WEB_REMOTE_ROOT)/fonts/
+
+.PHONY: downloads
+downloads:
+	bin/make-downloads
