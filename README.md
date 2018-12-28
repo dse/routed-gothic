@@ -12,7 +12,7 @@ some FontForge Python scripting.
 
 Other keywords I want people to use to find this font include: Wrico.
 
-![avionics diagram stolen from a Stack Overflow post](avionics-diagram)
+<img src="images/avionics-diagram.png">
 
 ## Notes
 
@@ -77,5 +77,3 @@ Punctuation block for common typographic symbols, and then some.
     Implementation by Derek Higgs [archived here](https://webonastick.com/fonts/other/mil-spec-33558/).
 
 -   [Futura](https://en.wikipedia.org/wiki/Futura_%28typeface%29), ATF Spartan, etc.
-
-avionics-diagram: https://github.com/
