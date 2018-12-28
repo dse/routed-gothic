@@ -34,7 +34,7 @@ function sass(options) {
             autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
         ]))
         .pipe(renamePipe)
-        .pipe(gulp.dest('web/src/css'))
+        .pipe(gulp.dest('src/web/css'))
         .pipe(browserSync.stream());
 }
 
@@ -43,7 +43,7 @@ function serve() {
         server: "./"
     });
     gulp.watch("src/scss//*.scss", sass);
-    gulp.watch("web/_site//*.html").on('change', browserSync.reload);
+    gulp.watch("_site//*.html").on('change', browserSync.reload);
 }
 
 gulp.task('sassDev', sassDev);

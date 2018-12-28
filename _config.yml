@@ -1,8 +1,8 @@
 name: Routed Gothic Font
 author: Darren Embry
 author_email: dse@webonastick.com
-source: web/src
-destination: web/_site
+source: src/web
+destination: _site
 plugins_dir: _plugins
 layouts_dir: _layouts
 data_dir: _data

@@ -14,7 +14,7 @@ Other keywords I want people to use to find this font include: Wrico.
 
 <div class="grid-x grid-padding-x align-center">
     <div class="cell medium-8 large-6">
-        <p><img style="border: 2px solid white; border-radius: 1px; padding: 2px;" src="https://dse.github.io/routed-gothic/web/_site/images/avionics-diagram-white-on-blue.png"></p>
+        <p><img style="border: 2px solid white; border-radius: 1px; padding: 2px;" src="https://dse.github.io/routed-gothic/_site/images/avionics-diagram-white-on-blue.png"></p>
     </div>
 </div>
 

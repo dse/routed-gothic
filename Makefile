@@ -53,7 +53,7 @@ clean:
 superclean: clean
 	find dist -type f -exec rm {} +
 
-web/src/_includes/%.inc.html: %.md
+src/web/_includes/%.inc.html: %.md
 	mkdir -p "$$(dirname "$@")"
 	markdown $< >$@.tmp
 	mv $@.tmp $@
@@ -63,8 +63,8 @@ web: includes sass jekyll
 
 .PHONY: includes
 includes: \
-	web/src/_includes/README.inc.html \
-	web/src/_includes/COPYING.inc.html
+	src/web/_includes/README.inc.html \
+	src/web/_includes/COPYING.inc.html
 
 .PHONY: sass
 sass:
