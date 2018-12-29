@@ -1,0 +1,133 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+use Unicode::UCD qw(charinfo charblocks);
+use Data::Dumper;
+use HTML::Entities;
+use Getopt::Long;
+
+my @extras;
+my $do_table = 0;
+my $do_glyphs = 0;
+
+Getopt::Long::Configure("bundling", "gnu_compat");
+Getopt::Long::GetOptions("x|extras=s", \@extras,
+			 "table|do-table" => \$do_table,
+			 "glyphs|do-glyphs" => \$do_glyphs,
+			);
+
+if (!$do_table && !$do_glyphs) {
+    $do_table = 1;
+}
+
+my %block;
+my %codepoint;
+my %charname;
+my @glyphs;
+
+my @codepoint;
+while (<>) {
+    if (/^\s*Encoding:\s*(\d+)\s+(\d+)\s+(\d+)/) {
+	my $codepoint = $2;
+	my $charinfo = charinfo($codepoint);
+	my $block = $charinfo->{block};
+	$block{$block} = 1;
+	$codepoint{$codepoint} = 1;
+	$charname{$codepoint} = $charinfo->{name};
+	push(@glyphs, chr($codepoint));
+	warn "$codepoint\n" if $codepoint == 8334;
+    }
+}
+
+my $glyphs = join(" ", map { "[$_]" } @glyphs);
+
+foreach my $extra (@extras) {
+    open(my $fh, "<", $extra) or do {
+	warn("Cannot read $extra: $!\n");
+	next;
+    };
+    while (<$fh>) {
+	chomp();
+	#warn("1 $_\n");
+	next if m{^\s*\#};
+	next unless m{^\s*U\+([[:xdigit:]]+)\s+}i;
+	my $codepoint = $1;
+	my $name = $';
+	$codepoint = hex($codepoint);
+	$charname{$codepoint} = $name;
+	#warn("2 $codepoint // $name\n");
+    }
+}
+
+my $charblocks = charblocks();
+my @charblocks;
+foreach my $blockname (sort keys %$charblocks) {
+    my $block = $charblocks->{$blockname};
+    my @blocks = @$block;
+    my @first_codepoints = sort { $a <=> $b } map { $_->[0] } @blocks;
+    my $first_codepoint = $first_codepoints[0];
+    push(@charblocks, {
+	name => $blockname,
+	ranges => $block,
+	first_codepoint => $first_codepoint
+       });
+}
+
+if ($do_glyphs) {
+
+    print("<h3>Arial (for comparison)</h3>\n");
+
+    print("<div class='regularFont'>\n");
+    printf("<p>%s</p>\n", encode_entities($glyphs));
+    printf("<p><i>%s</i></p>\n", encode_entities($glyphs));
+    print("</div>\n");
+
+    print("<h3>Routed Gothic</h3>\n");
+
+    print("<div class='routedGothic'>\n");
+    printf("<p>%s</p>\n", encode_entities($glyphs));
+    printf("<p><i>%s</i></p>\n", encode_entities($glyphs));
+    print("</div>\n");
+
+    print("<h3>Routed Gothic Narrow</h3>\n");
+
+    print("<div class='routedGothicNarrow'>\n");
+    printf("<p>%s</p>\n", encode_entities($glyphs));
+    printf("<p><i>%s</i></p>\n", encode_entities($glyphs));
+    print("</div>\n");
+}
+
+if ($do_table) {
+    @charblocks = sort { $a->{first_codepoint} <=> $b->{first_codepoint} } @charblocks;
+    foreach my $charblock (@charblocks) {
+	my $ranges = $charblock->{ranges};
+	my $blockname = $charblock->{name};
+	foreach my $range (@$ranges) {
+	    my @codepoints = grep { $codepoint{$_} } ($range->[0] .. $range->[1]);
+	    next unless scalar @codepoints;
+	    printf("<h2>%s</h2>\n", encode_entities($blockname));
+	    print(<<"END");
+<table class='glyphs'>
+<thead>
+<tr>
+<th colspan="2">Codepoint</th>
+<th>Symbol</th>
+<th>Name</th>
+</thead>
+<tbody>
+END
+	    foreach my $codepoint (@codepoints) {
+		printf("<tr><td>%s<td>%s</td><td>%s</td><td><span class='charname'>%s</span></td></tr>\n",
+		       encode_entities(sprintf("U+%04X", $codepoint)),
+		       encode_entities($codepoint),
+		       encode_entities(chr($codepoint)),
+		       encode_entities($charname{$codepoint}));
+	    }
+	    print(<<"END");
+</tbody>
+</table>
+END
+	}
+    }
+}
+
