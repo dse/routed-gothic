@@ -54,7 +54,7 @@ superclean: clean
 	find dist -type f -exec rm {} +
 
 .PHONY: web
-web: sass jekyll
+web: coverage sass jekyll
 
 .PHONY: sass
 sass:
@@ -76,3 +76,13 @@ publish: downloads
 .PHONY: downloads
 downloads:
 	bin/make-downloads
+
+.PHONY: coverage
+coverage: src/web/unicode-coverage.html
+src/web/unicode-coverage.html: src/routed-gothic-stroke-source.sfd bin/make-character-list Makefile
+	echo '---' >$@.tmp
+	echo 'layout: default' >>$@.tmp
+	echo 'title: Routed Gothic Unicode Coverage' >>$@.tmp
+	echo '---' >>$@.tmp
+	bin/make-character-list $< >>$@.tmp
+	mv $@.tmp $@

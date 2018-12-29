@@ -1,3 +1,7 @@
+body {
+    // margin: $global-padding;
+    // border: 1px solid $border-color;
+}
 .page-title {
     text-align: center;
 }
@@ -9,15 +13,30 @@
     margin-bottom: $global-margin;
 }
 header {
-    padding-top: $global-margin;
     background-color: rgba(black, 0.5);
+    padding-top: $global-margin;
+    // border-bottom: 1px solid $border-color;
 }
 main {
     padding-top: $global-margin;
 }
 footer {
-    padding-top: $global-margin;
     background-color: rgba(black, 0.5);
+    padding-top: $global-margin;
+    // border-top: 1px solid $border-color;
+}
+table.character-list {
+    @include breakpoint(small down) {
+        font-size: 75%;
+        > * > tr > * { padding: rem-calc(2 4); }
+    }
+    > thead > tr { vertical-align: bottom; }
+    > tbody > tr { vertical-align: baseline; }
+    > tbody > tr {
+        > *:nth-child(1) { width: 6em; }
+        > *:nth-child(2) { width: 4em; text-align: right; }
+        > *:nth-child(3) { width: 2em; text-align: center; }
+    }
 }
 textarea.try-routed-gothic {
     &.font-stretch--normal {

@@ -107,17 +107,23 @@ if ($do_table) {
 	    next unless scalar @codepoints;
 	    printf("<h2>%s</h2>\n", encode_entities($blockname));
 	    print(<<"END");
-<table class='glyphs'>
+<table class='character-list'>
 <thead>
 <tr>
-<th colspan="2">Codepoint</th>
-<th>Symbol</th>
-<th>Name</th>
+<th class='codepoint' colspan="2">
+    Codepoint
+</th>
+<th class='character'>
+    Sym<span class='hide-for-small-only'>bol</span>
+</th>
+<th class='character-name'>
+    Name
+</th>
 </thead>
 <tbody>
 END
 	    foreach my $codepoint (@codepoints) {
-		printf("<tr><td>%s<td>%s</td><td>%s</td><td><span class='charname'>%s</span></td></tr>\n",
+		printf("<tr><td class='codepoint-hex'>%s</td><td class='codepoint-dec'>%s</td><td class='character'>%s</td><td class='character-name'><span class='charname'>%s</span></td></tr>\n",
 		       encode_entities(sprintf("U+%04X", $codepoint)),
 		       encode_entities($codepoint),
 		       encode_entities(chr($codepoint)),

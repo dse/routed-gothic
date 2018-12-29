@@ -2986,16 +2986,16 @@ table {
   thead,
   tbody,
   tfoot {
-    border: 1px solid #f1f1f1;
-    background-color: #fefefe; }
+    border: 1px solid #ffffff;
+    background-color: transparent; }
   caption {
-    padding: 0.5rem 0.625rem 0.625rem;
+    padding: 0.25rem 0.5rem;
     font-weight: bold; }
   thead {
-    background: #f8f8f8;
+    background: rgba(6, 6, 6, 0);
     color: #ffffff; }
   tfoot {
-    background: #f1f1f1;
+    background: rgba(13, 13, 13, 0);
     color: #ffffff; }
   thead tr,
   tfoot tr {
@@ -3004,21 +3004,21 @@ table {
   thead td,
   tfoot th,
   tfoot td {
-    padding: 0.5rem 0.625rem 0.625rem;
+    padding: 0.25rem 0.5rem;
     font-weight: bold;
     text-align: left; }
   tbody th,
   tbody td {
-    padding: 0.5rem 0.625rem 0.625rem; }
+    padding: 0.25rem 0.5rem; }
   tbody tr:nth-child(even) {
     border-bottom: 0;
-    background-color: #f1f1f1; }
+    background-color: rgba(13, 13, 13, 0); }
   table.unstriped tbody {
-    background-color: #fefefe; }
+    background-color: transparent; }
     table.unstriped tbody tr {
       border-bottom: 0;
-      border-bottom: 1px solid #f1f1f1;
-      background-color: #fefefe; }
+      border-bottom: 1px solid #ffffff;
+      background-color: transparent; }
 
 @media screen and (max-width: 63.99875em) {
   table.stack thead {
@@ -3038,16 +3038,16 @@ table.scroll {
   overflow-x: auto; }
 
 table.hover thead tr:hover {
-  background-color: #f3f3f3; }
+  background-color: rgba(1, 1, 1, 0); }
 
 table.hover tfoot tr:hover {
-  background-color: #ececec; }
+  background-color: rgba(8, 8, 8, 0); }
 
 table.hover tbody tr:hover {
-  background-color: #f9f9f9; }
+  background-color: rgba(0, 0, 0, 0); }
 
 table.hover:not(.unstriped) tr:nth-of-type(even):hover {
-  background-color: #ececec; }
+  background-color: rgba(0, 0, 0, 0); }
 
 .table-scroll {
   overflow-x: auto; }
@@ -6656,15 +6656,38 @@ ol.list-upper-roman {
   margin-bottom: 1rem; }
 
 header {
-  padding-top: 1rem;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 1rem; }
 
 main {
   padding-top: 1rem; }
 
 footer {
-  padding-top: 1rem;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 1rem; }
+
+@media screen and (max-width: 39.99875em) {
+  table.character-list {
+    font-size: 75%; }
+    table.character-list > * > tr > * {
+      padding: 0.125rem 0.25rem; } }
+
+table.character-list > thead > tr {
+  vertical-align: bottom; }
+
+table.character-list > tbody > tr {
+  vertical-align: baseline; }
+
+table.character-list > tbody > tr > *:nth-child(1) {
+  width: 6em; }
+
+table.character-list > tbody > tr > *:nth-child(2) {
+  width: 4em;
+  text-align: right; }
+
+table.character-list > tbody > tr > *:nth-child(3) {
+  width: 2em;
+  text-align: center; }
 
 textarea.try-routed-gothic.font-stretch--normal.font-style--normal {
   font-family: 'routed-gothic'; }
