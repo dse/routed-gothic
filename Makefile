@@ -47,22 +47,23 @@ dist/eot/%.eot: dist/ttf/%.ttf Makefile
 
 .PHONY: clean
 clean:
-	find . -type f -name '*.tmp' -o -name '*.tmp.*' -exec rm {} +
+	find . -type f \( \
+		-name '*.tmp' \
+		-o -name '*.tmp.*' \
+		-o -name '#*#' \
+		-o -name '#~' \
+	\) -exec rm {} +
 
 .PHONY: superclean
 superclean: clean
 	find dist -type f -exec rm {} +
 
 .PHONY: web
-web: coverage sass jekyll
+web: coverage sass
 
 .PHONY: sass
 sass:
 	gulp sass
-
-.PHONY: jekyll
-jekyll:
-	jekyll build
 
 WEB_REMOTE_USER=dse@webonastick.com
 WEB_REMOTE_ROOT=/www/webonastick.com/htdocs/fonts/routed-gothic
@@ -83,11 +84,7 @@ downloads:
 	bin/make-downloads
 
 .PHONY: coverage
-coverage: src/web/unicode-coverage.html
-src/web/unicode-coverage.html: src/routed-gothic-stroke-source.sfd bin/make-character-list Makefile
-	echo '---' >$@.tmp
-	echo 'layout: default' >>$@.tmp
-	echo 'title: Routed Gothic Unicode Coverage' >>$@.tmp
-	echo '---' >>$@.tmp
-	bin/make-character-list $< >>$@.tmp
+coverage: _site/includes/unicode-coverage.inc.html
+_site/includes/unicode-coverage.inc.html: src/routed-gothic-stroke-source.sfd bin/make-character-list Makefile
+	bin/make-character-list $< >$@.tmp
 	mv $@.tmp $@
