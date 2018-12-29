@@ -65,7 +65,7 @@ jekyll:
 	jekyll build
 
 WEB_REMOTE_USER=dse@webonastick.com
-WEB_REMOTE_ROOT=/www/webonastick.com/htdocs/fonts/routed-gothic-new
+WEB_REMOTE_ROOT=/www/webonastick.com/htdocs/fonts/routed-gothic
 
 .PHONY: publish
 publish: downloads
