@@ -79,3 +79,10 @@ textarea.try-routed-gothic {
         font-size: 400%;
     }
 }
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+figure img + figcaption {
+    margin-top: 0.25rem;
+}
