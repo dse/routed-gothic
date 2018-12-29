@@ -73,6 +73,11 @@ publish: downloads
 	rsync -avCc --delete                                    download/ $(WEB_REMOTE_USER):$(WEB_REMOTE_ROOT)/download/
 	rsync -avCc --delete                                    dist/ttf/ $(WEB_REMOTE_USER):$(WEB_REMOTE_ROOT)/fonts/
 
+.PHONY: local
+local: downloads
+	rsync -avCc --delete download/ _site/download/
+	rsync -avCc --delete dist/ttf/ _site/fonts/
+
 .PHONY: downloads
 downloads:
 	bin/make-downloads
