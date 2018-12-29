@@ -6722,6 +6722,13 @@ textarea.try-routed-gothic.font-size--large {
 textarea.try-routed-gothic.font-size--x-large {
   font-size: 400%; }
 
+figcaption {
+  text-align: center;
+  font-style: italic; }
+
+figure img + figcaption {
+  margin-top: 0.25rem; }
+
 @font-face {
   font-family: 'routed-gothic';
   src: url("../fonts/routed-gothic.ttf") format("opentype"); }
