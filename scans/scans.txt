@@ -1,0 +1,5 @@
+425c scans are
+	11379 x 892.  close approximation to 12.75 x 1 aspect ratio.
+500c scans are
+	12600 x 1050.  12 x 1 aspect ratio.
+	6300 x 1050.  6 x 1 aspect ratio.
