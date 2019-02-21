@@ -1,6 +1,7 @@
 #!/usr/bin/env perl
 use warnings;
 use strict;
+use v5.10.0;
 
 use Unicode::UCD qw(charinfo charblocks);
 use Data::Dumper;
