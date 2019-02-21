@@ -14,7 +14,7 @@ Getopt::Long::Configure("bundling", "gnu_compat");
 Getopt::Long::GetOptions("x|extras=s", \@extras,
 			 "table|do-table" => \$do_table,
 			 "glyphs|do-glyphs" => \$do_glyphs,
-			);
+                     );
 
 if (!$do_table && !$do_glyphs) {
     $do_table = 1;
@@ -70,7 +70,7 @@ foreach my $blockname (sort keys %$charblocks) {
 	name => $blockname,
 	ranges => $block,
 	first_codepoint => $first_codepoint
-       });
+    });
 }
 
 if ($do_glyphs) {
