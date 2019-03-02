@@ -11,12 +11,13 @@ use Getopt::Long;
 my @extras;
 my $do_table = 0;
 my $do_glyphs = 0;
+my $do_all_codepoints = 0;
 
 Getopt::Long::Configure("bundling", "gnu_compat");
-Getopt::Long::GetOptions("x|extras=s", \@extras,
-			 "table|do-table" => \$do_table,
-			 "glyphs|do-glyphs" => \$do_glyphs,
-                     );
+Getopt::Long::GetOptions("x|extras=s"                       => \@extras,
+			 "table|do-table"                   => \$do_table,
+			 "glyphs|do-glyphs"                 => \$do_glyphs,
+                         "all-codepoints|do-all-codepoints" => \$do_all_codepoints);
 
 if (!$do_table && !$do_glyphs) {
     $do_table = 1;
@@ -104,38 +105,52 @@ if ($do_table) {
     foreach my $charblock (@charblocks) {
 	my $ranges = $charblock->{ranges};
 	my $blockname = $charblock->{name};
-	foreach my $range (@$ranges) {
-	    my @codepoints = grep { $codepoint{$_} } ($range->[0] .. $range->[1]);
-	    next unless scalar @codepoints;
-	    printf("<h2>%s</h2>\n", encode_entities($blockname));
-	    print(<<"END");
-<table class='character-list'>
-<thead>
-<tr>
-<th class='codepoint' colspan="2">
-    Codepoint
-</th>
-<th class='character'>
-    Sym<span class='hide-for-small-only'>bol</span>
-</th>
-<th class='character-name'>
-    Name
-</th>
-</thead>
-<tbody>
-END
-	    foreach my $codepoint (@codepoints) {
-		printf("<tr><td class='codepoint-hex'>%s</td><td class='codepoint-dec'>%s</td><td class='character'>%s</td><td class='character-name'><span class='charname'>%s</span></td></tr>\n",
-		       encode_entities(sprintf("U+%04X", $codepoint)),
-		       encode_entities($codepoint),
-		       encode_entities(chr($codepoint)),
-		       encode_entities($charname{$codepoint}));
-	    }
-	    print(<<"END");
-</tbody>
-</table>
-END
-	}
+
+        my @codepoints = map { ($_->[0] .. $_->[1]) } @$ranges;
+        if (!$do_all_codepoints) {
+            @codepoints = grep { $codepoint{$_} } @codepoints;
+        }
+
+        next unless scalar @codepoints;
+
+        printf("<h2>%s</h2>\n", encode_entities($blockname));
+
+        print table_preamble();
+
+        foreach my $codepoint (@codepoints) {
+            my $exists = $codepoint{$codepoint} ? 1 : 0;
+            printf("<tr class='%s'><td class='codepoint-hex'>%s</td><td class='codepoint-dec'>%s</td><td class='character'>%s</td><td class='character-name'><span class='charname'>%s</span></td></tr>\n",
+                   ($exists ? 'exists' : 'does-not-exist'),
+                   encode_entities(sprintf("U+%04X", $codepoint)),
+                   encode_entities($codepoint),
+                   encode_entities(chr($codepoint)),
+                   encode_entities($charname{$codepoint}));
+        }
+
+        print table_postamble();
     }
 }
+
+sub table_preamble { return <<END; }
+<table class="character-list">
+    <thead>
+        <tr>
+            <th class="codepoint" colspan="2">
+                Codepoint
+            </th>
+            <th class="character">
+                Sym<span class="hide-for-small-only">bol</span>
+            </th>
+            <th class="character-name">
+                Name
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+END
+
+sub table_postamble { return <<END; }
+    </tbody>
+</table>
+END
 
