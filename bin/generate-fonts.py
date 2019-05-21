@@ -136,7 +136,7 @@ def supersubscript_codepoint(foo, superscript = True):
         cp = foo
     else:
         raise TypeError("argument to codepoint must be a string or an integer")
-    
+
     if (cp >= 48 and cp <= 57):
         if superscript:
             return SUPERSCRIPT_DIGIT_CODEPOINTS[cp - 48]
@@ -261,7 +261,7 @@ def make_superscript_or_subscript(font, source_codepoint, dest_codepoint, supers
     dest_glyph.transform(psMat.scale(SUPERSUBSCRIPT_SCALE))
     dest_glyph.transform(vshift_xform)
 
-    additionalbearing = STROKE_WIDTH / 2 * (1 - SUPERSUBSCRIPT_SCALE)    
+    additionalbearing = STROKE_WIDTH / 2 * (1 - SUPERSUBSCRIPT_SCALE)
 
     dest_glyph.transform(psMat.translate(additionalbearing, 0))
     dest_glyph.width = dest_glyph.width + additionalbearing
@@ -278,7 +278,7 @@ def make_vulgar_fraction(font, super_codepoint, sub_codepoint, dest_codepoint):
     super_codepoint = codepoint(super_codepoint)
     sub_codepoint = codepoint(sub_codepoint)
     dest_codepoint = codepoint(dest_codepoint)
-    
+
     super = font.createChar(super_codepoint)
     sub   = font.createChar(sub_codepoint)
     dest  = font.createChar(dest_codepoint)
@@ -428,7 +428,7 @@ def generate(italic_deg = 0,
                     reference_transform(r, glyph, italic_deg)
                     for r in glyph.references
                 ]
-                
+
     for glyph in font.glyphs():
         if auto_hint:
             glyph.autoHint()
@@ -456,7 +456,7 @@ def generate(italic_deg = 0,
         # separate family names for condensed variants.  don't
         # remember why.
         font.familyname  = font.familyname + " " + condensed_name.replace("-", " ")
-        
+
         font.fontname    = font.fontname   +       condensed_name.replace("-", "").replace(" ", "")
         font.fullname    = font.fullname   + " " + condensed_name.replace("-", " ")
 
@@ -467,7 +467,7 @@ def generate(italic_deg = 0,
         font.fullname    = font.fullname   + " " + italic_name.replace("-", " ")
 
         basename         = basename        + "-" + italic_name.lower().replace(" ", "-")
-        
+
         font.italicangle = -ITALIC_ANGLE_DEG
 
     if family_name_suffix != "":
@@ -518,4 +518,3 @@ for italic in (italic_types):
             condensed_name     = condensed['name'],
             family_name_suffix = family_name_suffix
         )
-
