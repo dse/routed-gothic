@@ -311,6 +311,7 @@ def generate(italic_deg = 0,
              font_name = "RoutedGothic",
              family_name = "Routed Gothic",
              weight_name = "Regular",
+             font_family_name_suffix = "",
              font_file_basename = FONT_FILE_BASENAME):
 
     font = fontforge.open(SOURCE_FILENAME)
@@ -448,6 +449,9 @@ def generate(italic_deg = 0,
     font.italicangle = italic_deg
     basename         = font_file_basename
 
+    font_family_name_suffix = re.sub(r'^\s+', '', font_family_name_suffix)
+    font_family_name_suffix = re.sub(r'\s+$', '', font_family_name_suffix)
+
     if condensed_scale != 1:
         # separate family names for condensed variants.  don't
         # remember why.
@@ -465,6 +469,9 @@ def generate(italic_deg = 0,
         basename         = basename        + "-" + italic_name.lower().replace(" ", "-")
         
         font.italicangle = -ITALIC_ANGLE_DEG
+
+    if font_family_name_suffix != "":
+        font.familyname  = font.familyname + " " + font_family_name_suffix
 
     sfd_filename = DIST_SFD_DIRECTORY + "/" + basename + ".sfd"
     ttf_filename = DIST_TTF_DIRECTORY + "/" + basename + ".ttf"
@@ -486,21 +493,29 @@ def generate(italic_deg = 0,
     font.close()
 
 italic_types = [
-    { 'deg': 0,                    'name': ''            },
-    { 'deg': ITALIC_ANGLE_DEG / 2, 'name': 'Half Italic' },
-    { 'deg': ITALIC_ANGLE_DEG,     'name': 'Italic'      }
+    { 'deg': 0,                    'name': '',            'appendToFontFamilyName': False },
+    { 'deg': ITALIC_ANGLE_DEG / 2, 'name': 'Half Italic', 'appendToFontFamilyName': False },
+    { 'deg': ITALIC_ANGLE_DEG,     'name': 'Italic',      'appendToFontFamilyName': False }
 ]
 
 condensed_types = [
-    { 'scale': 1,                      'name': ''       },
-    { 'scale': CONDENSED_SCALE_X,      'name': 'Narrow' },
-    { 'scale': CONDENSED_WIDE_SCALE_X, 'name': 'Wide'   }
+    { 'scale': 1,                      'name': '',       'appendToFontFamilyName': False },
+    { 'scale': CONDENSED_SCALE_X,      'name': 'Narrow', 'appendToFontFamilyName': False },
+    { 'scale': CONDENSED_WIDE_SCALE_X, 'name': 'Wide',   'appendToFontFamilyName': False }
 ]
 
 for italic in (italic_types):
     for condensed in (condensed_types):
-        generate(italic_deg      = italic['deg'],
-                 italic_name     = italic['name'],
-                 condensed_scale = condensed['scale'],
-                 condensed_name  = condensed['name'])
+        font_family_name_suffix = ""
+        if 'appendToFontFamilyName' in italic and italic['appendToFontFamilyName']:
+            font_family_name_suffix = font_family_name_suffix + " " + italic['name']
+        if 'appendToFontFamilyName' in condensed and condensed['appendToFontFamilyName']:
+            font_family_name_suffix = font_family_name_suffix + " " + condensed['name']
+        generate(
+            italic_deg              = italic['deg'],
+            italic_name             = italic['name'],
+            condensed_scale         = condensed['scale'],
+            condensed_name          = condensed['name'],
+            font_family_name_suffix = font_family_name_suffix
+        )
 
