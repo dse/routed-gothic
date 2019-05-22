@@ -1,5 +1,7 @@
 SOURCE = src/routed-gothic-stroke-source.sfd
 
+ZIP_FILE = dist/routed-gothic-ttf.zip
+
 TTF_FONTS = \
 	dist/ttf/routed-gothic.ttf \
 	dist/ttf/routed-gothic-half-italic.ttf \
@@ -25,13 +27,20 @@ EOT_FONTS = \
 FONTS = $(TTF_FONTS)
 
 .PHONY: default
-default: ttf eot web
+default: ttf eot zip web
+
+.PHONY: dist
+dist: fonts zip
 
 .PHONY: fonts
 fonts: ttf eot
 
+.PHONY: zip
+zip: $(ZIP_FILE)
+
 .PHONY: ttf
 ttf: $(firstword $(TTF_FONTS))
+# single command builds all fonts, only specify first one
 
 .PHONY: eot
 eot: $(EOT_FONTS)
@@ -47,6 +56,10 @@ dist/eot/%.eot: dist/ttf/%.ttf Makefile
 	mkdir -p "$$(dirname "$@")"
 	mkeot "$<" >"$@.tmp.eot"
 	mv "$@.tmp.eot" "$@"
+
+$(ZIP_FILE): $(TTF_FONTS) Makefile
+	rm $@ || true
+	cd dist && zip $(patsubst dist/%, %, $@) $(patsubst dist/%, %, $(TTF_FONTS))
 
 .PHONY: clean
 clean:
