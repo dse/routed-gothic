@@ -125,7 +125,7 @@ SUBSCRIPTS = [
 
 ###############################################################################
 
-def supersubscript_codepoint(foo, superscript = True):
+def supersubscriptCodepoint(foo, superscript = True):
     if isinstance(foo, str) or isinstance(foo, unicode):
         if (len(foo) == 1):
             cp = ord(foo)
@@ -150,11 +150,11 @@ def supersubscript_codepoint(foo, superscript = True):
     else:
         return cp
 
-def superscript_codepoint(foo):
-    return supersubscript_codepoint(foo, True)
+def superscriptCodepoint(foo):
+    return supersubscriptCodepoint(foo, True)
 
-def subscript_codepoint(foo):
-    return supersubscript_codepoint(foo, False)
+def subscriptCodepoint(foo):
+    return supersubscriptCodepoint(foo, False)
 
 def codepoint(foo):
     if isinstance(foo, str) or isinstance(foo, unicode):
@@ -174,74 +174,74 @@ def codepoint(foo):
 def intersect(a, b):
     return list(set(a) & set(b))
 
-def anchor_point_transform(anchor_point, transform):
-    x = anchor_point[2]
-    y = anchor_point[3]
+def anchorPointTransform(anchorPoint, transform):
+    x = anchorPoint[2]
+    y = anchorPoint[3]
     p = fontforge.point(x, y)
     p = p.transform(transform)
-    return (anchor_point[0],
-            anchor_point[1],
+    return (anchorPoint[0],
+            anchorPoint[1],
             p.x,
             p.y)
 
-def italic_angle_rad(deg):
+def italicAngleRad(deg):
     return deg * math.pi / 180
 
-def italic_slant_ratio(deg):
-    return math.tan(italic_angle_rad(deg))
+def italicSlantRatio(deg):
+    return math.tan(italicAngleRad(deg))
 
-def italic_skew(deg):
-    return psMat.skew(italic_angle_rad(deg))
+def italicSkew(deg):
+    return psMat.skew(italicAngleRad(deg))
 
-def italic_unskew(deg):
-    return psMat.inverse(italic_skew(deg))
+def italicUnskew(deg):
+    return psMat.inverse(italicSkew(deg))
 
-def italic_shift_left(deg):
-    return psMat.translate(-CAP_HEIGHT / 2 * italic_slant_ratio(deg), 0)
+def italicShiftLeft(deg):
+    return psMat.translate(-CAP_HEIGHT / 2 * italicSlantRatio(deg), 0)
 
-def italic_shift_right(deg):
-    return psMat.inverse(italic_shift_left(deg))
+def italicShiftRight(deg):
+    return psMat.inverse(italicShiftLeft(deg))
 
-def italic_transform(deg):
-    return psMat.compose(italic_skew(deg), italic_shift_left(deg))
+def italicTransform(deg):
+    return psMat.compose(italicSkew(deg), italicShiftLeft(deg))
 
-def italic_untransform(deg):
-    return psMat.inverse(italic_transform(deg))
+def italicUntransform(deg):
+    return psMat.inverse(italicTransform(deg))
 
 # for referenced characters in italic and half-italic fonts
-def reference_transform(ref, glyph, deg):
+def referenceTransform(ref, glyph, deg):
     thatglyphname = ref[0]
     thisglyphname = glyph.glyphname
     r = ref[1]
 
-    column_a = "%s's reference to %s:" % (thisglyphname, thatglyphname)
-    column_b = str(r)
+    columnA = "%s's reference to %s:" % (thisglyphname, thatglyphname)
+    columnB = str(r)
 
     ri = psMat.inverse(r)
 
     result = psMat.identity()
-    result = psMat.compose(result, italic_shift_right(deg))
-    result = psMat.compose(result, italic_unskew(deg))
+    result = psMat.compose(result, italicShiftRight(deg))
+    result = psMat.compose(result, italicUnskew(deg))
     result = psMat.compose(result, r)
-    result = psMat.compose(result, italic_skew(deg))
-    result = psMat.compose(result, italic_shift_left(deg))
+    result = psMat.compose(result, italicSkew(deg))
+    result = psMat.compose(result, italicShiftLeft(deg))
 
     return (ref[0], result)
 
-def make_superscript_or_subscript(font, source_codepoint, dest_codepoint, superscript = True, placement_method = 3):
-    source_codepoint = codepoint(source_codepoint)
-    dest_codepoint   = codepoint(dest_codepoint)
+def makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, superscript = True, placementMethod = 3):
+    sourceCodepoint = codepoint(sourceCodepoint)
+    destCodepoint   = codepoint(destCodepoint)
 
     # vcenter = amount to raise raw scaled number to make it vertically centered
     # vdiff = amount to raise or lower from vcenter
 
-    if placement_method == 1:
+    if placementMethod == 1:
         vcenter = (1 - SUPERSUBSCRIPT_SCALE) * SUPERSUBSCRIPT_FRACTION_LINE
         vdiff = SUPERSUBSCRIPT_SCALE * SUPERSUBSCRIPT_FRACTION_LINE + (1 - SUPERSUBSCRIPT_SCALE / 2) * STROKE_WIDTH + SUPERSUBSCRIPT_FRACTION_LINE_SEPARATION
-    if placement_method == 2:
+    if placementMethod == 2:
         vcenter = SUPERSUBSCRIPT_FRACTION_LINE * (1 - SUPERSUBSCRIPT_SCALE)
         vdiff = CAP_HEIGHT / 2
-    if placement_method == 3:
+    if placementMethod == 3:
         vcenter = SUPERSUBSCRIPT_FRACTION_LINE * (1 - SUPERSUBSCRIPT_SCALE)
         vdiff = (1 - SUPERSUBSCRIPT_SCALE / 2) * (CAP_HEIGHT - STROKE_WIDTH)
 
@@ -250,38 +250,38 @@ def make_superscript_or_subscript(font, source_codepoint, dest_codepoint, supers
     else:
         vshift = vcenter - vdiff
 
-    vshift_xform = psMat.translate(0, vshift)
+    vshiftXform = psMat.translate(0, vshift)
 
-    font.selection.select(source_codepoint)
+    font.selection.select(sourceCodepoint)
     font.copy()
-    font.selection.select(dest_codepoint)
+    font.selection.select(destCodepoint)
     font.paste()
 
-    dest_glyph = font.createChar(dest_codepoint)
-    dest_glyph.transform(psMat.scale(SUPERSUBSCRIPT_SCALE))
-    dest_glyph.transform(vshift_xform)
+    destGlyph = font.createChar(destCodepoint)
+    destGlyph.transform(psMat.scale(SUPERSUBSCRIPT_SCALE))
+    destGlyph.transform(vshiftXform)
 
     additionalbearing = STROKE_WIDTH / 2 * (1 - SUPERSUBSCRIPT_SCALE)
 
-    dest_glyph.transform(psMat.translate(additionalbearing, 0))
-    dest_glyph.width = dest_glyph.width + additionalbearing
+    destGlyph.transform(psMat.translate(additionalbearing, 0))
+    destGlyph.width = destGlyph.width + additionalbearing
 
-    print "%s => %d" % (unicodedata.name(unichr(dest_codepoint)), dest_codepoint)
+    print "%s => %d" % (unicodedata.name(unichr(destCodepoint)), destCodepoint)
 
-def make_superscript(font, source_codepoint, dest_codepoint):
-    make_superscript_or_subscript(font, source_codepoint, dest_codepoint, True)
+def makeSuperscript(font, sourceCodepoint, destCodepoint):
+    makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, True)
 
-def make_subscript(font, source_codepoint, dest_codepoint):
-    make_superscript_or_subscript(font, source_codepoint, dest_codepoint, False)
+def makeSubscript(font, sourceCodepoint, destCodepoint):
+    makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, False)
 
-def make_vulgar_fraction(font, super_codepoint, sub_codepoint, dest_codepoint):
-    super_codepoint = codepoint(super_codepoint)
-    sub_codepoint = codepoint(sub_codepoint)
-    dest_codepoint = codepoint(dest_codepoint)
+def makeVulgarFraction(font, superCodepoint, subCodepoint, destCodepoint):
+    superCodepoint = codepoint(superCodepoint)
+    subCodepoint = codepoint(subCodepoint)
+    destCodepoint = codepoint(destCodepoint)
 
-    super = font.createChar(super_codepoint)
-    sub   = font.createChar(sub_codepoint)
-    dest  = font.createChar(dest_codepoint)
+    super = font.createChar(superCodepoint)
+    sub   = font.createChar(subCodepoint)
+    dest  = font.createChar(destCodepoint)
     dest.clear()
 
     fractionline = font[CODEPOINT_FRACTION_LINE]
@@ -295,44 +295,44 @@ def make_vulgar_fraction(font, super_codepoint, sub_codepoint, dest_codepoint):
     dest.addReference(fractionline.glyphname, psMat.translate((width - fractionline.width) / 2, 0))
     dest.width = width
 
-def generate(italic_deg = 0,
-             italic_name = "",
-             condensed_scale = 1,
-             condensed_name = "",
-             auto_hint = False,
-             manual_hints = False,
-             auto_instr = False,
-             auto_kern = False,
-             auto_width = False,
-             no_remove_overlap = False,
-             no_add_extrema = False,
-             generate_super_and_subscripts = True,
-             generate_super_and_subscripts_method = 3,
-             font_name = "RoutedGothic",
-             family_name = "Routed Gothic",
-             weight_name = "Regular",
-             family_name_suffix = "",
-             font_file_basename = FONT_FILE_BASENAME):
+def generate(italicDeg = 0,
+             italicName = "",
+             condensedScale = 1,
+             condensedName = "",
+             autoHint = False,
+             manualHints = False,
+             autoInstr = False,
+             autoKern = False,
+             autoWidth = False,
+             noRemoveOverlap = False,
+             noAddExtrema = False,
+             generateSuperAndSubscripts = True,
+             generateSuperAndSubscriptsMethod = 3,
+             fontName = "RoutedGothic",
+             familyName = "Routed Gothic",
+             weightName = "Regular",
+             familyNameSuffix = "",
+             fontFileBasename = FONT_FILE_BASENAME):
 
     font = fontforge.open(SOURCE_FILENAME)
 
-    if generate_super_and_subscripts:
+    if generateSuperAndSubscripts:
 
         for ss in SUPERSCRIPTS:
             sscp = codepoint(ss['codepoint'])
             ssof = codepoint(ss['of'])
-            make_superscript(font, ssof, sscp)
+            makeSuperscript(font, ssof, sscp)
 
         for ss in SUBSCRIPTS:
             sscp = codepoint(ss['codepoint'])
             ssof = codepoint(ss['of'])
-            make_subscript(font, ssof, sscp)
+            makeSubscript(font, ssof, sscp)
 
-        super_digit_glyphs = [
+        superDigitGlyphs = [
             font[cp]
             for cp in SUPERSCRIPT_DIGIT_CODEPOINTS
         ]
-        fractionlinewidth = max([g.width for g in super_digit_glyphs]) + FRACTION_LINE_EXTRA_WIDTH
+        fractionlinewidth = max([g.width for g in superDigitGlyphs]) + FRACTION_LINE_EXTRA_WIDTH
 
         fractionline = font.createChar(CODEPOINT_FRACTION_LINE)
         pen = fractionline.glyphPen()
@@ -349,12 +349,12 @@ def generate(italic_deg = 0,
             denominator = vf['denominator']
             fraction    = vf['codepoint']
 
-            numerator   = superscript_codepoint(numerator)
-            denominator = subscript_codepoint(denominator)
+            numerator   = superscriptCodepoint(numerator)
+            denominator = subscriptCodepoint(denominator)
             fraction    = codepoint(fraction)
-            make_vulgar_fraction(font, numerator, denominator, fraction)
+            makeVulgarFraction(font, numerator, denominator, fraction)
 
-    if auto_kern:
+    if autoKern:
         for lookupName in font.gpos_lookups:
             for subtableName in font.getLookupSubtables(lookupName):
                 if font.isKerningClass(subtableName):
@@ -362,46 +362,46 @@ def generate(italic_deg = 0,
 
     # condense kerning pairs if needed
 
-    if (condensed_scale != 1) and not auto_kern:
+    if (condensedScale != 1) and not autoKern:
         for lookupName in font.gpos_lookups:
             for subtableName in font.getLookupSubtables(lookupName):
                 if font.isKerningClass(subtableName):
                     kc = font.getKerningClass(subtableName)
                     offsets = kc[2]
-                    newOffsets = [o * condensed_scale for o in offsets]
+                    newOffsets = [o * condensedScale for o in offsets]
                     font.alterKerningClass(subtableName, kc[0], kc[1], newOffsets)
 
-    condensed_transform = psMat.scale(condensed_scale, 1)
+    condensedTransform = psMat.scale(condensedScale, 1)
 
-    if condensed_scale != 1:
+    if condensedScale != 1:
         font.selection.all()
-        font.transform(condensed_transform)
+        font.transform(condensedTransform)
 
     for glyph in font.glyphs():
-        if manual_hints:
+        if manualHints:
             glyph.manualHints = True
         else:
             glyph.manualHints = False
-        if italic_deg:
+        if italicDeg:
             width = glyph.width
             for name in glyph.layers:
                 layer = glyph.layers[name]
-                layer.transform(italic_transform(italic_deg))
+                layer.transform(italicTransform(italicDeg))
                 glyph.layers[name] = layer
                 glyph.width = width
             glyph.anchorPoints = [
-                anchor_point_transform(p, italic_transform(italic_deg))
+                anchorPointTransform(p, italicTransform(italicDeg))
                 for p in glyph.anchorPoints
             ]
 
         glyph.round()
         glyph.stroke("circular", STROKE_WIDTH, "round", "round")
-        if not no_remove_overlap:
+        if not noRemoveOverlap:
             glyph.removeOverlap()
-        if not no_add_extrema:
+        if not noAddExtrema:
             glyph.addExtrema()
 
-    if auto_width:
+    if autoWidth:
         font.autoWidth(AUTO_WIDTH, -1024, 1024)
 
     # call build() on glyphs that reference two glyphs if anchor
@@ -413,108 +413,108 @@ def generate(italic_deg = 0,
             glyphname2 = glyph.references[1][0]
             g1 = font[glyphname1]
             g2 = font[glyphname2]
-            g1_base_aps = tuple([ap[0] for ap in g1.anchorPoints if ap[1] == "base"])
-            g1_mark_aps = tuple([ap[0] for ap in g1.anchorPoints if ap[1] == "mark"])
-            g2_base_aps = tuple([ap[0] for ap in g2.anchorPoints if ap[1] == "base"])
-            g2_mark_aps = tuple([ap[0] for ap in g2.anchorPoints if ap[1] == "mark"])
-            i1 = intersect(g1_base_aps, g2_mark_aps)
-            i2 = intersect(g2_base_aps, g1_mark_aps)
+            g1BaseAps = tuple([ap[0] for ap in g1.anchorPoints if ap[1] == "base"])
+            g1MarkAps = tuple([ap[0] for ap in g1.anchorPoints if ap[1] == "mark"])
+            g2BaseAps = tuple([ap[0] for ap in g2.anchorPoints if ap[1] == "base"])
+            g2MarkAps = tuple([ap[0] for ap in g2.anchorPoints if ap[1] == "mark"])
+            i1 = intersect(g1BaseAps, g2MarkAps)
+            i2 = intersect(g2BaseAps, g1MarkAps)
             if len(i1) or len(i2):
                 glyph.build()
                 built = True
         if not built:
-            if italic_deg:
+            if italicDeg:
                 glyph.references = [
-                    reference_transform(r, glyph, italic_deg)
+                    referenceTransform(r, glyph, italicDeg)
                     for r in glyph.references
                 ]
 
     for glyph in font.glyphs():
-        if auto_hint:
+        if autoHint:
             glyph.autoHint()
-        if auto_instr:
+        if autoInstr:
             glyph.autoInstr()
 
     font.strokedfont = False
 
-    if auto_kern:
+    if autoKern:
         font.selection.all()
         font.addLookup("autoKern", "gpos_pair", (), (("liga",(("latn",("dflt")),)),))
         font.addKerningClass("autoKern", "autoKern", 288, 16, False, True)
 
-    font.fontname    = font_name
-    font.familyname  = family_name
-    font.fullname    = family_name
-    font.weight      = weight_name
-    font.italicangle = italic_deg
-    basename         = font_file_basename
+    font.fontname    = fontName
+    font.familyname  = familyName
+    font.fullname    = familyName
+    font.weight      = weightName
+    font.italicangle = italicDeg
+    basename         = fontFileBasename
 
-    family_name_suffix = re.sub(r'^\s+', '', family_name_suffix)
-    family_name_suffix = re.sub(r'\s+$', '', family_name_suffix)
+    familyNameSuffix = re.sub(r'^\s+', '', familyNameSuffix)
+    familyNameSuffix = re.sub(r'\s+$', '', familyNameSuffix)
 
-    if condensed_scale != 1:
+    if condensedScale != 1:
         # separate family names for condensed variants.  don't
         # remember why.
-        font.familyname  = font.familyname + " " + condensed_name.replace("-", " ")
+        font.familyname  = font.familyname + " " + condensedName.replace("-", " ")
 
-        font.fontname    = font.fontname   +       condensed_name.replace("-", "").replace(" ", "")
-        font.fullname    = font.fullname   + " " + condensed_name.replace("-", " ")
+        font.fontname    = font.fontname   +       condensedName.replace("-", "").replace(" ", "")
+        font.fullname    = font.fullname   + " " + condensedName.replace("-", " ")
 
-        basename         = basename        + "-" + condensed_name.lower().replace(" ", "-")
+        basename         = basename        + "-" + condensedName.lower().replace(" ", "-")
 
-    if italic_deg:
-        font.fontname    = font.fontname   + "-" + italic_name.replace(" ", "-")
-        font.fullname    = font.fullname   + " " + italic_name.replace("-", " ")
+    if italicDeg:
+        font.fontname    = font.fontname   + "-" + italicName.replace(" ", "-")
+        font.fullname    = font.fullname   + " " + italicName.replace("-", " ")
 
-        basename         = basename        + "-" + italic_name.lower().replace(" ", "-")
+        basename         = basename        + "-" + italicName.lower().replace(" ", "-")
 
         font.italicangle = -ITALIC_ANGLE_DEG
 
-    if family_name_suffix != "":
-        font.familyname  = font.familyname + " " + family_name_suffix
+    if familyNameSuffix != "":
+        font.familyname  = font.familyname + " " + familyNameSuffix
 
-    sfd_filename = DIST_SFD_DIRECTORY + "/" + basename + ".sfd"
-    ttf_filename = DIST_TTF_DIRECTORY + "/" + basename + ".ttf"
+    sfdFilename = DIST_SFD_DIRECTORY + "/" + basename + ".sfd"
+    ttfFilename = DIST_TTF_DIRECTORY + "/" + basename + ".ttf"
 
-    sfd_dir = os.path.dirname(sfd_filename)
-    ttf_dir = os.path.dirname(ttf_filename)
-    if not os.path.exists(sfd_dir):
-        print "makedirs " + sfd_dir
-        os.makedirs(sfd_dir)
-    if not os.path.exists(ttf_dir):
-        print "makedirs " + ttf_dir
-        os.makedirs(ttf_dir)
+    sfdDir = os.path.dirname(sfdFilename)
+    ttfDir = os.path.dirname(ttfFilename)
+    if not os.path.exists(sfdDir):
+        print "makedirs " + sfdDir
+        os.makedirs(sfdDir)
+    if not os.path.exists(ttfDir):
+        print "makedirs " + ttfDir
+        os.makedirs(ttfDir)
 
-    print "Saving " + sfd_filename + " ..."
-    font.save(sfd_filename)
-    print "Saving " + ttf_filename + " ..."
-    font.generate(ttf_filename, flags=("no-hints", "omit-instructions"))
+    print "Saving " + sfdFilename + " ..."
+    font.save(sfdFilename)
+    print "Saving " + ttfFilename + " ..."
+    font.generate(ttfFilename, flags=("no-hints", "omit-instructions"))
 
     font.close()
 
-italic_types = [
+italicTypes = [
     { 'deg': 0,                    'name': '',            'appendToFontFamilyName': False },
     { 'deg': ITALIC_ANGLE_DEG / 2, 'name': 'Half Italic', 'appendToFontFamilyName': False },
     { 'deg': ITALIC_ANGLE_DEG,     'name': 'Italic',      'appendToFontFamilyName': False }
 ]
 
-condensed_types = [
+condensedTypes = [
     { 'scale': 1,                      'name': '',       'appendToFontFamilyName': False },
     { 'scale': CONDENSED_SCALE_X,      'name': 'Narrow', 'appendToFontFamilyName': False },
     { 'scale': CONDENSED_WIDE_SCALE_X, 'name': 'Wide',   'appendToFontFamilyName': False }
 ]
 
-for italic in (italic_types):
-    for condensed in (condensed_types):
-        family_name_suffix = ""
+for italic in (italicTypes):
+    for condensed in (condensedTypes):
+        familyNameSuffix = ""
         if 'appendToFontFamilyName' in italic and italic['appendToFontFamilyName']:
-            family_name_suffix = family_name_suffix + " " + italic['name']
+            familyNameSuffix = familyNameSuffix + " " + italic['name']
         if 'appendToFontFamilyName' in condensed and condensed['appendToFontFamilyName']:
-            family_name_suffix = family_name_suffix + " " + condensed['name']
+            familyNameSuffix = familyNameSuffix + " " + condensed['name']
         generate(
-            italic_deg         = italic['deg'],
-            italic_name        = italic['name'],
-            condensed_scale    = condensed['scale'],
-            condensed_name     = condensed['name'],
-            family_name_suffix = family_name_suffix
+            italicDeg        = italic['deg'],
+            italicName       = italic['name'],
+            condensedScale   = condensed['scale'],
+            condensedName    = condensed['name'],
+            familyNameSuffix = familyNameSuffix
         )
