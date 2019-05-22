@@ -496,7 +496,7 @@ def generate(
 
 italicTypes = [
     { 'deg': 0,                    'name': ''                                               },
-    { 'deg': ITALIC_ANGLE_DEG / 2, 'name': 'Half Italic', 'familyNameSuffix': '' },
+    { 'deg': ITALIC_ANGLE_DEG / 2, 'name': 'Half Italic', 'familyNameSuffix': 'Half Italic' },
     { 'deg': ITALIC_ANGLE_DEG,     'name': 'Italic'                                         }
 ]
 
