@@ -494,7 +494,7 @@ def generate(
 
     font.close()
 
-italicTypes = [
+fontSlants = [
     { 'deg': 0,                    'name': ''                                               },
     { 'deg': ITALIC_ANGLE_DEG / 2, 'name': 'Half Italic', 'familyNameSuffix': 'Half Italic' },
     { 'deg': ITALIC_ANGLE_DEG,     'name': 'Italic'                                         }
@@ -502,23 +502,23 @@ italicTypes = [
 
 # separate family names for condensed variants.  don't
 # remember why.
-condensedTypes = [
+fontStretches = [
     { 'scale': 1,                      'name': ''                                     },
     { 'scale': CONDENSED_SCALE_X,      'name': 'Narrow', 'familyNameSuffix': 'Narrow' },
     { 'scale': CONDENSED_WIDE_SCALE_X, 'name': 'Wide',   'familyNameSuffix': 'Wide'   }
 ]
 
-for italic in (italicTypes):
-    for condensed in (condensedTypes):
+for fontSlant in (fontSlants):
+    for fontStretch in (fontStretches):
         familyNameSuffix = ""
-        if 'familyNameSuffix' in condensed:
-            familyNameSuffix = familyNameSuffix + " " + condensed['familyNameSuffix']
-        if 'familyNameSuffix' in italic:
-            familyNameSuffix = familyNameSuffix + " " + italic['familyNameSuffix']
+        if 'familyNameSuffix' in fontStretch:
+            familyNameSuffix = familyNameSuffix + " " + fontStretch['familyNameSuffix']
+        if 'familyNameSuffix' in fontSlant:
+            familyNameSuffix = familyNameSuffix + " " + fontSlant['familyNameSuffix']
         generate(
-            italicDeg        = italic['deg'],
-            italicName       = italic['name'],
-            condensedScale   = condensed['scale'],
-            condensedName    = condensed['name'],
+            italicDeg        = fontSlant['deg'],
+            italicName       = fontSlant['name'],
+            condensedScale   = fontStretch['scale'],
+            condensedName    = fontStretch['name'],
             familyNameSuffix = familyNameSuffix
         )
