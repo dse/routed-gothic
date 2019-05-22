@@ -44,12 +44,12 @@ DIGIT_NAMES = [
 ]
 
 SUPERSCRIPT_DIGIT_CODEPOINTS = [
-    ord(unicodedata.lookup("SUPERSCRIPT " + d))
+    ord(unicodedata.lookup("SUPERSCRIPT " + d)) # "SUPERSCRIPT ZERO" through "SUPERSCRIPT NINE"
     for d in DIGIT_NAMES
 ]
 
 SUBSCRIPT_DIGIT_CODEPOINTS = [
-    ord(unicodedata.lookup("SUBSCRIPT " + d))
+    ord(unicodedata.lookup("SUBSCRIPT " + d)) # "SUBSCRIPT ZERO" through "SUBSCRIPT NINE"
     for d in DIGIT_NAMES
 ]
 
