@@ -27,6 +27,9 @@ FONTS = $(TTF_FONTS)
 .PHONY: default
 default: ttf eot web
 
+.PHONY: fonts
+fonts: ttf eot
+
 .PHONY: ttf
 ttf: $(firstword $(TTF_FONTS))
 
