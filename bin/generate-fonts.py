@@ -37,8 +37,10 @@ CONDENSED_SCALE_X = 0.8         # arbitrary
 CONDENSED_WIDE_SCALE_X = 1.25   # arbitrary
 ITALIC_ANGLE_DEG = 22.5         # see any drafting literature
 
-DIGIT_NAMES = ["ZERO", "ONE", "TWO", "THREE", "FOUR",
-               "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"]
+DIGIT_NAMES = [
+    "ZERO", "ONE", "TWO", "THREE", "FOUR",
+    "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"
+]
 
 SUPERSCRIPT_DIGIT_CODEPOINTS = [
     ord(unicodedata.lookup("SUPERSCRIPT " + d))
@@ -237,7 +239,9 @@ def makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, superscript
 
     if placementMethod == 1:
         vcenter = (1 - SUPERSUBSCRIPT_SCALE) * SUPERSUBSCRIPT_FRACTION_LINE
-        vdiff = SUPERSUBSCRIPT_SCALE * SUPERSUBSCRIPT_FRACTION_LINE + (1 - SUPERSUBSCRIPT_SCALE / 2) * STROKE_WIDTH + SUPERSUBSCRIPT_FRACTION_LINE_SEPARATION
+        vdiff = (SUPERSUBSCRIPT_SCALE * SUPERSUBSCRIPT_FRACTION_LINE
+                 + (1 - SUPERSUBSCRIPT_SCALE / 2) * STROKE_WIDTH
+                 + SUPERSUBSCRIPT_FRACTION_LINE_SEPARATION)
     if placementMethod == 2:
         vcenter = SUPERSUBSCRIPT_FRACTION_LINE * (1 - SUPERSUBSCRIPT_SCALE)
         vdiff = CAP_HEIGHT / 2
@@ -286,33 +290,37 @@ def makeVulgarFraction(font, superCodepoint, subCodepoint, destCodepoint):
 
     fractionline = font[CODEPOINT_FRACTION_LINE]
 
-    width = max([super.width,
-                 sub.width,
-                 fractionline.width])
+    width = max([
+        super.width,
+        sub.width,
+        fractionline.width
+    ])
 
     dest.addReference(super.glyphname,        psMat.translate((width - super.width       ) / 2, 0))
     dest.addReference(sub.glyphname,          psMat.translate((width - sub.width         ) / 2, 0))
     dest.addReference(fractionline.glyphname, psMat.translate((width - fractionline.width) / 2, 0))
     dest.width = width
 
-def generate(italicDeg = 0,
-             italicName = "",
-             condensedScale = 1,
-             condensedName = "",
-             autoHint = False,
-             manualHints = False,
-             autoInstr = False,
-             autoKern = False,
-             autoWidth = False,
-             noRemoveOverlap = False,
-             noAddExtrema = False,
-             generateSuperAndSubscripts = True,
-             generateSuperAndSubscriptsMethod = 3,
-             fontName = "RoutedGothic",
-             familyName = "Routed Gothic",
-             weightName = "Regular",
-             familyNameSuffix = "",
-             fontFileBasename = FONT_FILE_BASENAME):
+def generate(
+        italicDeg = 0,
+        italicName = "",
+        condensedScale = 1,
+        condensedName = "",
+        autoHint = False,
+        manualHints = False,
+        autoInstr = False,
+        autoKern = False,
+        autoWidth = False,
+        noRemoveOverlap = False,
+        noAddExtrema = False,
+        generateSuperAndSubscripts = True,
+        generateSuperAndSubscriptsMethod = 3,
+        fontName = "RoutedGothic",
+        familyName = "Routed Gothic",
+        weightName = "Regular",
+        familyNameSuffix = "",
+        fontFileBasename = FONT_FILE_BASENAME
+):
 
     font = fontforge.open(SOURCE_FILENAME)
 
