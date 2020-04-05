@@ -34,7 +34,7 @@ function sass(options) {
             autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
         ]))
         .pipe(renamePipe)
-        .pipe(gulp.dest('src/web/css'))
+        .pipe(gulp.dest('css'))
         .pipe(browserSync.stream());
 }
 
