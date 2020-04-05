@@ -2,8 +2,8 @@
 
 @import 'variables';
 @import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+@import 'node_modules/foundation-sites/scss/foundation';
+@import 'node_modules/motion-ui/src/motion-ui';
 
 // Global styles
 @include foundation-global-styles;
@@ -64,6 +64,6 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import 'mixins';
+@import 'node_modules/foundation-sites/scss/util/mixins';
 @import 'main';
 @import 'fonts';
