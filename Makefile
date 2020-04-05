@@ -79,23 +79,12 @@ web: coverage sass
 sass:
 	gulp sass
 
-WEB_REMOTE_USER=dse@webonastick.com
-WEB_REMOTE_ROOT=/www/webonastick.com/htdocs/fonts/routed-gothic
-
-.PHONY: publish
-publish: downloads
-	rsync -avCc --delete --exclude=download --exclude=fonts _site/    $(WEB_REMOTE_USER):$(WEB_REMOTE_ROOT)/
-	rsync -avCc --delete                                    download/ $(WEB_REMOTE_USER):$(WEB_REMOTE_ROOT)/download/
-	rsync -avCc --delete                                    dist/ttf/ $(WEB_REMOTE_USER):$(WEB_REMOTE_ROOT)/fonts/
-
-.PHONY: local
-local: downloads
-	rsync -avCc --delete download/ _site/download/
-	rsync -avCc --delete dist/ttf/ _site/fonts/
-
 .PHONY: downloads
 downloads:
 	bin/make-downloads
+
+publish:
+	ssh dse@webonastick.com "bash -c 'cd /www/webonastick.com/htdocs/fonts/routed-gothic && git pull'"
 
 .PHONY: coverage
 coverage: $(GLYPH_LIST)
