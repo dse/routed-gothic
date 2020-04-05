@@ -1,28 +1,26 @@
-SOURCE = src/routed-gothic-stroke-source.sfd
-
-ZIP_FILE = dist/routed-gothic-ttf.zip
-
-TTF_FONTS = \
-	dist/ttf/routed-gothic.ttf \
-	dist/ttf/routed-gothic-half-italic.ttf \
-	dist/ttf/routed-gothic-italic.ttf \
-	dist/ttf/routed-gothic-narrow.ttf \
-	dist/ttf/routed-gothic-narrow-half-italic.ttf \
-	dist/ttf/routed-gothic-narrow-italic.ttf \
-	dist/ttf/routed-gothic-wide.ttf \
-	dist/ttf/routed-gothic-wide-half-italic.ttf \
-	dist/ttf/routed-gothic-wide-italic.ttf
-
-EOT_FONTS = \
-	dist/eot/routed-gothic.eot \
-	dist/eot/routed-gothic-half-italic.eot \
-	dist/eot/routed-gothic-italic.eot \
-	dist/eot/routed-gothic-narrow.eot \
-	dist/eot/routed-gothic-narrow-half-italic.eot \
-	dist/eot/routed-gothic-narrow-italic.eot \
-	dist/eot/routed-gothic-wide.eot \
-	dist/eot/routed-gothic-wide-half-italic.eot \
-	dist/eot/routed-gothic-wide-italic.eot
+SOURCE =		src/routed-gothic-stroke-source.sfd
+ZIP_FILE =		dist/routed-gothic-ttf.zip
+TTF_FONTS =		dist/ttf/routed-gothic.ttf \
+			dist/ttf/routed-gothic-half-italic.ttf \
+			dist/ttf/routed-gothic-italic.ttf \
+			dist/ttf/routed-gothic-narrow.ttf \
+			dist/ttf/routed-gothic-narrow-half-italic.ttf \
+			dist/ttf/routed-gothic-narrow-italic.ttf \
+			dist/ttf/routed-gothic-wide.ttf \
+			dist/ttf/routed-gothic-wide-half-italic.ttf \
+			dist/ttf/routed-gothic-wide-italic.ttf
+EOT_FONTS =		dist/eot/routed-gothic.eot \
+			dist/eot/routed-gothic-half-italic.eot \
+			dist/eot/routed-gothic-italic.eot \
+			dist/eot/routed-gothic-narrow.eot \
+			dist/eot/routed-gothic-narrow-half-italic.eot \
+			dist/eot/routed-gothic-narrow-italic.eot \
+			dist/eot/routed-gothic-wide.eot \
+			dist/eot/routed-gothic-wide-half-italic.eot \
+			dist/eot/routed-gothic-wide-italic.eot
+GLYPH_LIST =		includes/unicode-coverage.inc.html
+GENERATE_SCRIPT =	bin/generate-fonts.py
+GLYPH_LIST_SCRIPT =	bin/make-character-list
 
 FONTS = $(TTF_FONTS)
 
@@ -47,8 +45,8 @@ eot: $(EOT_FONTS)
 
 ###############################################################################
 
-$(TTF_FONTS): $(SOURCE) Makefile bin/generate-fonts.py
-	bin/generate-fonts.py
+$(TTF_FONTS): $(SOURCE) Makefile $(GENERATE_SCRIPT)
+	$(GENERATE_SCRIPT)
 
 # why I chose mkeot over ttf2eot:
 # https://lists.w3.org/Archives/Public/www-font/2010JanMar/0015.html
@@ -100,7 +98,7 @@ downloads:
 	bin/make-downloads
 
 .PHONY: coverage
-coverage: _site/includes/unicode-coverage.inc.html
-_site/includes/unicode-coverage.inc.html: src/routed-gothic-stroke-source.sfd bin/make-character-list Makefile
-	bin/make-character-list $< >$@.tmp
+coverage: $(GLYPH_LIST)
+$(GLYPH_LIST): $(SOURCE) $(GLYPH_LIST_SCRIPT) Makefile
+	$(GLYPH_LIST_SCRIPT) $< >$@.tmp
 	mv $@.tmp $@
