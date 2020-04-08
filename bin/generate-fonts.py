@@ -307,7 +307,6 @@ def generate(
         condensedScale = 1,
         condensedName = "",
         autoHint = False,
-        manualHints = False,
         autoInstr = False,
         autoWidth = False,
         noRemoveOverlap = False,
@@ -376,10 +375,7 @@ def generate(
         font.transform(condensedTransform)
 
     for glyph in font.glyphs():
-        if manualHints:
-            glyph.manualHints = True
-        else:
-            glyph.manualHints = False
+        glyph.manualHints = False
         if italicDeg:
             width = glyph.width
             for name in glyph.layers:
