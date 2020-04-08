@@ -299,19 +299,17 @@ def makeVulgarFraction(font, superCodepoint, subCodepoint, destCodepoint):
     dest.addReference(fractionline.glyphname, psMat.translate((width - fractionline.width) / 2, 0))
     dest.width = width
 
-def generate(
-        italicDeg = 0,
-        italicName = "",
-        condensedScale = 1,
-        condensedName = "",
-        generateSuperAndSubscripts = True,
-        generateSuperAndSubscriptsMethod = 3,
-        fontName = "RoutedGothic",
-        familyName = "Routed Gothic",
-        weightName = "Regular",
-        familyNameSuffix = "",
-        fontFileBasename = FONT_FILE_BASENAME
-):
+def generate(italicDeg = 0,
+             italicName = "",
+             condensedScale = 1,
+             condensedName = "",
+             generateSuperAndSubscripts = True,
+             generateSuperAndSubscriptsMethod = 3,
+             fontName = "RoutedGothic",
+             familyName = "Routed Gothic",
+             weightName = "Regular",
+             familyNameSuffix = "",
+             fontFileBasename = FONT_FILE_BASENAME):
 
     font = fontforge.open(SOURCE_FILENAME)
 
