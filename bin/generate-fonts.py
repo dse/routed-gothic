@@ -1,6 +1,11 @@
 #!/usr/bin/env fontforge
 # -*- coding: utf-8 -*-
 
+import sys
+sys.path.add(os.path.dirname(sys.argv[0]) + '/../lib')
+sys.path.add(os.environ['HOME'] + '/git/dse.d/fontforge-utilities/lib')
+
+import ffutils
 import fontforge
 import psMat
 import math
@@ -111,35 +116,10 @@ SUBSCRIPTS = [
     # { 'codepoint': "LATIN SUBSCRIPT SMALL LETTER N",   'of': u'n' },
 ]
 
-# U+2090          ₐ     LATIN SUBSCRIPT SMALL LETTER A
-# U+2091          ₑ     LATIN SUBSCRIPT SMALL LETTER E
-# U+2092          ₒ     LATIN SUBSCRIPT SMALL LETTER O
-# U+2093          ₓ     LATIN SUBSCRIPT SMALL LETTER X
-# U+2094          ₔ     LATIN SUBSCRIPT SMALL LETTER SCHWA
-# U+2095          ₕ     LATIN SUBSCRIPT SMALL LETTER H
-# U+2096          ₖ     LATIN SUBSCRIPT SMALL LETTER K
-# U+2097          ₗ     LATIN SUBSCRIPT SMALL LETTER L
-# U+2098          ₘ     LATIN SUBSCRIPT SMALL LETTER M
-# U+209A          ₚ     LATIN SUBSCRIPT SMALL LETTER P
-# U+209B          ₛ     LATIN SUBSCRIPT SMALL LETTER S
-# U+209C          ₜ     LATIN SUBSCRIPT SMALL LETTER T
-# U+2A27          ⨧     PLUS SIGN WITH SUBSCRIPT TWO
-# U+2C7C          ⱼ     LATIN SUBSCRIPT SMALL LETTER J
-
 ###############################################################################
 
 def supersubscriptCodepoint(foo, superscript = True):
-    if isinstance(foo, str) or isinstance(foo, unicode):
-        if (len(foo) == 1):
-            cp = ord(foo)
-        else:
-            char = unicodedata.lookup(foo)
-            cp = ord(char)
-    elif isinstance(foo, int):
-        cp = foo
-    else:
-        raise TypeError("argument to codepoint must be a string or an integer")
-
+    cp = codepointOf(foo)
     if (cp >= 48 and cp <= 57):
         if superscript:
             return SUPERSCRIPT_DIGIT_CODEPOINTS[cp - 48]
@@ -159,8 +139,24 @@ def superscriptCodepoint(foo):
 def subscriptCodepoint(foo):
     return supersubscriptCodepoint(foo, False)
 
+# 0 .. 9 => 0 .. 9
+def codepointOf(foo):
+    if (('unicode' in vars(__builtins__) and type(foo) == unicode) or type(foo) == str or type(foo) == bytes):
+        if (len(foo) == 1):
+            return ord(foo)
+        else:
+            char = unicodedata.lookup(foo)
+            return ord(char)
+    elif isinstance(foo, int):
+        return foo
+    elif isinstance(foo, float):
+        return int(foo)
+    else:
+        raise TypeError("argument to codepoint must be a string or an integer")
+
+# 0 .. 9 => 48 .. 57
 def codepoint(foo):
-    if isinstance(foo, str) or isinstance(foo, unicode):
+    if (('unicode' in vars(__builtins__) and type(foo) == unicode) or type(foo) == str or type(foo) == bytes):
         if (len(foo) == 1):
             return ord(foo)
         else:
@@ -271,7 +267,10 @@ def makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, superscript
     destGlyph.transform(psMat.translate(additionalbearing, 0))
     destGlyph.width = destGlyph.width + additionalbearing
 
-    print "%s => %d" % (unicodedata.name(unichr(destCodepoint)), destCodepoint)
+    try:
+        print("%s => %d" % (unicodedata.name(unichr(destCodepoint)), destCodepoint))
+    except NameError:
+        print("%s => %d" % (unicodedata.name(chr(destCodepoint)), destCodepoint))
 
 def makeSuperscript(font, sourceCodepoint, destCodepoint):
     makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, True)
@@ -481,16 +480,16 @@ def generate(
     sfdDir = os.path.dirname(sfdFilename)
     ttfDir = os.path.dirname(ttfFilename)
     if not os.path.exists(sfdDir):
-        print "makedirs " + sfdDir
+        print("makedirs " + sfdDir)
         os.makedirs(sfdDir)
     if not os.path.exists(ttfDir):
-        print "makedirs " + ttfDir
+        print("makedirs " + ttfDir)
         os.makedirs(ttfDir)
 
-    print "Saving " + sfdFilename + " ..."
+    print("Saving " + sfdFilename + " ...")
     font.save(sfdFilename)
-    print "Saving " + ttfFilename + " ..."
-    font.generate(ttfFilename, flags=("no-hints", "omit-instructions"))
+    print("Saving " + ttfFilename + " ...")
+    font.generate(ttfFilename, flags=("opentype", "no-hints", "omit-instructions"))
 
     font.close()
 
