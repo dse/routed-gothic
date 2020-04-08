@@ -326,15 +326,12 @@ def generate(
 
     if generateSuperAndSubscripts:
 
-        for ss in SUPERSCRIPTS:
-            sscp = codepoint(ss['codepoint'])
-            ssof = codepoint(ss['of'])
-            makeSuperscript(font, ssof, sscp)
-
-        for ss in SUBSCRIPTS:
-            sscp = codepoint(ss['codepoint'])
-            ssof = codepoint(ss['of'])
-            makeSubscript(font, ssof, sscp)
+        for digit in '0123456789':
+            codepoint = ord(digit) # 48..57
+            superscriptCodepoint = ffutils.subscriptCodepoint(codepoint)
+            subscriptCodepoint = ffutils.subscriptCodepoint(codepoint)
+            makeSuperscript(font, codepoint, superscriptCodepoint)
+            makeSubscript(font, codepoint, subscriptCodepoint)
 
         superDigitGlyphs = [
             font[cp]
