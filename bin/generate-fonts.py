@@ -24,8 +24,6 @@ FONT_FILE_BASENAME = "routed-gothic"
 
 CAP_HEIGHT = 736  # from bottom of lower stroke to top of upper stroke
 STROKE_WIDTH = 96 # font is designed for this
-AUTO_WIDTH = 144
-AUTO_KERN = 144
 KERN_CLASS_DIST = 8
 SUPERSUBSCRIPT_SCALE = 0.75     # see any drafting literature
 SUPERSUBSCRIPT_FRACTION_LINE = CAP_HEIGHT / 2
@@ -306,7 +304,6 @@ def generate(
         italicName = "",
         condensedScale = 1,
         condensedName = "",
-        autoWidth = False,
         noRemoveOverlap = False,
         noAddExtrema = False,
         generateSuperAndSubscripts = True,
@@ -392,9 +389,6 @@ def generate(
             glyph.removeOverlap()
         if not noAddExtrema:
             glyph.addExtrema()
-
-    if autoWidth:
-        font.autoWidth(AUTO_WIDTH, -1024, 1024)
 
     # call build() on glyphs that reference two glyphs if anchor
     # points would be used
