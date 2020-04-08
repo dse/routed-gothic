@@ -23,7 +23,6 @@ FONT_FILE_BASENAME = "routed-gothic"
 
 CAP_HEIGHT = 736  # from bottom of lower stroke to top of upper stroke
 STROKE_WIDTH = 96 # font is designed for this
-KERN_CLASS_DIST = 8
 SUPERSUBSCRIPT_SCALE = 0.75     # see any drafting literature
 SUPERSUBSCRIPT_FRACTION_LINE = CAP_HEIGHT / 2
 
