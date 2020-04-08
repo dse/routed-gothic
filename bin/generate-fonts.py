@@ -306,8 +306,6 @@ def generate(
         italicName = "",
         condensedScale = 1,
         condensedName = "",
-        autoHint = False,
-        autoInstr = False,
         autoWidth = False,
         noRemoveOverlap = False,
         noAddExtrema = False,
@@ -422,12 +420,6 @@ def generate(
                     referenceTransform(r, glyph, italicDeg)
                     for r in glyph.references
                 ]
-
-    for glyph in font.glyphs():
-        if autoHint:
-            glyph.autoHint()
-        if autoInstr:
-            glyph.autoInstr()
 
     font.strokedfont = False
 
