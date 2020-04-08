@@ -304,8 +304,6 @@ def generate(
         italicName = "",
         condensedScale = 1,
         condensedName = "",
-        noRemoveOverlap = False,
-        noAddExtrema = False,
         generateSuperAndSubscripts = True,
         generateSuperAndSubscriptsMethod = 3,
         fontName = "RoutedGothic",
@@ -385,10 +383,8 @@ def generate(
 
         glyph.round()
         glyph.stroke("circular", STROKE_WIDTH, "round", "round")
-        if not noRemoveOverlap:
-            glyph.removeOverlap()
-        if not noAddExtrema:
-            glyph.addExtrema()
+        glyph.removeOverlap()
+        glyph.addExtrema()
 
     # call build() on glyphs that reference two glyphs if anchor
     # points would be used
