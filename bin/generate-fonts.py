@@ -19,7 +19,6 @@ SOURCE_FILENAME    = "src/routed-gothic-stroke-source.sfd"
 DIST_DIRECTORY     = "dist"
 DIST_TTF_DIRECTORY = DIST_DIRECTORY + "/ttf"
 DIST_SFD_DIRECTORY = DIST_DIRECTORY + "/sfd"
-DIST_EOT_DIRECTORY = DIST_DIRECTORY + "/eot"
 FONT_FILE_BASENAME = "routed-gothic"
 
 CAP_HEIGHT = 736  # from bottom of lower stroke to top of upper stroke
