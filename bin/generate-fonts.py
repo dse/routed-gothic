@@ -309,7 +309,6 @@ def generate(
         autoHint = False,
         manualHints = False,
         autoInstr = False,
-        autoKern = False,
         autoWidth = False,
         noRemoveOverlap = False,
         noAddExtrema = False,
@@ -359,15 +358,9 @@ def generate(
             fraction    = codepoint(fraction)
             makeVulgarFraction(font, numerator, denominator, fraction)
 
-    if autoKern:
-        for lookupName in font.gpos_lookups:
-            for subtableName in font.getLookupSubtables(lookupName):
-                if font.isKerningClass(subtableName):
-                    font.removeLookupSubtable(subtableName);
-
     # condense kerning pairs if needed
 
-    if (condensedScale != 1) and not autoKern:
+    if condensedScale != 1:
         for lookupName in font.gpos_lookups:
             for subtableName in font.getLookupSubtables(lookupName):
                 if font.isKerningClass(subtableName):
@@ -441,11 +434,6 @@ def generate(
             glyph.autoInstr()
 
     font.strokedfont = False
-
-    if autoKern:
-        font.selection.all()
-        font.addLookup("autoKern", "gpos_pair", (), (("liga",(("latn",("dflt")),)),))
-        font.addKerningClass("autoKern", "autoKern", 288, 16, False, True)
 
     font.fontname    = fontName
     font.familyname  = familyName
