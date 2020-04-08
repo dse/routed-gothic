@@ -16,9 +16,8 @@ import os
 import re
 
 SOURCE_FILENAME    = "src/routed-gothic-stroke-source.sfd"
-DIST_DIRECTORY     = "dist"
-DIST_TTF_DIRECTORY = DIST_DIRECTORY + "/ttf"
-DIST_SFD_DIRECTORY = DIST_DIRECTORY + "/sfd"
+DIST_TTF_DIRECTORY = "dist/ttf"
+DIST_SFD_DIRECTORY = "dist/sfd"
 FONT_FILE_BASENAME = "routed-gothic"
 
 CAP_HEIGHT = 736  # from bottom of lower stroke to top of upper stroke
