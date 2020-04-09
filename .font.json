@@ -1,0 +1,18 @@
+{
+    "sourceFilename": "src/routed-gothic.sfd",
+    "distTTFDirectory": "dist/ttf",
+    "distSFDDirectory": "dist/sfd",
+    "fontFileBasename": "routed-gothic",
+    "capHeight": 736,
+    "strokeWidth": 96,
+    "superSubScriptScale": 0.75,
+    "superSubScriptFractionLine": 368,
+    "superSubScriptFractionLineSeparation": 96,
+    "fractionLineBearing": 48,
+    "fractionLineExtraWidth": 96,
+    "codepointFractionLine": 57344,
+    "condensedScaleX": 0.8,
+    "condensedWideScaleX": 1.25,
+    "italicAngleDeg": 22.5,
+    "generateHalfItalic": true
+}
