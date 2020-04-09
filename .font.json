@@ -14,5 +14,6 @@
     "condensedScaleX": 0.8,
     "condensedWideScaleX": 1.25,
     "italicAngleDeg": 22.5,
-    "generateHalfItalic": true
+    "generateHalfItalic": true,
+    "generateItalic": true
 }
