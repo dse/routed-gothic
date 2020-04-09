@@ -15,28 +15,27 @@ import math
 import os
 import re
 
-SOURCE_FILENAME    = "src/routed-gothic-stroke-source.sfd"
-DIST_TTF_DIRECTORY = "dist/ttf"
-DIST_SFD_DIRECTORY = "dist/sfd"
-FONT_FILE_BASENAME = "routed-gothic"
+fontData = ffutils.getFontData()
+if fontData == None:
+    raise Exception("no .font.json data found in this or any parent directory")
 
-CAP_HEIGHT = 736  # from bottom of lower stroke to top of upper stroke
-STROKE_WIDTH = 96 # font is designed for this
-SUPERSUBSCRIPT_SCALE = 0.75     # see any drafting literature
-SUPERSUBSCRIPT_FRACTION_LINE = CAP_HEIGHT / 2
-
-# from bottom of fraction line stroke to top    of upper stroke of denominator, and
-# from top    of fraction line stroke to bottom of lower stroke of numerator
-SUPERSUBSCRIPT_FRACTION_LINE_SEPARATION = 96
-
-FRACTION_LINE_BEARING = 48      # left and right bearing
-FRACTION_LINE_EXTRA_WIDTH = 96
-
-CODEPOINT_FRACTION_LINE = 0xe000 # a private use area codepoint
-
-CONDENSED_SCALE_X = 0.8         # arbitrary
-CONDENSED_WIDE_SCALE_X = 1.25   # arbitrary
-ITALIC_ANGLE_DEG = 22.5         # see any drafting literature
+SOURCE_FILENAME                         = ffutils.getCoalesce(fontData, 'sourceFilename', Exception)
+DIST_TTF_DIRECTORY                      = ffutils.getCoalesce(fontData, 'distTTFDirectory', 'dist/ttf')
+DIST_SFD_DIRECTORY                      = ffutils.getCoalesce(fontData, 'distSFDDirectory', 'dist/sfd')
+FONT_FILE_BASENAME                      = ffutils.getCoalesce(fontData, 'fontFileBasename', Exception)
+CAP_HEIGHT                              = ffutils.getCoalesce(fontData, 'capHeight', Exception)
+STROKE_WIDTH                            = ffutils.getCoalesce(fontData, 'strokeWidth', 96)
+SUPERSUBSCRIPT_SCALE                    = ffutils.getCoalesce(fontData, 'superSubScriptScale', 0.5)
+SUPERSUBSCRIPT_FRACTION_LINE            = ffutils.getCoalesce(fontData, 'superSubScriptFractionLine', CAP_HEIGHT / 2)
+SUPERSUBSCRIPT_FRACTION_LINE_SEPARATION = ffutils.getCoalesce(fontData, 'superSubScriptFractionLineSeparation', STROKE_WIDTH)
+FRACTION_LINE_BEARING                   = ffutils.getCoalesce(fontData, 'fractionLineBearing', STROKE_WIDTH / 2)
+FRACTION_LINE_EXTRA_WIDTH               = ffutils.getCoalesce(fontData, 'fractionLineExtraWidth', STROKE_WIDTH)
+CODEPOINT_FRACTION_LINE                 = ffutils.getCoalesce(fontData, 'codepointFractionLine')
+CONDENSED_SCALE_X                       = ffutils.getCoalesce(fontData, 'condensedScaleX')
+CONDENSED_WIDE_SCALE_X                  = ffutils.getCoalesce(fontData, 'condensedWideScaleX')
+ITALIC_ANGLE_DEG                        = ffutils.getCoalesce(fontData, 'italicAngleDeg')
+GENERATE_HALF_ITALIC                    = ffutils.getCoalesce(fontData, 'generateHalfItalic', False)
+GENERATE_ITALIC                         = ffutils.getCoalesce(fontData, 'generateItalic', True)
 
 DIGIT_NAMES = [
     "ZERO", "ONE", "TWO", "THREE", "FOUR",
