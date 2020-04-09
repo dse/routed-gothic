@@ -1,0 +1,162 @@
+@import url('fonts.css');
+@import url('normalize.css');
+@import url('framework.css');
+
+html {
+    background-color: #338;
+    color: #fff;
+    font-family: 'Routed Gothic web font';
+}
+
+a {
+    color: #ff0;
+}
+a:hover {
+    color: #dd0;
+}
+
+.page-title {
+    text-align: center;
+}
+.border-width-1  { border-width: 1px !important; }
+.border-width-2  { border-width: 2px !important; }
+.border-radius-1 { border-radius: 1px !important; }
+.border-radius-2 { border-radius: 2px !important; }
+.menu {
+    margin-bottom: 1rem;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 1rem;
+}
+main {
+    padding-top: 1rem;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 1rem;
+}
+
+table.character-list > * > tr > * { padding: 2px 4px; }
+table.character-list > thead > tr { vertical-align: bottom; }
+table.character-list > tbody > tr { vertical-align: baseline; }
+table.character-list > tbody > tr > *:nth-child(1) { width: 6em; }
+table.character-list > tbody > tr > *:nth-child(2) { width: 4em; text-align: right; }
+table.character-list > tbody > tr > *:nth-child(3) { width: 2em; text-align: center; }
+@media (max-width: 599.99px) {
+    table.character-list { font-size: 75%; }
+    table.character-list > * > tr > * { padding: 1px 2px; }
+}
+
+/* try routed gothic */
+.font-stretch--normal {
+    font-family: 'routed-gothic';
+}
+.font-stretch--narrow {
+    font-family: 'routed-gothic--narrow';
+}
+.font-stretch--wide {
+    font-family: 'routed-gothic--wide';
+}
+.font-style--normal {
+    font-family: 'routed-gothic';
+}
+.font-style--half-italic {
+    font-family: 'routed-gothic--half-italic';
+}
+.font-style--italic {
+    font-family: 'routed-gothic--italic';
+}
+.font-stretch--normal.font-style--normal,
+.font-stretch--normal .font-style--normal,
+.font-style--normal .font-stretch--normal {
+    font-family: 'routed-gothic';
+}
+.font-stretch--normal.font-style--half-italic,
+.font-stretch--normal .font-style--half-italic,
+.font-style--half-italic .font-stretch--normal {
+    font-family: 'routed-gothic--half-italic';
+}
+.font-stretch--normal.font-style--italic,
+.font-stretch--normal .font-style--italic,
+.font-style--italic .font-stretch--normal {
+    font-family: 'routed-gothic--italic';
+}
+.font-stretch--narrow.font-style--normal,
+.font-stretch--narrow .font-style--normal,
+.font-style--normal .font-stretch--narrow {
+    font-family: 'routed-gothic--narrow';
+}
+.font-stretch--narrow.font-style--half-italic,
+.font-stretch--narrow .font-style--half-italic,
+.font-style--half-italic .font-stretch--narrow {
+    font-family: 'routed-gothic--narrow--half-italic';
+}
+.font-stretch--narrow.font-style--italic,
+.font-stretch--narrow .font-style--italic,
+.font-style--italic .font-stretch--narrow {
+    font-family: 'routed-gothic--narrow--italic';
+}
+.font-stretch--wide.font-style--normal,
+.font-stretch--wide .font-style--normal,
+.font-style--normal .font-stretch--wide {
+    font-family: 'routed-gothic--wide';
+}
+.font-stretch--wide.font-style--half-italic,
+.font-stretch--wide .font-style--half-italic,
+.font-style--half-italic .font-stretch--wide {
+    font-family: 'routed-gothic--wide--half-italic';
+}
+.font-stretch--wide.font-style--italic,
+.font-stretch--wide .font-style--italic,
+.font-style--italic .font-stretch--wide {
+    font-family: 'routed-gothic--wide--italic';
+}
+.font-size--large {
+    font-size: 200%;
+}
+.font-size--x-large {
+    font-size: 400%;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+figure img + figcaption {
+    margin-top: 0.25rem;
+}
+
+textarea {
+    overflow: auto;
+    height: auto;
+    min-height: 50px;
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+    border: 1px solid #fff;
+    padding: 0.5rem;
+    transition: font-size 250ms;
+}
+::placeholder {
+    color: inherit;
+    opacity: 0.5;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.menu.simple > li + li {
+    margin-left: 1rem;
+}
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
