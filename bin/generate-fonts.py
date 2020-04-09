@@ -450,19 +450,22 @@ def generate(italicDeg = 0,
 
     font.close()
 
-fontSlants = [
-    { 'deg': 0,                    'name': ''                                               },
-    { 'deg': ITALIC_ANGLE_DEG / 2, 'name': 'Half Italic', 'familyNameSuffix': 'Half Italic' },
-    { 'deg': ITALIC_ANGLE_DEG,     'name': 'Italic'                                         }
-]
+fontSlants = []
+fontSlants.append({ 'deg': 0, 'name': '' })
+if ITALIC_ANGLE_DEG != None:
+    if GENERATE_HALF_ITALIC:
+        fontSlants.append({ 'deg': ITALIC_ANGLE_DEG / 2, 'name': 'Half Italic', 'familyNameSuffix': 'Half Italic' })
+    if GENERATE_ITALIC:
+        fontSlants.append({ 'deg': ITALIC_ANGLE_DEG, 'name': 'Italic' })
 
 # separate family names for condensed variants.  don't
 # remember why.
-fontStretches = [
-    { 'scale': 1,                      'name': ''                                     },
-    { 'scale': CONDENSED_SCALE_X,      'name': 'Narrow', 'familyNameSuffix': 'Narrow' },
-    { 'scale': CONDENSED_WIDE_SCALE_X, 'name': 'Wide',   'familyNameSuffix': 'Wide'   }
-]
+fontStretches = []
+fontStretches.append({ 'scale': 1, 'name': '' })
+if CONDENSED_SCALE_X != None:
+    fontStretches.append({ 'scale': CONDENSED_SCALE_X, 'name': 'Narrow', 'familyNameSuffix': 'Narrow' })
+if CONDENSED_WIDE_SCALE_X != None:
+    fontStretches.append({ 'scale': CONDENSED_WIDE_SCALE_X, 'name': 'Wide', 'familyNameSuffix': 'Wide' })
 
 for fontSlant in (fontSlants):
     for fontStretch in (fontStretches):
