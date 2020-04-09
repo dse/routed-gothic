@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import sys
-sys.path.add(os.path.dirname(sys.argv[0]) + '/../lib')
-sys.path.add(os.environ['HOME'] + '/git/dse.d/fontforge-utilities/lib')
+sys.path.append(os.path.dirname(sys.argv[0]) + '/../lib')
+sys.path.append(os.environ['HOME'] + '/git/dse.d/fontforge-utilities/lib')
 
 import ffutils
 import fontforge
