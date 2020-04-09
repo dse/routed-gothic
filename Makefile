@@ -1,4 +1,4 @@
-SOURCE =		src/routed-gothic-stroke-source.sfd
+SOURCE =		src/routed-gothic.sfd
 ZIP_FILE =		dist/routed-gothic-ttf.zip
 TTF_FONTS =		dist/ttf/routed-gothic.ttf \
 			dist/ttf/routed-gothic-half-italic.ttf \
@@ -10,8 +10,10 @@ TTF_FONTS =		dist/ttf/routed-gothic.ttf \
 			dist/ttf/routed-gothic-wide-half-italic.ttf \
 			dist/ttf/routed-gothic-wide-italic.ttf
 GLYPH_LIST =		includes/unicode-coverage.inc.html
-GENERATE_SCRIPT =	bin/generate-fonts.py
+GENERATE_SCRIPT =	bin/generate-fonts-old.py
 GLYPH_LIST_SCRIPT =	bin/make-character-list
+
+PATH := /usr/local/Cellar/fontforge/20190801_1/bin:$(PATH)
 
 FONTS = $(TTF_FONTS)
 
@@ -29,14 +31,13 @@ zip: $(ZIP_FILE)
 
 .PHONY: ttf
 ttf: $(firstword $(TTF_FONTS))
-# single command builds all fonts, only specify first one
 
 ###############################################################################
 
 $(TTF_FONTS): $(SOURCE) Makefile $(GENERATE_SCRIPT)
 	$(GENERATE_SCRIPT)
 
-$(ZIP_FILE): $(TTF_FONTS) Makefile
+$(ZIP_FILE): $(firstword $(TTF_FONTS)) Makefile
 	rm $@ || true
 	cd dist && zip $(patsubst dist/%, %, $@) $(patsubst dist/%, %, $(TTF_FONTS))
 
@@ -47,14 +48,11 @@ clean:
 		-o -name '*.tmp.*' \
 		-o -name '#*#' \
 		-o -name '#~' \
-	\) -exec rm {} +
-
-.PHONY: superclean
-superclean: clean
-	find dist -type f -exec rm {} +
+	\) -exec rm {} + || true
+	rm $(TTF_FONTS) || true
 
 .PHONY: web
-web: coverage sass
+web: coverage
 
 .PHONY: sass
 sass:
