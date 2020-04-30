@@ -26,7 +26,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-util": "^3.0.8",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "motion-ui": "^2.0.3",
     "what-input": "^5.1.3"
   }
