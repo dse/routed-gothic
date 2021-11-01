@@ -1,5 +1,5 @@
 #!/usr/bin/env fontforge
-# -*- coding: utf-8 -*-
+# -*- mode: python; coding: utf-8 -*-
 
 import fontforge
 import psMat
@@ -271,7 +271,7 @@ def makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, superscript
     destGlyph.transform(psMat.translate(additionalbearing, 0))
     destGlyph.width = destGlyph.width + additionalbearing
 
-    print "%s => %d" % (unicodedata.name(unichr(destCodepoint)), destCodepoint)
+    print("%s => %d" % (unicodedata.name(unichr(destCodepoint)), destCodepoint))
 
 def makeSuperscript(font, sourceCodepoint, destCodepoint):
     makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, True)
@@ -481,15 +481,15 @@ def generate(
     sfdDir = os.path.dirname(sfdFilename)
     ttfDir = os.path.dirname(ttfFilename)
     if not os.path.exists(sfdDir):
-        print "makedirs " + sfdDir
+        print("makedirs " + sfdDir)
         os.makedirs(sfdDir)
     if not os.path.exists(ttfDir):
-        print "makedirs " + ttfDir
+        print("makedirs " + ttfDir)
         os.makedirs(ttfDir)
 
-    print "Saving " + sfdFilename + " ..."
+    print("Saving " + sfdFilename + " ...")
     font.save(sfdFilename)
-    print "Saving " + ttfFilename + " ..."
+    print("Saving " + ttfFilename + " ...")
     font.generate(ttfFilename, flags=("no-hints", "omit-instructions"))
 
     font.close()
