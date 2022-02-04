@@ -223,11 +223,11 @@ def referenceTransform(ref, glyph, deg):
     ri = psMat.inverse(r)
 
     result = psMat.identity()
-    result = psMat.compose(result, italicShiftRight(deg))
+    # result = psMat.compose(result, italicShiftRight(deg))
     result = psMat.compose(result, italicUnskew(deg))
     result = psMat.compose(result, r)
     result = psMat.compose(result, italicSkew(deg))
-    result = psMat.compose(result, italicShiftLeft(deg))
+    # result = psMat.compose(result, italicShiftLeft(deg))
 
     return (ref[0], result)
 
