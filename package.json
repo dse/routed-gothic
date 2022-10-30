@@ -18,7 +18,7 @@
   "homepage": "https://github.com/dse/routed-gothic#readme",
   "devDependencies": {
     "autoprefixer": "^9.4.3",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "foundation-sites": "^6.5.1",
     "gulp": "^4.0.0",
     "gulp-load-plugins": "^1.5.0",
