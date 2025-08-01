@@ -1,0 +1,2579 @@
+{
+    "familyName": "Routed Gothic",
+    "fondName": null,
+    "fontName": "RoutedGothic",
+    "fullName": "Routed Gothic",
+    "weight": "Book",
+    "uniqueId": 0,
+    "version": "001.000",
+    "sfntRevision": {
+        "raw": 1.0,
+        "cooked": "1.000",
+        "numeric": 1.0
+    },
+    "comment": null,
+    "copyright": "Copyright (c) 2017, Darren Embry (http://webonastick.com/),\nwith Reserved Font Name Routed Gothic.\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n\n\n-----------------------------------------------------------\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n-----------------------------------------------------------\n\nPREAMBLE\nThe goals of the Open Font License (OFL) are to stimulate worldwide\ndevelopment of collaborative font projects, to support the font creation\nefforts of academic and linguistic communities, and to provide a free and\nopen framework in which fonts may be shared and improved in partnership\nwith others.\n\nThe OFL allows the licensed fonts to be used, studied, modified and\nredistributed freely as long as they are not sold by themselves. The\nfonts, including any derivative works, can be bundled, embedded, \nredistributed and/or sold with any software provided that any reserved\nnames are not used by derivative works. The fonts and derivatives,\nhowever, cannot be released under any other type of license. The\nrequirement for fonts to remain under this license does not apply\nto any document created using the fonts or their derivatives.\n\nDEFINITIONS\n\"Font Software\" refers to the set of files released by the Copyright\nHolder(s) under this license and clearly marked as such. This may\ninclude source files, build scripts and documentation.\n\n\"Reserved Font Name\" refers to any names specified as such after the\ncopyright statement(s).\n\n\"Original Version\" refers to the collection of Font Software components as\ndistributed by the Copyright Holder(s).\n\n\"Modified Version\" refers to any derivative made by adding to, deleting,\nor substituting -- in part or in whole -- any of the components of the\nOriginal Version, by changing formats or by porting the Font Software to a\nnew environment.\n\n\"Author\" refers to any designer, engineer, programmer, technical\nwriter or other person who contributed to the Font Software.\n\nPERMISSION & CONDITIONS\nPermission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:\n\n1) Neither the Font Software nor any of its individual components,\nin Original or Modified Versions, may be sold by itself.\n\n2) Original or Modified Versions of the Font Software may be bundled,\nredistributed and/or sold with any software, provided that each copy\ncontains the above copyright notice and this license. These can be\nincluded either as stand-alone text files, human-readable headers or\nin the appropriate machine-readable metadata fields within text or\nbinary files as long as those fields can be easily viewed by the user.\n\n3) No Modified Version of the Font Software may use the Reserved Font\nName(s) unless explicit written permission is granted by the corresponding\nCopyright Holder. This restriction only applies to the primary font name as\npresented to the users.\n\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\nSoftware shall not be used to promote, endorse or advertise any\nModified Version, except to acknowledge the contribution(s) of the\nCopyright Holder(s) and the Author(s) or with their explicit written\npermission.\n\n5) The Font Software, modified or unmodified, in part or in whole,\nmust be distributed entirely under this license, and must not be\ndistributed under any other license. The requirement for fonts to\nremain under this license does not apply to any document created\nusing the Font Software.\n\nTERMINATION\nThis license becomes null and void if any of the above conditions are\nnot met.\n\nDISCLAIMER\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\nOTHER DEALINGS IN THE FONT SOFTWARE.\n",
+    "fontLog": null,
+    "macStyle": {
+        "numeric": -1,
+        "bold": true,
+        "italic": true,
+        "underline": true,
+        "outline": true,
+        "shadow": true,
+        "condensed": true,
+        "extended": true,
+        "reservedBit": true
+    },
+    "familyClass": 0,
+    "fsType": 0,
+    "styleMap": 0,
+    "panose": [
+        2,
+        0,
+        5,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "os2Weight": 400,
+    "os2Width": 5,
+    "metrics": {
+        "ascent": 832,
+        "capHeight": 736.0,
+        "descent": 192,
+        "designSize": 0.0,
+        "em": 1024,
+        "italicAngle": 0.0,
+        "underlinePos": -98.0,
+        "underlineWidth": 98.0,
+        "exHeight": 528.0
+    },
+    "hheaMetrics": {
+        "ascent": 1325,
+        "ascentAdd": 0,
+        "descent": -381,
+        "descentAdd": 0,
+        "linegap": 92
+    },
+    "os2Metrics": {
+        "strikeYPos": 265,
+        "strikeYSize": 51,
+        "subXOff": 0,
+        "subXSize": 665,
+        "subYOff": 143,
+        "subYSize": 716,
+        "supXOff": 0,
+        "supXSize": 665,
+        "supYOff": 491,
+        "supYSize": 716
+    },
+    "useTypoMetrics": 1,
+    "typoMetrics": {
+        "ascent": 832,
+        "ascentAdd": 0,
+        "descent": -192,
+        "descentAdd": 0,
+        "linegap": 92
+    },
+    "winMetrics": {
+        "ascent": 1325,
+        "ascentAdd": 0,
+        "descent": 381,
+        "descentAdd": 0
+    },
+    "vhea": {
+        "linegap": 0
+    },
+    "isCid": 0,
+    "cid": {
+        "copyright": null,
+        "familyName": null,
+        "fontName": null,
+        "fullName": null,
+        "ordering": null,
+        "registry": null,
+        "subfont": -1,
+        "subfontCnt": 0,
+        "subfontNames": null,
+        "supplement": null,
+        "version": null,
+        "weight": null
+    },
+    "encoding": "UnicodeFull",
+    "hasVMetrics": 0,
+    "headOptimizedForCleartype": 0,
+    "horizontalBaseline": null,
+    "isQuadratic": 1,
+    "onlyBitmaps": 0,
+    "codepages": [
+        17,
+        0
+    ],
+    "unicodeRanges": [
+        -2147483537,
+        301990137,
+        0,
+        0
+    ],
+    "os2Vendor": "PfEd",
+    "os2Version": 4,
+    "os2WeightWidthSlopeOnly": 0,
+    "isStrokedFont": 0,
+    "strokeWidth": 0.0,
+    "verticalBaseline": null,
+    "verticalOrigin": 0,
+    "woffMajor": null,
+    "woffMinor": null,
+    "woffMetadata": null,
+    "glyphs": {
+        "glyphList": [
+            {
+                "codepoint": -1,
+                "name": ".notdef",
+                "realCodepoint": -1
+            },
+            {
+                "codepoint": -1,
+                "name": ".null",
+                "realCodepoint": 0
+            },
+            {
+                "codepoint": -1,
+                "name": "nonmarkingreturn",
+                "realCodepoint": 13
+            },
+            {
+                "codepoint": 32,
+                "name": "space",
+                "realCodepoint": 32
+            },
+            {
+                "codepoint": 33,
+                "name": "exclam",
+                "realCodepoint": 33
+            },
+            {
+                "codepoint": 34,
+                "name": "quotedbl",
+                "realCodepoint": 34
+            },
+            {
+                "codepoint": 35,
+                "name": "numbersign",
+                "realCodepoint": 35
+            },
+            {
+                "codepoint": 36,
+                "name": "dollar",
+                "realCodepoint": 36
+            },
+            {
+                "codepoint": 37,
+                "name": "percent",
+                "realCodepoint": 37
+            },
+            {
+                "codepoint": 38,
+                "name": "ampersand",
+                "realCodepoint": 38
+            },
+            {
+                "codepoint": 39,
+                "name": "quotesingle",
+                "realCodepoint": 39
+            },
+            {
+                "codepoint": 40,
+                "name": "parenleft",
+                "realCodepoint": 40
+            },
+            {
+                "codepoint": 41,
+                "name": "parenright",
+                "realCodepoint": 41
+            },
+            {
+                "codepoint": 42,
+                "name": "asterisk",
+                "realCodepoint": 42
+            },
+            {
+                "codepoint": 43,
+                "name": "plus",
+                "realCodepoint": 43
+            },
+            {
+                "codepoint": 44,
+                "name": "comma",
+                "realCodepoint": 44
+            },
+            {
+                "codepoint": 45,
+                "name": "hyphen",
+                "realCodepoint": 45
+            },
+            {
+                "codepoint": 46,
+                "name": "period",
+                "realCodepoint": 46
+            },
+            {
+                "codepoint": 47,
+                "name": "slash",
+                "realCodepoint": 47
+            },
+            {
+                "codepoint": 48,
+                "name": "zero",
+                "realCodepoint": 48
+            },
+            {
+                "codepoint": 49,
+                "name": "one",
+                "realCodepoint": 49
+            },
+            {
+                "codepoint": 50,
+                "name": "two",
+                "realCodepoint": 50
+            },
+            {
+                "codepoint": 51,
+                "name": "three",
+                "realCodepoint": 51
+            },
+            {
+                "codepoint": 52,
+                "name": "four",
+                "realCodepoint": 52
+            },
+            {
+                "codepoint": 53,
+                "name": "five",
+                "realCodepoint": 53
+            },
+            {
+                "codepoint": 54,
+                "name": "six",
+                "realCodepoint": 54
+            },
+            {
+                "codepoint": 55,
+                "name": "seven",
+                "realCodepoint": 55
+            },
+            {
+                "codepoint": 56,
+                "name": "eight",
+                "realCodepoint": 56
+            },
+            {
+                "codepoint": 57,
+                "name": "nine",
+                "realCodepoint": 57
+            },
+            {
+                "codepoint": 58,
+                "name": "colon",
+                "realCodepoint": 58
+            },
+            {
+                "codepoint": 59,
+                "name": "semicolon",
+                "realCodepoint": 59
+            },
+            {
+                "codepoint": 60,
+                "name": "less",
+                "realCodepoint": 60
+            },
+            {
+                "codepoint": 61,
+                "name": "equal",
+                "realCodepoint": 61
+            },
+            {
+                "codepoint": 62,
+                "name": "greater",
+                "realCodepoint": 62
+            },
+            {
+                "codepoint": 63,
+                "name": "question",
+                "realCodepoint": 63
+            },
+            {
+                "codepoint": 64,
+                "name": "at",
+                "realCodepoint": 64
+            },
+            {
+                "codepoint": 65,
+                "name": "A",
+                "realCodepoint": 65
+            },
+            {
+                "codepoint": 66,
+                "name": "B",
+                "realCodepoint": 66
+            },
+            {
+                "codepoint": 67,
+                "name": "C",
+                "realCodepoint": 67
+            },
+            {
+                "codepoint": 68,
+                "name": "D",
+                "realCodepoint": 68
+            },
+            {
+                "codepoint": 69,
+                "name": "E",
+                "realCodepoint": 69
+            },
+            {
+                "codepoint": 70,
+                "name": "F",
+                "realCodepoint": 70
+            },
+            {
+                "codepoint": 71,
+                "name": "G",
+                "realCodepoint": 71
+            },
+            {
+                "codepoint": 72,
+                "name": "H",
+                "realCodepoint": 72
+            },
+            {
+                "codepoint": 73,
+                "name": "I",
+                "realCodepoint": 73
+            },
+            {
+                "codepoint": 74,
+                "name": "J",
+                "realCodepoint": 74
+            },
+            {
+                "codepoint": 75,
+                "name": "K",
+                "realCodepoint": 75
+            },
+            {
+                "codepoint": 76,
+                "name": "L",
+                "realCodepoint": 76
+            },
+            {
+                "codepoint": 77,
+                "name": "M",
+                "realCodepoint": 77
+            },
+            {
+                "codepoint": 78,
+                "name": "N",
+                "realCodepoint": 78
+            },
+            {
+                "codepoint": 79,
+                "name": "O",
+                "realCodepoint": 79
+            },
+            {
+                "codepoint": 80,
+                "name": "P",
+                "realCodepoint": 80
+            },
+            {
+                "codepoint": 81,
+                "name": "Q",
+                "realCodepoint": 81
+            },
+            {
+                "codepoint": 82,
+                "name": "R",
+                "realCodepoint": 82
+            },
+            {
+                "codepoint": 83,
+                "name": "S",
+                "realCodepoint": 83
+            },
+            {
+                "codepoint": 84,
+                "name": "T",
+                "realCodepoint": 84
+            },
+            {
+                "codepoint": 85,
+                "name": "U",
+                "realCodepoint": 85
+            },
+            {
+                "codepoint": 86,
+                "name": "V",
+                "realCodepoint": 86
+            },
+            {
+                "codepoint": 87,
+                "name": "W",
+                "realCodepoint": 87
+            },
+            {
+                "codepoint": 88,
+                "name": "X",
+                "realCodepoint": 88
+            },
+            {
+                "codepoint": 89,
+                "name": "Y",
+                "realCodepoint": 89
+            },
+            {
+                "codepoint": 90,
+                "name": "Z",
+                "realCodepoint": 90
+            },
+            {
+                "codepoint": 91,
+                "name": "bracketleft",
+                "realCodepoint": 91
+            },
+            {
+                "codepoint": 92,
+                "name": "backslash",
+                "realCodepoint": 92
+            },
+            {
+                "codepoint": 93,
+                "name": "bracketright",
+                "realCodepoint": 93
+            },
+            {
+                "codepoint": 94,
+                "name": "asciicircum",
+                "realCodepoint": 94
+            },
+            {
+                "codepoint": 95,
+                "name": "underscore",
+                "realCodepoint": 95
+            },
+            {
+                "codepoint": 96,
+                "name": "grave",
+                "realCodepoint": 96
+            },
+            {
+                "codepoint": 97,
+                "name": "a",
+                "realCodepoint": 97
+            },
+            {
+                "codepoint": 98,
+                "name": "b",
+                "realCodepoint": 98
+            },
+            {
+                "codepoint": 99,
+                "name": "c",
+                "realCodepoint": 99
+            },
+            {
+                "codepoint": 100,
+                "name": "d",
+                "realCodepoint": 100
+            },
+            {
+                "codepoint": 101,
+                "name": "e",
+                "realCodepoint": 101
+            },
+            {
+                "codepoint": 102,
+                "name": "f",
+                "realCodepoint": 102
+            },
+            {
+                "codepoint": 103,
+                "name": "g",
+                "realCodepoint": 103
+            },
+            {
+                "codepoint": 104,
+                "name": "h",
+                "realCodepoint": 104
+            },
+            {
+                "codepoint": 105,
+                "name": "i",
+                "realCodepoint": 105
+            },
+            {
+                "codepoint": 106,
+                "name": "j",
+                "realCodepoint": 106
+            },
+            {
+                "codepoint": 107,
+                "name": "k",
+                "realCodepoint": 107
+            },
+            {
+                "codepoint": 108,
+                "name": "l",
+                "realCodepoint": 108
+            },
+            {
+                "codepoint": 109,
+                "name": "m",
+                "realCodepoint": 109
+            },
+            {
+                "codepoint": 110,
+                "name": "n",
+                "realCodepoint": 110
+            },
+            {
+                "codepoint": 111,
+                "name": "o",
+                "realCodepoint": 111
+            },
+            {
+                "codepoint": 112,
+                "name": "p",
+                "realCodepoint": 112
+            },
+            {
+                "codepoint": 113,
+                "name": "q",
+                "realCodepoint": 113
+            },
+            {
+                "codepoint": 114,
+                "name": "r",
+                "realCodepoint": 114
+            },
+            {
+                "codepoint": 115,
+                "name": "s",
+                "realCodepoint": 115
+            },
+            {
+                "codepoint": 116,
+                "name": "t",
+                "realCodepoint": 116
+            },
+            {
+                "codepoint": 117,
+                "name": "u",
+                "realCodepoint": 117
+            },
+            {
+                "codepoint": 118,
+                "name": "v",
+                "realCodepoint": 118
+            },
+            {
+                "codepoint": 119,
+                "name": "w",
+                "realCodepoint": 119
+            },
+            {
+                "codepoint": 120,
+                "name": "x",
+                "realCodepoint": 120
+            },
+            {
+                "codepoint": 121,
+                "name": "y",
+                "realCodepoint": 121
+            },
+            {
+                "codepoint": 122,
+                "name": "z",
+                "realCodepoint": 122
+            },
+            {
+                "codepoint": 123,
+                "name": "braceleft",
+                "realCodepoint": 123
+            },
+            {
+                "codepoint": 124,
+                "name": "bar",
+                "realCodepoint": 124
+            },
+            {
+                "codepoint": 125,
+                "name": "braceright",
+                "realCodepoint": 125
+            },
+            {
+                "codepoint": 126,
+                "name": "asciitilde",
+                "realCodepoint": 126
+            },
+            {
+                "codepoint": 160,
+                "name": "uni00A0",
+                "realCodepoint": 160
+            },
+            {
+                "codepoint": 161,
+                "name": "exclamdown",
+                "realCodepoint": 161
+            },
+            {
+                "codepoint": 162,
+                "name": "cent",
+                "realCodepoint": 162
+            },
+            {
+                "codepoint": 163,
+                "name": "sterling",
+                "realCodepoint": 163
+            },
+            {
+                "codepoint": 164,
+                "name": "currency",
+                "realCodepoint": 164
+            },
+            {
+                "codepoint": 165,
+                "name": "yen",
+                "realCodepoint": 165
+            },
+            {
+                "codepoint": 166,
+                "name": "brokenbar",
+                "realCodepoint": 166
+            },
+            {
+                "codepoint": 167,
+                "name": "section",
+                "realCodepoint": 167
+            },
+            {
+                "codepoint": 168,
+                "name": "dieresis",
+                "realCodepoint": 168
+            },
+            {
+                "codepoint": 169,
+                "name": "copyright",
+                "realCodepoint": 169
+            },
+            {
+                "codepoint": 170,
+                "name": "ordfeminine",
+                "realCodepoint": 170
+            },
+            {
+                "codepoint": 171,
+                "name": "guillemotleft",
+                "realCodepoint": 171
+            },
+            {
+                "codepoint": 172,
+                "name": "logicalnot",
+                "realCodepoint": 172
+            },
+            {
+                "codepoint": 173,
+                "name": "uni00AD",
+                "realCodepoint": 173
+            },
+            {
+                "codepoint": 174,
+                "name": "registered",
+                "realCodepoint": 174
+            },
+            {
+                "codepoint": 175,
+                "name": "macron",
+                "realCodepoint": 175
+            },
+            {
+                "codepoint": 176,
+                "name": "degree",
+                "realCodepoint": 176
+            },
+            {
+                "codepoint": 177,
+                "name": "plusminus",
+                "realCodepoint": 177
+            },
+            {
+                "codepoint": 178,
+                "name": "uni00B2",
+                "realCodepoint": 178
+            },
+            {
+                "codepoint": 179,
+                "name": "uni00B3",
+                "realCodepoint": 179
+            },
+            {
+                "codepoint": 180,
+                "name": "acute",
+                "realCodepoint": 180
+            },
+            {
+                "codepoint": 181,
+                "name": "uni00B5",
+                "realCodepoint": 181
+            },
+            {
+                "codepoint": 182,
+                "name": "paragraph",
+                "realCodepoint": 182
+            },
+            {
+                "codepoint": 183,
+                "name": "periodcentered",
+                "realCodepoint": 183
+            },
+            {
+                "codepoint": 184,
+                "name": "cedilla",
+                "realCodepoint": 184
+            },
+            {
+                "codepoint": 185,
+                "name": "uni00B9",
+                "realCodepoint": 185
+            },
+            {
+                "codepoint": 186,
+                "name": "ordmasculine",
+                "realCodepoint": 186
+            },
+            {
+                "codepoint": 187,
+                "name": "guillemotright",
+                "realCodepoint": 187
+            },
+            {
+                "codepoint": 188,
+                "name": "onequarter",
+                "realCodepoint": 188
+            },
+            {
+                "codepoint": 189,
+                "name": "onehalf",
+                "realCodepoint": 189
+            },
+            {
+                "codepoint": 190,
+                "name": "threequarters",
+                "realCodepoint": 190
+            },
+            {
+                "codepoint": 191,
+                "name": "questiondown",
+                "realCodepoint": 191
+            },
+            {
+                "codepoint": 192,
+                "name": "Agrave",
+                "realCodepoint": 192
+            },
+            {
+                "codepoint": 193,
+                "name": "Aacute",
+                "realCodepoint": 193
+            },
+            {
+                "codepoint": 194,
+                "name": "Acircumflex",
+                "realCodepoint": 194
+            },
+            {
+                "codepoint": 195,
+                "name": "Atilde",
+                "realCodepoint": 195
+            },
+            {
+                "codepoint": 196,
+                "name": "Adieresis",
+                "realCodepoint": 196
+            },
+            {
+                "codepoint": 197,
+                "name": "Aring",
+                "realCodepoint": 197
+            },
+            {
+                "codepoint": 198,
+                "name": "AE",
+                "realCodepoint": 198
+            },
+            {
+                "codepoint": 199,
+                "name": "Ccedilla",
+                "realCodepoint": 199
+            },
+            {
+                "codepoint": 200,
+                "name": "Egrave",
+                "realCodepoint": 200
+            },
+            {
+                "codepoint": 201,
+                "name": "Eacute",
+                "realCodepoint": 201
+            },
+            {
+                "codepoint": 202,
+                "name": "Ecircumflex",
+                "realCodepoint": 202
+            },
+            {
+                "codepoint": 203,
+                "name": "Edieresis",
+                "realCodepoint": 203
+            },
+            {
+                "codepoint": 204,
+                "name": "Igrave",
+                "realCodepoint": 204
+            },
+            {
+                "codepoint": 205,
+                "name": "Iacute",
+                "realCodepoint": 205
+            },
+            {
+                "codepoint": 206,
+                "name": "Icircumflex",
+                "realCodepoint": 206
+            },
+            {
+                "codepoint": 207,
+                "name": "Idieresis",
+                "realCodepoint": 207
+            },
+            {
+                "codepoint": 208,
+                "name": "Eth",
+                "realCodepoint": 208
+            },
+            {
+                "codepoint": 209,
+                "name": "Ntilde",
+                "realCodepoint": 209
+            },
+            {
+                "codepoint": 210,
+                "name": "Ograve",
+                "realCodepoint": 210
+            },
+            {
+                "codepoint": 211,
+                "name": "Oacute",
+                "realCodepoint": 211
+            },
+            {
+                "codepoint": 212,
+                "name": "Ocircumflex",
+                "realCodepoint": 212
+            },
+            {
+                "codepoint": 213,
+                "name": "Otilde",
+                "realCodepoint": 213
+            },
+            {
+                "codepoint": 214,
+                "name": "Odieresis",
+                "realCodepoint": 214
+            },
+            {
+                "codepoint": 215,
+                "name": "multiply",
+                "realCodepoint": 215
+            },
+            {
+                "codepoint": 216,
+                "name": "Oslash",
+                "realCodepoint": 216
+            },
+            {
+                "codepoint": 217,
+                "name": "Ugrave",
+                "realCodepoint": 217
+            },
+            {
+                "codepoint": 218,
+                "name": "Uacute",
+                "realCodepoint": 218
+            },
+            {
+                "codepoint": 219,
+                "name": "Ucircumflex",
+                "realCodepoint": 219
+            },
+            {
+                "codepoint": 220,
+                "name": "Udieresis",
+                "realCodepoint": 220
+            },
+            {
+                "codepoint": 221,
+                "name": "Yacute",
+                "realCodepoint": 221
+            },
+            {
+                "codepoint": 222,
+                "name": "Thorn",
+                "realCodepoint": 222
+            },
+            {
+                "codepoint": 223,
+                "name": "germandbls",
+                "realCodepoint": 223
+            },
+            {
+                "codepoint": 224,
+                "name": "agrave",
+                "realCodepoint": 224
+            },
+            {
+                "codepoint": 225,
+                "name": "aacute",
+                "realCodepoint": 225
+            },
+            {
+                "codepoint": 226,
+                "name": "acircumflex",
+                "realCodepoint": 226
+            },
+            {
+                "codepoint": 227,
+                "name": "atilde",
+                "realCodepoint": 227
+            },
+            {
+                "codepoint": 228,
+                "name": "adieresis",
+                "realCodepoint": 228
+            },
+            {
+                "codepoint": 229,
+                "name": "aring",
+                "realCodepoint": 229
+            },
+            {
+                "codepoint": 230,
+                "name": "ae",
+                "realCodepoint": 230
+            },
+            {
+                "codepoint": 231,
+                "name": "ccedilla",
+                "realCodepoint": 231
+            },
+            {
+                "codepoint": 232,
+                "name": "egrave",
+                "realCodepoint": 232
+            },
+            {
+                "codepoint": 233,
+                "name": "eacute",
+                "realCodepoint": 233
+            },
+            {
+                "codepoint": 234,
+                "name": "ecircumflex",
+                "realCodepoint": 234
+            },
+            {
+                "codepoint": 235,
+                "name": "edieresis",
+                "realCodepoint": 235
+            },
+            {
+                "codepoint": 236,
+                "name": "igrave",
+                "realCodepoint": 236
+            },
+            {
+                "codepoint": 237,
+                "name": "iacute",
+                "realCodepoint": 237
+            },
+            {
+                "codepoint": 238,
+                "name": "icircumflex",
+                "realCodepoint": 238
+            },
+            {
+                "codepoint": 239,
+                "name": "idieresis",
+                "realCodepoint": 239
+            },
+            {
+                "codepoint": 240,
+                "name": "eth",
+                "realCodepoint": 240
+            },
+            {
+                "codepoint": 241,
+                "name": "ntilde",
+                "realCodepoint": 241
+            },
+            {
+                "codepoint": 242,
+                "name": "ograve",
+                "realCodepoint": 242
+            },
+            {
+                "codepoint": 243,
+                "name": "oacute",
+                "realCodepoint": 243
+            },
+            {
+                "codepoint": 244,
+                "name": "ocircumflex",
+                "realCodepoint": 244
+            },
+            {
+                "codepoint": 245,
+                "name": "otilde",
+                "realCodepoint": 245
+            },
+            {
+                "codepoint": 246,
+                "name": "odieresis",
+                "realCodepoint": 246
+            },
+            {
+                "codepoint": 247,
+                "name": "divide",
+                "realCodepoint": 247
+            },
+            {
+                "codepoint": 248,
+                "name": "oslash",
+                "realCodepoint": 248
+            },
+            {
+                "codepoint": 249,
+                "name": "ugrave",
+                "realCodepoint": 249
+            },
+            {
+                "codepoint": 250,
+                "name": "uacute",
+                "realCodepoint": 250
+            },
+            {
+                "codepoint": 251,
+                "name": "ucircumflex",
+                "realCodepoint": 251
+            },
+            {
+                "codepoint": 252,
+                "name": "udieresis",
+                "realCodepoint": 252
+            },
+            {
+                "codepoint": 253,
+                "name": "yacute",
+                "realCodepoint": 253
+            },
+            {
+                "codepoint": 254,
+                "name": "thorn",
+                "realCodepoint": 254
+            },
+            {
+                "codepoint": 255,
+                "name": "ydieresis",
+                "realCodepoint": 255
+            },
+            {
+                "codepoint": 256,
+                "name": "Amacron",
+                "realCodepoint": 256
+            },
+            {
+                "codepoint": 257,
+                "name": "amacron",
+                "realCodepoint": 257
+            },
+            {
+                "codepoint": 258,
+                "name": "Abreve",
+                "realCodepoint": 258
+            },
+            {
+                "codepoint": 259,
+                "name": "abreve",
+                "realCodepoint": 259
+            },
+            {
+                "codepoint": 262,
+                "name": "Cacute",
+                "realCodepoint": 262
+            },
+            {
+                "codepoint": 263,
+                "name": "cacute",
+                "realCodepoint": 263
+            },
+            {
+                "codepoint": 264,
+                "name": "Ccircumflex",
+                "realCodepoint": 264
+            },
+            {
+                "codepoint": 265,
+                "name": "ccircumflex",
+                "realCodepoint": 265
+            },
+            {
+                "codepoint": 266,
+                "name": "Cdotaccent",
+                "realCodepoint": 266
+            },
+            {
+                "codepoint": 267,
+                "name": "cdotaccent",
+                "realCodepoint": 267
+            },
+            {
+                "codepoint": 268,
+                "name": "Ccaron",
+                "realCodepoint": 268
+            },
+            {
+                "codepoint": 269,
+                "name": "ccaron",
+                "realCodepoint": 269
+            },
+            {
+                "codepoint": 270,
+                "name": "Dcaron",
+                "realCodepoint": 270
+            },
+            {
+                "codepoint": 274,
+                "name": "Emacron",
+                "realCodepoint": 274
+            },
+            {
+                "codepoint": 275,
+                "name": "emacron",
+                "realCodepoint": 275
+            },
+            {
+                "codepoint": 276,
+                "name": "Ebreve",
+                "realCodepoint": 276
+            },
+            {
+                "codepoint": 277,
+                "name": "ebreve",
+                "realCodepoint": 277
+            },
+            {
+                "codepoint": 278,
+                "name": "Edotaccent",
+                "realCodepoint": 278
+            },
+            {
+                "codepoint": 279,
+                "name": "edotaccent",
+                "realCodepoint": 279
+            },
+            {
+                "codepoint": 282,
+                "name": "Ecaron",
+                "realCodepoint": 282
+            },
+            {
+                "codepoint": 283,
+                "name": "ecaron",
+                "realCodepoint": 283
+            },
+            {
+                "codepoint": 284,
+                "name": "Gcircumflex",
+                "realCodepoint": 284
+            },
+            {
+                "codepoint": 285,
+                "name": "gcircumflex",
+                "realCodepoint": 285
+            },
+            {
+                "codepoint": 286,
+                "name": "Gbreve",
+                "realCodepoint": 286
+            },
+            {
+                "codepoint": 287,
+                "name": "gbreve",
+                "realCodepoint": 287
+            },
+            {
+                "codepoint": 288,
+                "name": "Gdotaccent",
+                "realCodepoint": 288
+            },
+            {
+                "codepoint": 289,
+                "name": "gdotaccent",
+                "realCodepoint": 289
+            },
+            {
+                "codepoint": 292,
+                "name": "Hcircumflex",
+                "realCodepoint": 292
+            },
+            {
+                "codepoint": 293,
+                "name": "hcircumflex",
+                "realCodepoint": 293
+            },
+            {
+                "codepoint": 296,
+                "name": "Itilde",
+                "realCodepoint": 296
+            },
+            {
+                "codepoint": 297,
+                "name": "itilde",
+                "realCodepoint": 297
+            },
+            {
+                "codepoint": 298,
+                "name": "Imacron",
+                "realCodepoint": 298
+            },
+            {
+                "codepoint": 299,
+                "name": "imacron",
+                "realCodepoint": 299
+            },
+            {
+                "codepoint": 300,
+                "name": "Ibreve",
+                "realCodepoint": 300
+            },
+            {
+                "codepoint": 301,
+                "name": "ibreve",
+                "realCodepoint": 301
+            },
+            {
+                "codepoint": 304,
+                "name": "Idotaccent",
+                "realCodepoint": 304
+            },
+            {
+                "codepoint": 305,
+                "name": "dotlessi",
+                "realCodepoint": 305
+            },
+            {
+                "codepoint": 308,
+                "name": "Jcircumflex",
+                "realCodepoint": 308
+            },
+            {
+                "codepoint": 309,
+                "name": "jcircumflex",
+                "realCodepoint": 309
+            },
+            {
+                "codepoint": 313,
+                "name": "Lacute",
+                "realCodepoint": 313
+            },
+            {
+                "codepoint": 314,
+                "name": "lacute",
+                "realCodepoint": 314
+            },
+            {
+                "codepoint": 319,
+                "name": "Ldot",
+                "realCodepoint": 319
+            },
+            {
+                "codepoint": 320,
+                "name": "ldot",
+                "realCodepoint": 320
+            },
+            {
+                "codepoint": 323,
+                "name": "Nacute",
+                "realCodepoint": 323
+            },
+            {
+                "codepoint": 324,
+                "name": "nacute",
+                "realCodepoint": 324
+            },
+            {
+                "codepoint": 327,
+                "name": "Ncaron",
+                "realCodepoint": 327
+            },
+            {
+                "codepoint": 328,
+                "name": "ncaron",
+                "realCodepoint": 328
+            },
+            {
+                "codepoint": 332,
+                "name": "Omacron",
+                "realCodepoint": 332
+            },
+            {
+                "codepoint": 333,
+                "name": "omacron",
+                "realCodepoint": 333
+            },
+            {
+                "codepoint": 334,
+                "name": "Obreve",
+                "realCodepoint": 334
+            },
+            {
+                "codepoint": 335,
+                "name": "obreve",
+                "realCodepoint": 335
+            },
+            {
+                "codepoint": 340,
+                "name": "Racute",
+                "realCodepoint": 340
+            },
+            {
+                "codepoint": 341,
+                "name": "racute",
+                "realCodepoint": 341
+            },
+            {
+                "codepoint": 344,
+                "name": "Rcaron",
+                "realCodepoint": 344
+            },
+            {
+                "codepoint": 345,
+                "name": "rcaron",
+                "realCodepoint": 345
+            },
+            {
+                "codepoint": 346,
+                "name": "Sacute",
+                "realCodepoint": 346
+            },
+            {
+                "codepoint": 347,
+                "name": "sacute",
+                "realCodepoint": 347
+            },
+            {
+                "codepoint": 348,
+                "name": "Scircumflex",
+                "realCodepoint": 348
+            },
+            {
+                "codepoint": 349,
+                "name": "scircumflex",
+                "realCodepoint": 349
+            },
+            {
+                "codepoint": 350,
+                "name": "Scedilla",
+                "realCodepoint": 350
+            },
+            {
+                "codepoint": 351,
+                "name": "scedilla",
+                "realCodepoint": 351
+            },
+            {
+                "codepoint": 352,
+                "name": "Scaron",
+                "realCodepoint": 352
+            },
+            {
+                "codepoint": 353,
+                "name": "scaron",
+                "realCodepoint": 353
+            },
+            {
+                "codepoint": 354,
+                "name": "Tcommaaccent",
+                "realCodepoint": 354
+            },
+            {
+                "codepoint": 355,
+                "name": "tcommaaccent",
+                "realCodepoint": 355
+            },
+            {
+                "codepoint": 356,
+                "name": "Tcaron",
+                "realCodepoint": 356
+            },
+            {
+                "codepoint": 360,
+                "name": "Utilde",
+                "realCodepoint": 360
+            },
+            {
+                "codepoint": 361,
+                "name": "utilde",
+                "realCodepoint": 361
+            },
+            {
+                "codepoint": 362,
+                "name": "Umacron",
+                "realCodepoint": 362
+            },
+            {
+                "codepoint": 363,
+                "name": "umacron",
+                "realCodepoint": 363
+            },
+            {
+                "codepoint": 364,
+                "name": "Ubreve",
+                "realCodepoint": 364
+            },
+            {
+                "codepoint": 365,
+                "name": "ubreve",
+                "realCodepoint": 365
+            },
+            {
+                "codepoint": 366,
+                "name": "Uring",
+                "realCodepoint": 366
+            },
+            {
+                "codepoint": 367,
+                "name": "uring",
+                "realCodepoint": 367
+            },
+            {
+                "codepoint": 372,
+                "name": "Wcircumflex",
+                "realCodepoint": 372
+            },
+            {
+                "codepoint": 373,
+                "name": "wcircumflex",
+                "realCodepoint": 373
+            },
+            {
+                "codepoint": 374,
+                "name": "Ycircumflex",
+                "realCodepoint": 374
+            },
+            {
+                "codepoint": 375,
+                "name": "ycircumflex",
+                "realCodepoint": 375
+            },
+            {
+                "codepoint": 376,
+                "name": "Ydieresis",
+                "realCodepoint": 376
+            },
+            {
+                "codepoint": 377,
+                "name": "Zacute",
+                "realCodepoint": 377
+            },
+            {
+                "codepoint": 378,
+                "name": "zacute",
+                "realCodepoint": 378
+            },
+            {
+                "codepoint": 379,
+                "name": "Zdotaccent",
+                "realCodepoint": 379
+            },
+            {
+                "codepoint": 380,
+                "name": "zdotaccent",
+                "realCodepoint": 380
+            },
+            {
+                "codepoint": 381,
+                "name": "Zcaron",
+                "realCodepoint": 381
+            },
+            {
+                "codepoint": 382,
+                "name": "zcaron",
+                "realCodepoint": 382
+            },
+            {
+                "codepoint": 416,
+                "name": "Ohorn",
+                "realCodepoint": 416
+            },
+            {
+                "codepoint": 417,
+                "name": "ohorn",
+                "realCodepoint": 417
+            },
+            {
+                "codepoint": 431,
+                "name": "Uhorn",
+                "realCodepoint": 431
+            },
+            {
+                "codepoint": 432,
+                "name": "uhorn",
+                "realCodepoint": 432
+            },
+            {
+                "codepoint": 461,
+                "name": "uni01CD",
+                "realCodepoint": 461
+            },
+            {
+                "codepoint": 462,
+                "name": "uni01CE",
+                "realCodepoint": 462
+            },
+            {
+                "codepoint": 463,
+                "name": "uni01CF",
+                "realCodepoint": 463
+            },
+            {
+                "codepoint": 464,
+                "name": "uni01D0",
+                "realCodepoint": 464
+            },
+            {
+                "codepoint": 465,
+                "name": "uni01D1",
+                "realCodepoint": 465
+            },
+            {
+                "codepoint": 466,
+                "name": "uni01D2",
+                "realCodepoint": 466
+            },
+            {
+                "codepoint": 467,
+                "name": "uni01D3",
+                "realCodepoint": 467
+            },
+            {
+                "codepoint": 468,
+                "name": "uni01D4",
+                "realCodepoint": 468
+            },
+            {
+                "codepoint": 469,
+                "name": "uni01D5",
+                "realCodepoint": 469
+            },
+            {
+                "codepoint": 470,
+                "name": "uni01D6",
+                "realCodepoint": 470
+            },
+            {
+                "codepoint": 471,
+                "name": "uni01D7",
+                "realCodepoint": 471
+            },
+            {
+                "codepoint": 472,
+                "name": "uni01D8",
+                "realCodepoint": 472
+            },
+            {
+                "codepoint": 473,
+                "name": "uni01D9",
+                "realCodepoint": 473
+            },
+            {
+                "codepoint": 474,
+                "name": "uni01DA",
+                "realCodepoint": 474
+            },
+            {
+                "codepoint": 475,
+                "name": "uni01DB",
+                "realCodepoint": 475
+            },
+            {
+                "codepoint": 476,
+                "name": "uni01DC",
+                "realCodepoint": 476
+            },
+            {
+                "codepoint": 478,
+                "name": "uni01DE",
+                "realCodepoint": 478
+            },
+            {
+                "codepoint": 479,
+                "name": "uni01DF",
+                "realCodepoint": 479
+            },
+            {
+                "codepoint": 480,
+                "name": "uni01E0",
+                "realCodepoint": 480
+            },
+            {
+                "codepoint": 481,
+                "name": "uni01E1",
+                "realCodepoint": 481
+            },
+            {
+                "codepoint": 482,
+                "name": "uni01E2",
+                "realCodepoint": 482
+            },
+            {
+                "codepoint": 483,
+                "name": "uni01E3",
+                "realCodepoint": 483
+            },
+            {
+                "codepoint": 486,
+                "name": "Gcaron",
+                "realCodepoint": 486
+            },
+            {
+                "codepoint": 487,
+                "name": "gcaron",
+                "realCodepoint": 487
+            },
+            {
+                "codepoint": 488,
+                "name": "uni01E8",
+                "realCodepoint": 488
+            },
+            {
+                "codepoint": 489,
+                "name": "uni01E9",
+                "realCodepoint": 489
+            },
+            {
+                "codepoint": 496,
+                "name": "uni01F0",
+                "realCodepoint": 496
+            },
+            {
+                "codepoint": 500,
+                "name": "uni01F4",
+                "realCodepoint": 500
+            },
+            {
+                "codepoint": 501,
+                "name": "uni01F5",
+                "realCodepoint": 501
+            },
+            {
+                "codepoint": 504,
+                "name": "uni01F8",
+                "realCodepoint": 504
+            },
+            {
+                "codepoint": 505,
+                "name": "uni01F9",
+                "realCodepoint": 505
+            },
+            {
+                "codepoint": 506,
+                "name": "Aringacute",
+                "realCodepoint": 506
+            },
+            {
+                "codepoint": 507,
+                "name": "aringacute",
+                "realCodepoint": 507
+            },
+            {
+                "codepoint": 508,
+                "name": "AEacute",
+                "realCodepoint": 508
+            },
+            {
+                "codepoint": 509,
+                "name": "aeacute",
+                "realCodepoint": 509
+            },
+            {
+                "codepoint": 510,
+                "name": "Oslashacute",
+                "realCodepoint": 510
+            },
+            {
+                "codepoint": 511,
+                "name": "oslashacute",
+                "realCodepoint": 511
+            },
+            {
+                "codepoint": 514,
+                "name": "uni0202",
+                "realCodepoint": 514
+            },
+            {
+                "codepoint": 515,
+                "name": "uni0203",
+                "realCodepoint": 515
+            },
+            {
+                "codepoint": 518,
+                "name": "uni0206",
+                "realCodepoint": 518
+            },
+            {
+                "codepoint": 519,
+                "name": "uni0207",
+                "realCodepoint": 519
+            },
+            {
+                "codepoint": 522,
+                "name": "uni020A",
+                "realCodepoint": 522
+            },
+            {
+                "codepoint": 523,
+                "name": "uni020B",
+                "realCodepoint": 523
+            },
+            {
+                "codepoint": 526,
+                "name": "uni020E",
+                "realCodepoint": 526
+            },
+            {
+                "codepoint": 527,
+                "name": "uni020F",
+                "realCodepoint": 527
+            },
+            {
+                "codepoint": 530,
+                "name": "uni0212",
+                "realCodepoint": 530
+            },
+            {
+                "codepoint": 531,
+                "name": "uni0213",
+                "realCodepoint": 531
+            },
+            {
+                "codepoint": 534,
+                "name": "uni0216",
+                "realCodepoint": 534
+            },
+            {
+                "codepoint": 535,
+                "name": "uni0217",
+                "realCodepoint": 535
+            },
+            {
+                "codepoint": 542,
+                "name": "uni021E",
+                "realCodepoint": 542
+            },
+            {
+                "codepoint": 543,
+                "name": "uni021F",
+                "realCodepoint": 543
+            },
+            {
+                "codepoint": 550,
+                "name": "uni0226",
+                "realCodepoint": 550
+            },
+            {
+                "codepoint": 551,
+                "name": "uni0227",
+                "realCodepoint": 551
+            },
+            {
+                "codepoint": 552,
+                "name": "uni0228",
+                "realCodepoint": 552
+            },
+            {
+                "codepoint": 553,
+                "name": "uni0229",
+                "realCodepoint": 553
+            },
+            {
+                "codepoint": 554,
+                "name": "uni022A",
+                "realCodepoint": 554
+            },
+            {
+                "codepoint": 555,
+                "name": "uni022B",
+                "realCodepoint": 555
+            },
+            {
+                "codepoint": 556,
+                "name": "uni022C",
+                "realCodepoint": 556
+            },
+            {
+                "codepoint": 557,
+                "name": "uni022D",
+                "realCodepoint": 557
+            },
+            {
+                "codepoint": 558,
+                "name": "uni022E",
+                "realCodepoint": 558
+            },
+            {
+                "codepoint": 559,
+                "name": "uni022F",
+                "realCodepoint": 559
+            },
+            {
+                "codepoint": 560,
+                "name": "uni0230",
+                "realCodepoint": 560
+            },
+            {
+                "codepoint": 561,
+                "name": "uni0231",
+                "realCodepoint": 561
+            },
+            {
+                "codepoint": 562,
+                "name": "uni0232",
+                "realCodepoint": 562
+            },
+            {
+                "codepoint": 563,
+                "name": "uni0233",
+                "realCodepoint": 563
+            },
+            {
+                "codepoint": 567,
+                "name": "uni0237",
+                "realCodepoint": 567
+            },
+            {
+                "codepoint": 728,
+                "name": "breve",
+                "realCodepoint": 728
+            },
+            {
+                "codepoint": 729,
+                "name": "dotaccent",
+                "realCodepoint": 729
+            },
+            {
+                "codepoint": 730,
+                "name": "ring",
+                "realCodepoint": 730
+            },
+            {
+                "codepoint": 732,
+                "name": "tilde",
+                "realCodepoint": 732
+            },
+            {
+                "codepoint": 768,
+                "name": "gravecomb",
+                "realCodepoint": 768
+            },
+            {
+                "codepoint": 769,
+                "name": "acutecomb",
+                "realCodepoint": 769
+            },
+            {
+                "codepoint": 770,
+                "name": "uni0302",
+                "realCodepoint": 770
+            },
+            {
+                "codepoint": 771,
+                "name": "tildecomb",
+                "realCodepoint": 771
+            },
+            {
+                "codepoint": 772,
+                "name": "uni0304",
+                "realCodepoint": 772
+            },
+            {
+                "codepoint": 773,
+                "name": "uni0305",
+                "realCodepoint": 773
+            },
+            {
+                "codepoint": 774,
+                "name": "uni0306",
+                "realCodepoint": 774
+            },
+            {
+                "codepoint": 775,
+                "name": "uni0307",
+                "realCodepoint": 775
+            },
+            {
+                "codepoint": 776,
+                "name": "uni0308",
+                "realCodepoint": 776
+            },
+            {
+                "codepoint": 778,
+                "name": "uni030A",
+                "realCodepoint": 778
+            },
+            {
+                "codepoint": 780,
+                "name": "uni030C",
+                "realCodepoint": 780
+            },
+            {
+                "codepoint": 807,
+                "name": "uni0327",
+                "realCodepoint": 807
+            },
+            {
+                "codepoint": 8192,
+                "name": "uni2000",
+                "realCodepoint": 8192
+            },
+            {
+                "codepoint": 8193,
+                "name": "uni2001",
+                "realCodepoint": 8193
+            },
+            {
+                "codepoint": 8194,
+                "name": "uni2002",
+                "realCodepoint": 8194
+            },
+            {
+                "codepoint": 8195,
+                "name": "uni2003",
+                "realCodepoint": 8195
+            },
+            {
+                "codepoint": 8196,
+                "name": "uni2004",
+                "realCodepoint": 8196
+            },
+            {
+                "codepoint": 8197,
+                "name": "uni2005",
+                "realCodepoint": 8197
+            },
+            {
+                "codepoint": 8198,
+                "name": "uni2006",
+                "realCodepoint": 8198
+            },
+            {
+                "codepoint": 8199,
+                "name": "uni2007",
+                "realCodepoint": 8199
+            },
+            {
+                "codepoint": 8200,
+                "name": "uni2008",
+                "realCodepoint": 8200
+            },
+            {
+                "codepoint": 8201,
+                "name": "uni2009",
+                "realCodepoint": 8201
+            },
+            {
+                "codepoint": 8202,
+                "name": "uni200A",
+                "realCodepoint": 8202
+            },
+            {
+                "codepoint": 8203,
+                "name": "uni200B",
+                "realCodepoint": 8203
+            },
+            {
+                "codepoint": 8204,
+                "name": "afii61664",
+                "realCodepoint": 8204
+            },
+            {
+                "codepoint": 8205,
+                "name": "afii301",
+                "realCodepoint": 8205
+            },
+            {
+                "codepoint": 8208,
+                "name": "uni2010",
+                "realCodepoint": 8208
+            },
+            {
+                "codepoint": 8209,
+                "name": "uni2011",
+                "realCodepoint": 8209
+            },
+            {
+                "codepoint": 8210,
+                "name": "figuredash",
+                "realCodepoint": 8210
+            },
+            {
+                "codepoint": 8211,
+                "name": "endash",
+                "realCodepoint": 8211
+            },
+            {
+                "codepoint": 8212,
+                "name": "emdash",
+                "realCodepoint": 8212
+            },
+            {
+                "codepoint": 8213,
+                "name": "afii00208",
+                "realCodepoint": 8213
+            },
+            {
+                "codepoint": 8214,
+                "name": "uni2016",
+                "realCodepoint": 8214
+            },
+            {
+                "codepoint": 8215,
+                "name": "underscoredbl",
+                "realCodepoint": 8215
+            },
+            {
+                "codepoint": 8216,
+                "name": "quoteleft",
+                "realCodepoint": 8216
+            },
+            {
+                "codepoint": 8217,
+                "name": "quoteright",
+                "realCodepoint": 8217
+            },
+            {
+                "codepoint": 8218,
+                "name": "quotesinglbase",
+                "realCodepoint": 8218
+            },
+            {
+                "codepoint": 8219,
+                "name": "quotereversed",
+                "realCodepoint": 8219
+            },
+            {
+                "codepoint": 8220,
+                "name": "quotedblleft",
+                "realCodepoint": 8220
+            },
+            {
+                "codepoint": 8221,
+                "name": "quotedblright",
+                "realCodepoint": 8221
+            },
+            {
+                "codepoint": 8222,
+                "name": "quotedblbase",
+                "realCodepoint": 8222
+            },
+            {
+                "codepoint": 8223,
+                "name": "uni201F",
+                "realCodepoint": 8223
+            },
+            {
+                "codepoint": 8224,
+                "name": "dagger",
+                "realCodepoint": 8224
+            },
+            {
+                "codepoint": 8225,
+                "name": "daggerdbl",
+                "realCodepoint": 8225
+            },
+            {
+                "codepoint": 8226,
+                "name": "bullet",
+                "realCodepoint": 8226
+            },
+            {
+                "codepoint": 8227,
+                "name": "uni2023",
+                "realCodepoint": 8227
+            },
+            {
+                "codepoint": 8240,
+                "name": "perthousand",
+                "realCodepoint": 8240
+            },
+            {
+                "codepoint": 8241,
+                "name": "uni2031",
+                "realCodepoint": 8241
+            },
+            {
+                "codepoint": 8242,
+                "name": "minute",
+                "realCodepoint": 8242
+            },
+            {
+                "codepoint": 8243,
+                "name": "second",
+                "realCodepoint": 8243
+            },
+            {
+                "codepoint": 8244,
+                "name": "uni2034",
+                "realCodepoint": 8244
+            },
+            {
+                "codepoint": 8245,
+                "name": "uni2035",
+                "realCodepoint": 8245
+            },
+            {
+                "codepoint": 8246,
+                "name": "uni2036",
+                "realCodepoint": 8246
+            },
+            {
+                "codepoint": 8247,
+                "name": "uni2037",
+                "realCodepoint": 8247
+            },
+            {
+                "codepoint": 8252,
+                "name": "exclamdbl",
+                "realCodepoint": 8252
+            },
+            {
+                "codepoint": 8253,
+                "name": "uni203D",
+                "realCodepoint": 8253
+            },
+            {
+                "codepoint": 8260,
+                "name": "fraction",
+                "realCodepoint": 8260
+            },
+            {
+                "codepoint": 8279,
+                "name": "uni2057",
+                "realCodepoint": 8279
+            },
+            {
+                "codepoint": 8304,
+                "name": "uni2070",
+                "realCodepoint": 8304
+            },
+            {
+                "codepoint": 8305,
+                "name": "uni2071",
+                "realCodepoint": 8305
+            },
+            {
+                "codepoint": 8308,
+                "name": "uni2074",
+                "realCodepoint": 8308
+            },
+            {
+                "codepoint": 8309,
+                "name": "uni2075",
+                "realCodepoint": 8309
+            },
+            {
+                "codepoint": 8310,
+                "name": "uni2076",
+                "realCodepoint": 8310
+            },
+            {
+                "codepoint": 8311,
+                "name": "uni2077",
+                "realCodepoint": 8311
+            },
+            {
+                "codepoint": 8312,
+                "name": "uni2078",
+                "realCodepoint": 8312
+            },
+            {
+                "codepoint": 8313,
+                "name": "uni2079",
+                "realCodepoint": 8313
+            },
+            {
+                "codepoint": 8314,
+                "name": "uni207A",
+                "realCodepoint": 8314
+            },
+            {
+                "codepoint": 8315,
+                "name": "uni207B",
+                "realCodepoint": 8315
+            },
+            {
+                "codepoint": 8316,
+                "name": "uni207C",
+                "realCodepoint": 8316
+            },
+            {
+                "codepoint": 8317,
+                "name": "uni207D",
+                "realCodepoint": 8317
+            },
+            {
+                "codepoint": 8318,
+                "name": "uni207E",
+                "realCodepoint": 8318
+            },
+            {
+                "codepoint": 8319,
+                "name": "uni207F",
+                "realCodepoint": 8319
+            },
+            {
+                "codepoint": 8320,
+                "name": "uni2080",
+                "realCodepoint": 8320
+            },
+            {
+                "codepoint": 8321,
+                "name": "uni2081",
+                "realCodepoint": 8321
+            },
+            {
+                "codepoint": 8322,
+                "name": "uni2082",
+                "realCodepoint": 8322
+            },
+            {
+                "codepoint": 8323,
+                "name": "uni2083",
+                "realCodepoint": 8323
+            },
+            {
+                "codepoint": 8324,
+                "name": "uni2084",
+                "realCodepoint": 8324
+            },
+            {
+                "codepoint": 8325,
+                "name": "uni2085",
+                "realCodepoint": 8325
+            },
+            {
+                "codepoint": 8326,
+                "name": "uni2086",
+                "realCodepoint": 8326
+            },
+            {
+                "codepoint": 8327,
+                "name": "uni2087",
+                "realCodepoint": 8327
+            },
+            {
+                "codepoint": 8328,
+                "name": "uni2088",
+                "realCodepoint": 8328
+            },
+            {
+                "codepoint": 8329,
+                "name": "uni2089",
+                "realCodepoint": 8329
+            },
+            {
+                "codepoint": 8330,
+                "name": "uni208A",
+                "realCodepoint": 8330
+            },
+            {
+                "codepoint": 8331,
+                "name": "uni208B",
+                "realCodepoint": 8331
+            },
+            {
+                "codepoint": 8332,
+                "name": "uni208C",
+                "realCodepoint": 8332
+            },
+            {
+                "codepoint": 8333,
+                "name": "uni208D",
+                "realCodepoint": 8333
+            },
+            {
+                "codepoint": 8334,
+                "name": "uni208E",
+                "realCodepoint": 8334
+            },
+            {
+                "codepoint": 8452,
+                "name": "uni2104",
+                "realCodepoint": 8452
+            },
+            {
+                "codepoint": 8528,
+                "name": "uni2150",
+                "realCodepoint": 8528
+            },
+            {
+                "codepoint": 8531,
+                "name": "onethird",
+                "realCodepoint": 8531
+            },
+            {
+                "codepoint": 8532,
+                "name": "twothirds",
+                "realCodepoint": 8532
+            },
+            {
+                "codepoint": 8533,
+                "name": "uni2155",
+                "realCodepoint": 8533
+            },
+            {
+                "codepoint": 8534,
+                "name": "uni2156",
+                "realCodepoint": 8534
+            },
+            {
+                "codepoint": 8535,
+                "name": "uni2157",
+                "realCodepoint": 8535
+            },
+            {
+                "codepoint": 8536,
+                "name": "uni2158",
+                "realCodepoint": 8536
+            },
+            {
+                "codepoint": 8537,
+                "name": "uni2159",
+                "realCodepoint": 8537
+            },
+            {
+                "codepoint": 8538,
+                "name": "uni215A",
+                "realCodepoint": 8538
+            },
+            {
+                "codepoint": 8539,
+                "name": "oneeighth",
+                "realCodepoint": 8539
+            },
+            {
+                "codepoint": 8540,
+                "name": "threeeighths",
+                "realCodepoint": 8540
+            },
+            {
+                "codepoint": 8541,
+                "name": "fiveeighths",
+                "realCodepoint": 8541
+            },
+            {
+                "codepoint": 8542,
+                "name": "seveneighths",
+                "realCodepoint": 8542
+            },
+            {
+                "codepoint": 8592,
+                "name": "arrowleft",
+                "realCodepoint": 8592
+            },
+            {
+                "codepoint": 8593,
+                "name": "arrowup",
+                "realCodepoint": 8593
+            },
+            {
+                "codepoint": 8594,
+                "name": "arrowright",
+                "realCodepoint": 8594
+            },
+            {
+                "codepoint": 8595,
+                "name": "arrowdown",
+                "realCodepoint": 8595
+            },
+            {
+                "codepoint": 8596,
+                "name": "arrowboth",
+                "realCodepoint": 8596
+            },
+            {
+                "codepoint": 8597,
+                "name": "arrowupdn",
+                "realCodepoint": 8597
+            },
+            {
+                "codepoint": 8722,
+                "name": "minus",
+                "realCodepoint": 8722
+            },
+            {
+                "codepoint": 8960,
+                "name": "uni2300",
+                "realCodepoint": 8960
+            },
+            {
+                "codepoint": 10229,
+                "name": "uni27F5",
+                "realCodepoint": 10229
+            },
+            {
+                "codepoint": 10230,
+                "name": "uni27F6",
+                "realCodepoint": 10230
+            },
+            {
+                "codepoint": 10231,
+                "name": "uni27F7",
+                "realCodepoint": 10231
+            },
+            {
+                "codepoint": 57344,
+                "name": "uniE000",
+                "realCodepoint": 57344
+            },
+            {
+                "codepoint": 57345,
+                "name": "uniE001",
+                "realCodepoint": 57345
+            },
+            {
+                "codepoint": 57346,
+                "name": "uniE002",
+                "realCodepoint": 57346
+            },
+            {
+                "codepoint": 57347,
+                "name": "uniE003",
+                "realCodepoint": 57347
+            },
+            {
+                "codepoint": 57348,
+                "name": "uniE004",
+                "realCodepoint": 57348
+            },
+            {
+                "codepoint": 57350,
+                "name": "uniE006",
+                "realCodepoint": 57350
+            },
+            {
+                "codepoint": 57367,
+                "name": "uniE017",
+                "realCodepoint": 57367
+            },
+            {
+                "codepoint": 57368,
+                "name": "uniE018",
+                "realCodepoint": 57368
+            },
+            {
+                "codepoint": 57369,
+                "name": "uniE019",
+                "realCodepoint": 57369
+            },
+            {
+                "codepoint": 57370,
+                "name": "uniE01A",
+                "realCodepoint": 57370
+            },
+            {
+                "codepoint": 57371,
+                "name": "uniE01B",
+                "realCodepoint": 57371
+            },
+            {
+                "codepoint": 57600,
+                "name": "uniE100",
+                "realCodepoint": 57600
+            },
+            {
+                "codepoint": 57601,
+                "name": "uniE101",
+                "realCodepoint": 57601
+            },
+            {
+                "codepoint": 57602,
+                "name": "uniE102",
+                "realCodepoint": 57602
+            },
+            {
+                "codepoint": 57603,
+                "name": "uniE103",
+                "realCodepoint": 57603
+            },
+            {
+                "codepoint": 57616,
+                "name": "uniE110",
+                "realCodepoint": 57616
+            },
+            {
+                "codepoint": 57617,
+                "name": "uniE111",
+                "realCodepoint": 57617
+            },
+            {
+                "codepoint": 57618,
+                "name": "uniE112",
+                "realCodepoint": 57618
+            },
+            {
+                "codepoint": 57619,
+                "name": "uniE113",
+                "realCodepoint": 57619
+            },
+            {
+                "codepoint": 57620,
+                "name": "uniE114",
+                "realCodepoint": 57620
+            },
+            {
+                "codepoint": 57712,
+                "name": "uniE170",
+                "realCodepoint": 57712
+            },
+            {
+                "codepoint": 57713,
+                "name": "uniE171",
+                "realCodepoint": 57713
+            },
+            {
+                "codepoint": 128169,
+                "name": "u1F4A9",
+                "realCodepoint": 128169
+            }
+        ]
+    },
+    "filename": "dist/ttf/routed-gothic.ttf",
+    "isCollection": false
+}
