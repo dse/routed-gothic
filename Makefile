@@ -1,44 +1,66 @@
-SOURCE =		src/routed-gothic-stroke-source.sfd
-ZIP_FILE =		dist/routed-gothic-ttf.zip
-TTF_FONTS =		dist/ttf/routed-gothic.ttf \
-			dist/ttf/routed-gothic-half-italic.ttf \
-			dist/ttf/routed-gothic-italic.ttf \
-			dist/ttf/routed-gothic-narrow.ttf \
-			dist/ttf/routed-gothic-narrow-half-italic.ttf \
-			dist/ttf/routed-gothic-narrow-italic.ttf \
-			dist/ttf/routed-gothic-wide.ttf \
-			dist/ttf/routed-gothic-wide-half-italic.ttf \
-			dist/ttf/routed-gothic-wide-italic.ttf
-GLYPH_LIST =		includes/unicode-coverage.inc.html
-GENERATE_SCRIPT =	bin/generate-fonts.py
-GLYPH_LIST_SCRIPT =	bin/make-character-list
+FONT_SRC		= src/basefont/routed-gothic-stroke-source.sfd
+FONT_NAME		= RoutedGothic
+SFNT_REVISION		= 001.000	# XXX.YZZ, typically
+VERSION			= 0.9.2
+TTF_FONTS =		= 	dist/ttf/routed-gothic.ttf \
+				dist/ttf/routed-gothic-half-italic.ttf \
+				dist/ttf/routed-gothic-italic.ttf \
+				dist/ttf/routed-gothic-narrow.ttf \
+				dist/ttf/routed-gothic-narrow-half-italic.ttf \
+				dist/ttf/routed-gothic-narrow-italic.ttf \
+				dist/ttf/routed-gothic-wide.ttf \
+				dist/ttf/routed-gothic-wide-half-italic.ttf \
+				dist/ttf/routed-gothic-wide-italic.ttf
 
-FONTS = $(TTF_FONTS)
+GENERATE_SCRIPT		= bin/generate-fonts.py
+# NOTE: hard-coded to put fonts into dist/ttf, dist/sfd, and dist/eot
 
-.PHONY: default
-default: ttf zip web
+FONTS			= $(TTF_FONTS)
 
-.PHONY: dist
-dist: fonts zip
-
-.PHONY: fonts
-fonts: ttf
-
-.PHONY: zip
+default: $(FONTS)
+fonts: $(FONTS)
 zip: $(ZIP_FILE)
 
-.PHONY: ttf
-ttf: $(firstword $(TTF_FONTS))
-# single command builds all fonts, only specify first one
-
+###############################################################################
+# GENERATE FONTS
 ###############################################################################
 
-$(TTF_FONTS): $(SOURCE) Makefile $(GENERATE_SCRIPT)
+ttf: FORCE $(firstword $(TTF_FONTS))
+# single command builds all fonts, only specify first one
+
+$(TTF_FONTS): $(FONT_SRC) Makefile $(GENERATE_SCRIPT)
 	$(GENERATE_SCRIPT)
 
-$(ZIP_FILE): $(TTF_FONTS) Makefile
-	rm $@ || true
-	cd dist && zip $(patsubst dist/%, %, $@) $(patsubst dist/%, %, $(TTF_FONTS))
+###############################################################################
+# ZIP FILE
+###############################################################################
+
+ZIP_FILE		= dist/zip/$(FONT_NAME).zip
+VERSIONED_ZIP_FILE    	= dist/zip/$(FONT_NAME)-$(VERSION).zip
+
+zip: FORCE $(VERSIONED_ZIP_FILE) $(ZIP_FILE)
+
+$(VERSIONED_ZIP_FILE): FORCE
+	mkdir -p dist/zip
+	cd dist/zip && \
+		bsdtar -c -f "$(FONT_NAME)-$(VERSION).zip" \
+		--format zip \
+		-s '#^\.\./ttf#$(FONT_NAME)-$(VERSION)#' \
+		../ttf
+
+$(ZIP_FILE): $(VERSIONED_ZIP_FILE) Makefile
+	cp "$(VERSIONED_ZIP_FILE)" "$(ZIP_FILE)"
+
+###############################################################################
+# PUBLISH
+###############################################################################
+
+publish:
+	ssh dse@webonastick.com "bash -c 'cd /www/webonastick.com/htdocs/fonts/routed-gothic && git pull'"
+
+###############################################################################
+# CLEAN
+###############################################################################
 
 .PHONY: clean
 clean:
@@ -49,26 +71,8 @@ clean:
 		-o -name '#~' \
 	\) -exec rm {} +
 
-.PHONY: superclean
-superclean: clean
-	find dist -type f -exec rm {} +
+###############################################################################
+# BACKMATTER
+###############################################################################
 
-.PHONY: web
-web: coverage sass
-
-.PHONY: sass
-sass:
-	gulp sass
-
-.PHONY: downloads
-downloads:
-	bin/make-downloads
-
-publish:
-	ssh dse@webonastick.com "bash -c 'cd /www/webonastick.com/htdocs/fonts/routed-gothic && git pull'"
-
-.PHONY: coverage
-coverage: $(GLYPH_LIST)
-$(GLYPH_LIST): $(SOURCE) $(GLYPH_LIST_SCRIPT) Makefile
-	$(GLYPH_LIST_SCRIPT) $< >$@.tmp
-	mv $@.tmp $@
+.PHONY: FORCE
