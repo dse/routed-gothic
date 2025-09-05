@@ -31,7 +31,7 @@ zip: $(ZIP_FILE)
 
 data: FORCE src/data/font-data.json
 
-src/data/font-data.json: Makefile $(FIRST_TTF_FONT)
+src/data/font-data.json: FORCE
 	mkdir -p src/data
 	fontdata "$(FIRST_TTF_FONT)" >"$@.tmp"
 	mv "$@.tmp" "$@"

@@ -1,5 +1,5 @@
 #!/usr/bin/env fontforge
-# -*- coding: utf-8 -*-
+# -*- mode: python; coding: utf-8 -*-
 
 import fontforge
 import psMat
@@ -10,7 +10,7 @@ import math
 import os
 import re
 
-SOURCE_FILENAME    = "src/basefont/routed-gothic-stroke-source.sfd"
+SOURCE_FILENAME    = "src/routed-gothic-stroke-source.sfd"
 DIST_DIRECTORY     = "dist"
 DIST_TTF_DIRECTORY = DIST_DIRECTORY + "/ttf"
 DIST_SFD_DIRECTORY = DIST_DIRECTORY + "/sfd"
@@ -129,7 +129,16 @@ SUBSCRIPTS = [
 ###############################################################################
 
 def supersubscriptCodepoint(foo, superscript = True):
-    cp = codepoint(foo)
+    if isinstance(foo, str) or isinstance(foo, unicode):
+        if (len(foo) == 1):
+            cp = ord(foo)
+        else:
+            char = unicodedata.lookup(foo)
+            cp = ord(char)
+    elif isinstance(foo, int):
+        cp = foo
+    else:
+        raise TypeError("argument to codepoint must be a string or an integer")
 
     if (cp >= 48 and cp <= 57):
         if superscript:
@@ -151,19 +160,19 @@ def subscriptCodepoint(foo):
     return supersubscriptCodepoint(foo, False)
 
 def codepoint(foo):
-    if type(foo) == str:
-        if len(foo) == 1:
+    if isinstance(foo, str) or isinstance(foo, unicode):
+        if (len(foo) == 1):
             return ord(foo)
         else:
             char = unicodedata.lookup(foo)
             return ord(char)
-    elif type(foo) == int:
-        if foo in range(0, 10):
+    elif isinstance(foo, int):
+        if foo >= 0 and foo <= 9:
             return foo + 48
-        return foo
+        else:
+            return foo
     else:
-        raise TypeError("codepoint() argument muts be a string or integer")
-    return cp
+        raise TypeError("argument to codepoint must be a string or an integer")
 
 def intersect(a, b):
     return list(set(a) & set(b))
@@ -260,9 +269,9 @@ def makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, superscript
     additionalbearing = STROKE_WIDTH / 2 * (1 - SUPERSUBSCRIPT_SCALE)
 
     destGlyph.transform(psMat.translate(additionalbearing, 0))
-    destGlyph.width = int(destGlyph.width + additionalbearing + 0.5)
+    destGlyph.width = destGlyph.width + additionalbearing
 
-    print("%s => %d" % (unicodedata.name(chr(destCodepoint)), destCodepoint))
+    print("%s => %d" % (unicodedata.name(unichr(destCodepoint)), destCodepoint))
 
 def makeSuperscript(font, sourceCodepoint, destCodepoint):
     makeSuperscriptOrSubscript(font, sourceCodepoint, destCodepoint, True)
@@ -368,7 +377,7 @@ def generate(
                 if font.isKerningClass(subtableName):
                     kc = font.getKerningClass(subtableName)
                     offsets = kc[2]
-                    newOffsets = [int(o * condensedScale + 0.5) for o in offsets]
+                    newOffsets = [o * condensedScale for o in offsets]
                     font.alterKerningClass(subtableName, kc[0], kc[1], newOffsets)
 
     condensedTransform = psMat.scale(condensedScale, 1)

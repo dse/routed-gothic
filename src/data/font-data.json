@@ -1,2579 +1,4016 @@
 {
-    "familyName": "Routed Gothic",
-    "fondName": null,
-    "fontName": "RoutedGothic",
-    "fullName": "Routed Gothic",
-    "weight": "Book",
-    "uniqueId": 0,
-    "version": "001.000",
-    "sfntRevision": {
-        "raw": 1.0,
-        "cooked": "1.000",
-        "numeric": 1.0
-    },
-    "comment": null,
-    "copyright": "Copyright (c) 2017, Darren Embry (http://webonastick.com/),\nwith Reserved Font Name Routed Gothic.\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n\n\n-----------------------------------------------------------\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n-----------------------------------------------------------\n\nPREAMBLE\nThe goals of the Open Font License (OFL) are to stimulate worldwide\ndevelopment of collaborative font projects, to support the font creation\nefforts of academic and linguistic communities, and to provide a free and\nopen framework in which fonts may be shared and improved in partnership\nwith others.\n\nThe OFL allows the licensed fonts to be used, studied, modified and\nredistributed freely as long as they are not sold by themselves. The\nfonts, including any derivative works, can be bundled, embedded, \nredistributed and/or sold with any software provided that any reserved\nnames are not used by derivative works. The fonts and derivatives,\nhowever, cannot be released under any other type of license. The\nrequirement for fonts to remain under this license does not apply\nto any document created using the fonts or their derivatives.\n\nDEFINITIONS\n\"Font Software\" refers to the set of files released by the Copyright\nHolder(s) under this license and clearly marked as such. This may\ninclude source files, build scripts and documentation.\n\n\"Reserved Font Name\" refers to any names specified as such after the\ncopyright statement(s).\n\n\"Original Version\" refers to the collection of Font Software components as\ndistributed by the Copyright Holder(s).\n\n\"Modified Version\" refers to any derivative made by adding to, deleting,\nor substituting -- in part or in whole -- any of the components of the\nOriginal Version, by changing formats or by porting the Font Software to a\nnew environment.\n\n\"Author\" refers to any designer, engineer, programmer, technical\nwriter or other person who contributed to the Font Software.\n\nPERMISSION & CONDITIONS\nPermission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:\n\n1) Neither the Font Software nor any of its individual components,\nin Original or Modified Versions, may be sold by itself.\n\n2) Original or Modified Versions of the Font Software may be bundled,\nredistributed and/or sold with any software, provided that each copy\ncontains the above copyright notice and this license. These can be\nincluded either as stand-alone text files, human-readable headers or\nin the appropriate machine-readable metadata fields within text or\nbinary files as long as those fields can be easily viewed by the user.\n\n3) No Modified Version of the Font Software may use the Reserved Font\nName(s) unless explicit written permission is granted by the corresponding\nCopyright Holder. This restriction only applies to the primary font name as\npresented to the users.\n\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\nSoftware shall not be used to promote, endorse or advertise any\nModified Version, except to acknowledge the contribution(s) of the\nCopyright Holder(s) and the Author(s) or with their explicit written\npermission.\n\n5) The Font Software, modified or unmodified, in part or in whole,\nmust be distributed entirely under this license, and must not be\ndistributed under any other license. The requirement for fonts to\nremain under this license does not apply to any document created\nusing the Font Software.\n\nTERMINATION\nThis license becomes null and void if any of the above conditions are\nnot met.\n\nDISCLAIMER\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\nOTHER DEALINGS IN THE FONT SOFTWARE.\n",
-    "fontLog": null,
-    "macStyle": {
-        "numeric": -1,
-        "bold": true,
-        "italic": true,
-        "underline": true,
-        "outline": true,
-        "shadow": true,
-        "condensed": true,
-        "extended": true,
-        "reservedBit": true
-    },
-    "familyClass": 0,
-    "fsType": 0,
-    "styleMap": 0,
-    "panose": [
-        2,
-        0,
-        5,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-    ],
-    "os2Weight": 400,
-    "os2Width": 5,
-    "metrics": {
-        "ascent": 832,
-        "capHeight": 736.0,
-        "descent": 192,
-        "designSize": 0.0,
-        "em": 1024,
-        "italicAngle": 0.0,
-        "underlinePos": -98.0,
-        "underlineWidth": 98.0,
-        "exHeight": 528.0
-    },
-    "hheaMetrics": {
-        "ascent": 1325,
-        "ascentAdd": 0,
-        "descent": -381,
-        "descentAdd": 0,
-        "linegap": 92
-    },
-    "os2Metrics": {
-        "strikeYPos": 265,
-        "strikeYSize": 51,
-        "subXOff": 0,
-        "subXSize": 665,
-        "subYOff": 143,
-        "subYSize": 716,
-        "supXOff": 0,
-        "supXSize": 665,
-        "supYOff": 491,
-        "supYSize": 716
-    },
-    "useTypoMetrics": 1,
-    "typoMetrics": {
-        "ascent": 832,
-        "ascentAdd": 0,
-        "descent": -192,
-        "descentAdd": 0,
-        "linegap": 92
-    },
-    "winMetrics": {
-        "ascent": 1325,
-        "ascentAdd": 0,
-        "descent": 381,
-        "descentAdd": 0
-    },
-    "vhea": {
-        "linegap": 0
-    },
-    "isCid": 0,
-    "cid": {
-        "copyright": null,
-        "familyName": null,
-        "fontName": null,
-        "fullName": null,
-        "ordering": null,
-        "registry": null,
-        "subfont": -1,
-        "subfontCnt": 0,
-        "subfontNames": null,
-        "supplement": null,
-        "version": null,
-        "weight": null
-    },
-    "encoding": "UnicodeFull",
-    "hasVMetrics": 0,
-    "headOptimizedForCleartype": 0,
-    "horizontalBaseline": null,
-    "isQuadratic": 1,
-    "onlyBitmaps": 0,
-    "codepages": [
-        17,
-        0
-    ],
-    "unicodeRanges": [
-        -2147483537,
-        301990137,
-        0,
-        0
-    ],
-    "os2Vendor": "PfEd",
-    "os2Version": 4,
-    "os2WeightWidthSlopeOnly": 0,
-    "isStrokedFont": 0,
-    "strokeWidth": 0.0,
-    "verticalBaseline": null,
-    "verticalOrigin": 0,
-    "woffMajor": null,
-    "woffMinor": null,
-    "woffMetadata": null,
-    "glyphs": {
+    "fontData": {
+        "familyName": "Routed Gothic",
+        "fondName": null,
+        "fontName": "RoutedGothic",
+        "fullName": "Routed Gothic",
+        "weight": "Book",
+        "uniqueId": 0,
+        "version": "001.000",
+        "sfntRevision": {
+            "raw": 1.0,
+            "cooked": "1.000",
+            "numeric": 1.0
+        },
+        "comment": null,
+        "copyright": "Copyright (c) 2017, Darren Embry (http://webonastick.com/),\nwith Reserved Font Name Routed Gothic.\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n\n\n-----------------------------------------------------------\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n-----------------------------------------------------------\n\nPREAMBLE\nThe goals of the Open Font License (OFL) are to stimulate worldwide\ndevelopment of collaborative font projects, to support the font creation\nefforts of academic and linguistic communities, and to provide a free and\nopen framework in which fonts may be shared and improved in partnership\nwith others.\n\nThe OFL allows the licensed fonts to be used, studied, modified and\nredistributed freely as long as they are not sold by themselves. The\nfonts, including any derivative works, can be bundled, embedded, \nredistributed and/or sold with any software provided that any reserved\nnames are not used by derivative works. The fonts and derivatives,\nhowever, cannot be released under any other type of license. The\nrequirement for fonts to remain under this license does not apply\nto any document created using the fonts or their derivatives.\n\nDEFINITIONS\n\"Font Software\" refers to the set of files released by the Copyright\nHolder(s) under this license and clearly marked as such. This may\ninclude source files, build scripts and documentation.\n\n\"Reserved Font Name\" refers to any names specified as such after the\ncopyright statement(s).\n\n\"Original Version\" refers to the collection of Font Software components as\ndistributed by the Copyright Holder(s).\n\n\"Modified Version\" refers to any derivative made by adding to, deleting,\nor substituting -- in part or in whole -- any of the components of the\nOriginal Version, by changing formats or by porting the Font Software to a\nnew environment.\n\n\"Author\" refers to any designer, engineer, programmer, technical\nwriter or other person who contributed to the Font Software.\n\nPERMISSION & CONDITIONS\nPermission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:\n\n1) Neither the Font Software nor any of its individual components,\nin Original or Modified Versions, may be sold by itself.\n\n2) Original or Modified Versions of the Font Software may be bundled,\nredistributed and/or sold with any software, provided that each copy\ncontains the above copyright notice and this license. These can be\nincluded either as stand-alone text files, human-readable headers or\nin the appropriate machine-readable metadata fields within text or\nbinary files as long as those fields can be easily viewed by the user.\n\n3) No Modified Version of the Font Software may use the Reserved Font\nName(s) unless explicit written permission is granted by the corresponding\nCopyright Holder. This restriction only applies to the primary font name as\npresented to the users.\n\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\nSoftware shall not be used to promote, endorse or advertise any\nModified Version, except to acknowledge the contribution(s) of the\nCopyright Holder(s) and the Author(s) or with their explicit written\npermission.\n\n5) The Font Software, modified or unmodified, in part or in whole,\nmust be distributed entirely under this license, and must not be\ndistributed under any other license. The requirement for fonts to\nremain under this license does not apply to any document created\nusing the Font Software.\n\nTERMINATION\nThis license becomes null and void if any of the above conditions are\nnot met.\n\nDISCLAIMER\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\nOTHER DEALINGS IN THE FONT SOFTWARE.\n",
+        "fontLog": null,
+        "macStyle": {
+            "numeric": -1,
+            "bold": true,
+            "italic": true,
+            "underline": true,
+            "outline": true,
+            "shadow": true,
+            "condensed": true,
+            "extended": true,
+            "reservedBit": true
+        },
+        "familyClass": 0,
+        "fsType": 0,
+        "styleMap": 0,
+        "panose": [
+            2,
+            0,
+            5,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "os2Weight": 400,
+        "os2Width": 5,
+        "metrics": {
+            "ascent": 832,
+            "capHeight": 736.0,
+            "descent": 192,
+            "designSize": 0.0,
+            "em": 1024,
+            "italicAngle": 0.0,
+            "underlinePos": -98.0,
+            "underlineWidth": 98.0,
+            "exHeight": 528.0
+        },
+        "hheaMetrics": {
+            "ascent": 1277,
+            "ascentAdd": 0,
+            "descent": -380,
+            "descentAdd": 0,
+            "linegap": 92
+        },
+        "os2Metrics": {
+            "strikeYPos": 265,
+            "strikeYSize": 51,
+            "subXOff": 0,
+            "subXSize": 665,
+            "subYOff": 143,
+            "subYSize": 716,
+            "supXOff": 0,
+            "supXSize": 665,
+            "supYOff": 491,
+            "supYSize": 716
+        },
+        "useTypoMetrics": 1,
+        "typoMetrics": {
+            "ascent": 832,
+            "ascentAdd": 0,
+            "descent": -192,
+            "descentAdd": 0,
+            "linegap": 92
+        },
+        "winMetrics": {
+            "ascent": 1277,
+            "ascentAdd": 0,
+            "descent": 380,
+            "descentAdd": 0
+        },
+        "vhea": {
+            "linegap": 0
+        },
+        "isCid": 0,
+        "cid": {
+            "copyright": null,
+            "familyName": null,
+            "fontName": null,
+            "fullName": null,
+            "ordering": null,
+            "registry": null,
+            "subfont": -1,
+            "subfontCnt": 0,
+            "subfontNames": null,
+            "supplement": null,
+            "version": null,
+            "weight": null
+        },
+        "encoding": "UnicodeFull",
+        "hasVMetrics": 0,
+        "headOptimizedForCleartype": 0,
+        "horizontalBaseline": null,
+        "isQuadratic": 1,
+        "onlyBitmaps": 0,
+        "codepages": [
+            17,
+            0
+        ],
+        "unicodeRanges": [
+            -2147483537,
+            301990137,
+            0,
+            0
+        ],
+        "os2Vendor": "PfEd",
+        "os2Version": 4,
+        "os2WeightWidthSlopeOnly": 0,
+        "isStrokedFont": 0,
+        "strokeWidth": 0.0,
+        "verticalBaseline": null,
+        "verticalOrigin": 0,
+        "woffMajor": null,
+        "woffMinor": null,
+        "woffMetadata": null,
         "glyphList": [
             {
                 "codepoint": -1,
-                "name": ".notdef",
+                "glyphName": ".notdef",
                 "realCodepoint": -1
             },
             {
                 "codepoint": -1,
-                "name": ".null",
-                "realCodepoint": 0
+                "glyphName": ".null",
+                "realCodepoint": 0,
+                "char": "\u0000",
+                "unicodeHex": "U+0000"
             },
             {
                 "codepoint": -1,
-                "name": "nonmarkingreturn",
-                "realCodepoint": 13
+                "glyphName": "nonmarkingreturn",
+                "realCodepoint": 13,
+                "char": "\r",
+                "unicodeHex": "U+000D"
             },
             {
                 "codepoint": 32,
-                "name": "space",
-                "realCodepoint": 32
+                "glyphName": "space",
+                "realCodepoint": 32,
+                "char": " ",
+                "unicodeHex": "U+0020",
+                "name": "SPACE"
             },
             {
                 "codepoint": 33,
-                "name": "exclam",
-                "realCodepoint": 33
+                "glyphName": "exclam",
+                "realCodepoint": 33,
+                "char": "!",
+                "unicodeHex": "U+0021",
+                "name": "EXCLAMATION MARK"
             },
             {
                 "codepoint": 34,
-                "name": "quotedbl",
-                "realCodepoint": 34
+                "glyphName": "quotedbl",
+                "realCodepoint": 34,
+                "char": "\"",
+                "unicodeHex": "U+0022",
+                "name": "QUOTATION MARK"
             },
             {
                 "codepoint": 35,
-                "name": "numbersign",
-                "realCodepoint": 35
+                "glyphName": "numbersign",
+                "realCodepoint": 35,
+                "char": "#",
+                "unicodeHex": "U+0023",
+                "name": "NUMBER SIGN"
             },
             {
                 "codepoint": 36,
-                "name": "dollar",
-                "realCodepoint": 36
+                "glyphName": "dollar",
+                "realCodepoint": 36,
+                "char": "$",
+                "unicodeHex": "U+0024",
+                "name": "DOLLAR SIGN"
             },
             {
                 "codepoint": 37,
-                "name": "percent",
-                "realCodepoint": 37
+                "glyphName": "percent",
+                "realCodepoint": 37,
+                "char": "%",
+                "unicodeHex": "U+0025",
+                "name": "PERCENT SIGN"
             },
             {
                 "codepoint": 38,
-                "name": "ampersand",
-                "realCodepoint": 38
+                "glyphName": "ampersand",
+                "realCodepoint": 38,
+                "char": "&",
+                "unicodeHex": "U+0026",
+                "name": "AMPERSAND"
             },
             {
                 "codepoint": 39,
-                "name": "quotesingle",
-                "realCodepoint": 39
+                "glyphName": "quotesingle",
+                "realCodepoint": 39,
+                "char": "'",
+                "unicodeHex": "U+0027",
+                "name": "APOSTROPHE"
             },
             {
                 "codepoint": 40,
-                "name": "parenleft",
-                "realCodepoint": 40
+                "glyphName": "parenleft",
+                "realCodepoint": 40,
+                "char": "(",
+                "unicodeHex": "U+0028",
+                "name": "LEFT PARENTHESIS"
             },
             {
                 "codepoint": 41,
-                "name": "parenright",
-                "realCodepoint": 41
+                "glyphName": "parenright",
+                "realCodepoint": 41,
+                "char": ")",
+                "unicodeHex": "U+0029",
+                "name": "RIGHT PARENTHESIS"
             },
             {
                 "codepoint": 42,
-                "name": "asterisk",
-                "realCodepoint": 42
+                "glyphName": "asterisk",
+                "realCodepoint": 42,
+                "char": "*",
+                "unicodeHex": "U+002A",
+                "name": "ASTERISK"
             },
             {
                 "codepoint": 43,
-                "name": "plus",
-                "realCodepoint": 43
+                "glyphName": "plus",
+                "realCodepoint": 43,
+                "char": "+",
+                "unicodeHex": "U+002B",
+                "name": "PLUS SIGN"
             },
             {
                 "codepoint": 44,
-                "name": "comma",
-                "realCodepoint": 44
+                "glyphName": "comma",
+                "realCodepoint": 44,
+                "char": ",",
+                "unicodeHex": "U+002C",
+                "name": "COMMA"
             },
             {
                 "codepoint": 45,
-                "name": "hyphen",
-                "realCodepoint": 45
+                "glyphName": "hyphen",
+                "realCodepoint": 45,
+                "char": "-",
+                "unicodeHex": "U+002D",
+                "name": "HYPHEN-MINUS"
             },
             {
                 "codepoint": 46,
-                "name": "period",
-                "realCodepoint": 46
+                "glyphName": "period",
+                "realCodepoint": 46,
+                "char": ".",
+                "unicodeHex": "U+002E",
+                "name": "FULL STOP"
             },
             {
                 "codepoint": 47,
-                "name": "slash",
-                "realCodepoint": 47
+                "glyphName": "slash",
+                "realCodepoint": 47,
+                "char": "/",
+                "unicodeHex": "U+002F",
+                "name": "SOLIDUS"
             },
             {
                 "codepoint": 48,
-                "name": "zero",
-                "realCodepoint": 48
+                "glyphName": "zero",
+                "realCodepoint": 48,
+                "char": "0",
+                "unicodeHex": "U+0030",
+                "name": "DIGIT ZERO"
             },
             {
                 "codepoint": 49,
-                "name": "one",
-                "realCodepoint": 49
+                "glyphName": "one",
+                "realCodepoint": 49,
+                "char": "1",
+                "unicodeHex": "U+0031",
+                "name": "DIGIT ONE"
             },
             {
                 "codepoint": 50,
-                "name": "two",
-                "realCodepoint": 50
+                "glyphName": "two",
+                "realCodepoint": 50,
+                "char": "2",
+                "unicodeHex": "U+0032",
+                "name": "DIGIT TWO"
             },
             {
                 "codepoint": 51,
-                "name": "three",
-                "realCodepoint": 51
+                "glyphName": "three",
+                "realCodepoint": 51,
+                "char": "3",
+                "unicodeHex": "U+0033",
+                "name": "DIGIT THREE"
             },
             {
                 "codepoint": 52,
-                "name": "four",
-                "realCodepoint": 52
+                "glyphName": "four",
+                "realCodepoint": 52,
+                "char": "4",
+                "unicodeHex": "U+0034",
+                "name": "DIGIT FOUR"
             },
             {
                 "codepoint": 53,
-                "name": "five",
-                "realCodepoint": 53
+                "glyphName": "five",
+                "realCodepoint": 53,
+                "char": "5",
+                "unicodeHex": "U+0035",
+                "name": "DIGIT FIVE"
             },
             {
                 "codepoint": 54,
-                "name": "six",
-                "realCodepoint": 54
+                "glyphName": "six",
+                "realCodepoint": 54,
+                "char": "6",
+                "unicodeHex": "U+0036",
+                "name": "DIGIT SIX"
             },
             {
                 "codepoint": 55,
-                "name": "seven",
-                "realCodepoint": 55
+                "glyphName": "seven",
+                "realCodepoint": 55,
+                "char": "7",
+                "unicodeHex": "U+0037",
+                "name": "DIGIT SEVEN"
             },
             {
                 "codepoint": 56,
-                "name": "eight",
-                "realCodepoint": 56
+                "glyphName": "eight",
+                "realCodepoint": 56,
+                "char": "8",
+                "unicodeHex": "U+0038",
+                "name": "DIGIT EIGHT"
             },
             {
                 "codepoint": 57,
-                "name": "nine",
-                "realCodepoint": 57
+                "glyphName": "nine",
+                "realCodepoint": 57,
+                "char": "9",
+                "unicodeHex": "U+0039",
+                "name": "DIGIT NINE"
             },
             {
                 "codepoint": 58,
-                "name": "colon",
-                "realCodepoint": 58
+                "glyphName": "colon",
+                "realCodepoint": 58,
+                "char": ":",
+                "unicodeHex": "U+003A",
+                "name": "COLON"
             },
             {
                 "codepoint": 59,
-                "name": "semicolon",
-                "realCodepoint": 59
+                "glyphName": "semicolon",
+                "realCodepoint": 59,
+                "char": ";",
+                "unicodeHex": "U+003B",
+                "name": "SEMICOLON"
             },
             {
                 "codepoint": 60,
-                "name": "less",
-                "realCodepoint": 60
+                "glyphName": "less",
+                "realCodepoint": 60,
+                "char": "<",
+                "unicodeHex": "U+003C",
+                "name": "LESS-THAN SIGN"
             },
             {
                 "codepoint": 61,
-                "name": "equal",
-                "realCodepoint": 61
+                "glyphName": "equal",
+                "realCodepoint": 61,
+                "char": "=",
+                "unicodeHex": "U+003D",
+                "name": "EQUALS SIGN"
             },
             {
                 "codepoint": 62,
-                "name": "greater",
-                "realCodepoint": 62
+                "glyphName": "greater",
+                "realCodepoint": 62,
+                "char": ">",
+                "unicodeHex": "U+003E",
+                "name": "GREATER-THAN SIGN"
             },
             {
                 "codepoint": 63,
-                "name": "question",
-                "realCodepoint": 63
+                "glyphName": "question",
+                "realCodepoint": 63,
+                "char": "?",
+                "unicodeHex": "U+003F",
+                "name": "QUESTION MARK"
             },
             {
                 "codepoint": 64,
-                "name": "at",
-                "realCodepoint": 64
+                "glyphName": "at",
+                "realCodepoint": 64,
+                "char": "@",
+                "unicodeHex": "U+0040",
+                "name": "COMMERCIAL AT"
             },
             {
                 "codepoint": 65,
-                "name": "A",
-                "realCodepoint": 65
+                "glyphName": "A",
+                "realCodepoint": 65,
+                "char": "A",
+                "unicodeHex": "U+0041",
+                "name": "LATIN CAPITAL LETTER A"
             },
             {
                 "codepoint": 66,
-                "name": "B",
-                "realCodepoint": 66
+                "glyphName": "B",
+                "realCodepoint": 66,
+                "char": "B",
+                "unicodeHex": "U+0042",
+                "name": "LATIN CAPITAL LETTER B"
             },
             {
                 "codepoint": 67,
-                "name": "C",
-                "realCodepoint": 67
+                "glyphName": "C",
+                "realCodepoint": 67,
+                "char": "C",
+                "unicodeHex": "U+0043",
+                "name": "LATIN CAPITAL LETTER C"
             },
             {
                 "codepoint": 68,
-                "name": "D",
-                "realCodepoint": 68
+                "glyphName": "D",
+                "realCodepoint": 68,
+                "char": "D",
+                "unicodeHex": "U+0044",
+                "name": "LATIN CAPITAL LETTER D"
             },
             {
                 "codepoint": 69,
-                "name": "E",
-                "realCodepoint": 69
+                "glyphName": "E",
+                "realCodepoint": 69,
+                "char": "E",
+                "unicodeHex": "U+0045",
+                "name": "LATIN CAPITAL LETTER E"
             },
             {
                 "codepoint": 70,
-                "name": "F",
-                "realCodepoint": 70
+                "glyphName": "F",
+                "realCodepoint": 70,
+                "char": "F",
+                "unicodeHex": "U+0046",
+                "name": "LATIN CAPITAL LETTER F"
             },
             {
                 "codepoint": 71,
-                "name": "G",
-                "realCodepoint": 71
+                "glyphName": "G",
+                "realCodepoint": 71,
+                "char": "G",
+                "unicodeHex": "U+0047",
+                "name": "LATIN CAPITAL LETTER G"
             },
             {
                 "codepoint": 72,
-                "name": "H",
-                "realCodepoint": 72
+                "glyphName": "H",
+                "realCodepoint": 72,
+                "char": "H",
+                "unicodeHex": "U+0048",
+                "name": "LATIN CAPITAL LETTER H"
             },
             {
                 "codepoint": 73,
-                "name": "I",
-                "realCodepoint": 73
+                "glyphName": "I",
+                "realCodepoint": 73,
+                "char": "I",
+                "unicodeHex": "U+0049",
+                "name": "LATIN CAPITAL LETTER I"
             },
             {
                 "codepoint": 74,
-                "name": "J",
-                "realCodepoint": 74
+                "glyphName": "J",
+                "realCodepoint": 74,
+                "char": "J",
+                "unicodeHex": "U+004A",
+                "name": "LATIN CAPITAL LETTER J"
             },
             {
                 "codepoint": 75,
-                "name": "K",
-                "realCodepoint": 75
+                "glyphName": "K",
+                "realCodepoint": 75,
+                "char": "K",
+                "unicodeHex": "U+004B",
+                "name": "LATIN CAPITAL LETTER K"
             },
             {
                 "codepoint": 76,
-                "name": "L",
-                "realCodepoint": 76
+                "glyphName": "L",
+                "realCodepoint": 76,
+                "char": "L",
+                "unicodeHex": "U+004C",
+                "name": "LATIN CAPITAL LETTER L"
             },
             {
                 "codepoint": 77,
-                "name": "M",
-                "realCodepoint": 77
+                "glyphName": "M",
+                "realCodepoint": 77,
+                "char": "M",
+                "unicodeHex": "U+004D",
+                "name": "LATIN CAPITAL LETTER M"
             },
             {
                 "codepoint": 78,
-                "name": "N",
-                "realCodepoint": 78
+                "glyphName": "N",
+                "realCodepoint": 78,
+                "char": "N",
+                "unicodeHex": "U+004E",
+                "name": "LATIN CAPITAL LETTER N"
             },
             {
                 "codepoint": 79,
-                "name": "O",
-                "realCodepoint": 79
+                "glyphName": "O",
+                "realCodepoint": 79,
+                "char": "O",
+                "unicodeHex": "U+004F",
+                "name": "LATIN CAPITAL LETTER O"
             },
             {
                 "codepoint": 80,
-                "name": "P",
-                "realCodepoint": 80
+                "glyphName": "P",
+                "realCodepoint": 80,
+                "char": "P",
+                "unicodeHex": "U+0050",
+                "name": "LATIN CAPITAL LETTER P"
             },
             {
                 "codepoint": 81,
-                "name": "Q",
-                "realCodepoint": 81
+                "glyphName": "Q",
+                "realCodepoint": 81,
+                "char": "Q",
+                "unicodeHex": "U+0051",
+                "name": "LATIN CAPITAL LETTER Q"
             },
             {
                 "codepoint": 82,
-                "name": "R",
-                "realCodepoint": 82
+                "glyphName": "R",
+                "realCodepoint": 82,
+                "char": "R",
+                "unicodeHex": "U+0052",
+                "name": "LATIN CAPITAL LETTER R"
             },
             {
                 "codepoint": 83,
-                "name": "S",
-                "realCodepoint": 83
+                "glyphName": "S",
+                "realCodepoint": 83,
+                "char": "S",
+                "unicodeHex": "U+0053",
+                "name": "LATIN CAPITAL LETTER S"
             },
             {
                 "codepoint": 84,
-                "name": "T",
-                "realCodepoint": 84
+                "glyphName": "T",
+                "realCodepoint": 84,
+                "char": "T",
+                "unicodeHex": "U+0054",
+                "name": "LATIN CAPITAL LETTER T"
             },
             {
                 "codepoint": 85,
-                "name": "U",
-                "realCodepoint": 85
+                "glyphName": "U",
+                "realCodepoint": 85,
+                "char": "U",
+                "unicodeHex": "U+0055",
+                "name": "LATIN CAPITAL LETTER U"
             },
             {
                 "codepoint": 86,
-                "name": "V",
-                "realCodepoint": 86
+                "glyphName": "V",
+                "realCodepoint": 86,
+                "char": "V",
+                "unicodeHex": "U+0056",
+                "name": "LATIN CAPITAL LETTER V"
             },
             {
                 "codepoint": 87,
-                "name": "W",
-                "realCodepoint": 87
+                "glyphName": "W",
+                "realCodepoint": 87,
+                "char": "W",
+                "unicodeHex": "U+0057",
+                "name": "LATIN CAPITAL LETTER W"
             },
             {
                 "codepoint": 88,
-                "name": "X",
-                "realCodepoint": 88
+                "glyphName": "X",
+                "realCodepoint": 88,
+                "char": "X",
+                "unicodeHex": "U+0058",
+                "name": "LATIN CAPITAL LETTER X"
             },
             {
                 "codepoint": 89,
-                "name": "Y",
-                "realCodepoint": 89
+                "glyphName": "Y",
+                "realCodepoint": 89,
+                "char": "Y",
+                "unicodeHex": "U+0059",
+                "name": "LATIN CAPITAL LETTER Y"
             },
             {
                 "codepoint": 90,
-                "name": "Z",
-                "realCodepoint": 90
+                "glyphName": "Z",
+                "realCodepoint": 90,
+                "char": "Z",
+                "unicodeHex": "U+005A",
+                "name": "LATIN CAPITAL LETTER Z"
             },
             {
                 "codepoint": 91,
-                "name": "bracketleft",
-                "realCodepoint": 91
+                "glyphName": "bracketleft",
+                "realCodepoint": 91,
+                "char": "[",
+                "unicodeHex": "U+005B",
+                "name": "LEFT SQUARE BRACKET"
             },
             {
                 "codepoint": 92,
-                "name": "backslash",
-                "realCodepoint": 92
+                "glyphName": "backslash",
+                "realCodepoint": 92,
+                "char": "\\",
+                "unicodeHex": "U+005C",
+                "name": "REVERSE SOLIDUS"
             },
             {
                 "codepoint": 93,
-                "name": "bracketright",
-                "realCodepoint": 93
+                "glyphName": "bracketright",
+                "realCodepoint": 93,
+                "char": "]",
+                "unicodeHex": "U+005D",
+                "name": "RIGHT SQUARE BRACKET"
             },
             {
                 "codepoint": 94,
-                "name": "asciicircum",
-                "realCodepoint": 94
+                "glyphName": "asciicircum",
+                "realCodepoint": 94,
+                "char": "^",
+                "unicodeHex": "U+005E",
+                "name": "CIRCUMFLEX ACCENT"
             },
             {
                 "codepoint": 95,
-                "name": "underscore",
-                "realCodepoint": 95
+                "glyphName": "underscore",
+                "realCodepoint": 95,
+                "char": "_",
+                "unicodeHex": "U+005F",
+                "name": "LOW LINE"
             },
             {
                 "codepoint": 96,
-                "name": "grave",
-                "realCodepoint": 96
+                "glyphName": "grave",
+                "realCodepoint": 96,
+                "char": "`",
+                "unicodeHex": "U+0060",
+                "name": "GRAVE ACCENT"
             },
             {
                 "codepoint": 97,
-                "name": "a",
-                "realCodepoint": 97
+                "glyphName": "a",
+                "realCodepoint": 97,
+                "char": "a",
+                "unicodeHex": "U+0061",
+                "name": "LATIN SMALL LETTER A"
             },
             {
                 "codepoint": 98,
-                "name": "b",
-                "realCodepoint": 98
+                "glyphName": "b",
+                "realCodepoint": 98,
+                "char": "b",
+                "unicodeHex": "U+0062",
+                "name": "LATIN SMALL LETTER B"
             },
             {
                 "codepoint": 99,
-                "name": "c",
-                "realCodepoint": 99
+                "glyphName": "c",
+                "realCodepoint": 99,
+                "char": "c",
+                "unicodeHex": "U+0063",
+                "name": "LATIN SMALL LETTER C"
             },
             {
                 "codepoint": 100,
-                "name": "d",
-                "realCodepoint": 100
+                "glyphName": "d",
+                "realCodepoint": 100,
+                "char": "d",
+                "unicodeHex": "U+0064",
+                "name": "LATIN SMALL LETTER D"
             },
             {
                 "codepoint": 101,
-                "name": "e",
-                "realCodepoint": 101
+                "glyphName": "e",
+                "realCodepoint": 101,
+                "char": "e",
+                "unicodeHex": "U+0065",
+                "name": "LATIN SMALL LETTER E"
             },
             {
                 "codepoint": 102,
-                "name": "f",
-                "realCodepoint": 102
+                "glyphName": "f",
+                "realCodepoint": 102,
+                "char": "f",
+                "unicodeHex": "U+0066",
+                "name": "LATIN SMALL LETTER F"
             },
             {
                 "codepoint": 103,
-                "name": "g",
-                "realCodepoint": 103
+                "glyphName": "g",
+                "realCodepoint": 103,
+                "char": "g",
+                "unicodeHex": "U+0067",
+                "name": "LATIN SMALL LETTER G"
             },
             {
                 "codepoint": 104,
-                "name": "h",
-                "realCodepoint": 104
+                "glyphName": "h",
+                "realCodepoint": 104,
+                "char": "h",
+                "unicodeHex": "U+0068",
+                "name": "LATIN SMALL LETTER H"
             },
             {
                 "codepoint": 105,
-                "name": "i",
-                "realCodepoint": 105
+                "glyphName": "i",
+                "realCodepoint": 105,
+                "char": "i",
+                "unicodeHex": "U+0069",
+                "name": "LATIN SMALL LETTER I"
             },
             {
                 "codepoint": 106,
-                "name": "j",
-                "realCodepoint": 106
+                "glyphName": "j",
+                "realCodepoint": 106,
+                "char": "j",
+                "unicodeHex": "U+006A",
+                "name": "LATIN SMALL LETTER J"
             },
             {
                 "codepoint": 107,
-                "name": "k",
-                "realCodepoint": 107
+                "glyphName": "k",
+                "realCodepoint": 107,
+                "char": "k",
+                "unicodeHex": "U+006B",
+                "name": "LATIN SMALL LETTER K"
             },
             {
                 "codepoint": 108,
-                "name": "l",
-                "realCodepoint": 108
+                "glyphName": "l",
+                "realCodepoint": 108,
+                "char": "l",
+                "unicodeHex": "U+006C",
+                "name": "LATIN SMALL LETTER L"
             },
             {
                 "codepoint": 109,
-                "name": "m",
-                "realCodepoint": 109
+                "glyphName": "m",
+                "realCodepoint": 109,
+                "char": "m",
+                "unicodeHex": "U+006D",
+                "name": "LATIN SMALL LETTER M"
             },
             {
                 "codepoint": 110,
-                "name": "n",
-                "realCodepoint": 110
+                "glyphName": "n",
+                "realCodepoint": 110,
+                "char": "n",
+                "unicodeHex": "U+006E",
+                "name": "LATIN SMALL LETTER N"
             },
             {
                 "codepoint": 111,
-                "name": "o",
-                "realCodepoint": 111
+                "glyphName": "o",
+                "realCodepoint": 111,
+                "char": "o",
+                "unicodeHex": "U+006F",
+                "name": "LATIN SMALL LETTER O"
             },
             {
                 "codepoint": 112,
-                "name": "p",
-                "realCodepoint": 112
+                "glyphName": "p",
+                "realCodepoint": 112,
+                "char": "p",
+                "unicodeHex": "U+0070",
+                "name": "LATIN SMALL LETTER P"
             },
             {
                 "codepoint": 113,
-                "name": "q",
-                "realCodepoint": 113
+                "glyphName": "q",
+                "realCodepoint": 113,
+                "char": "q",
+                "unicodeHex": "U+0071",
+                "name": "LATIN SMALL LETTER Q"
             },
             {
                 "codepoint": 114,
-                "name": "r",
-                "realCodepoint": 114
+                "glyphName": "r",
+                "realCodepoint": 114,
+                "char": "r",
+                "unicodeHex": "U+0072",
+                "name": "LATIN SMALL LETTER R"
             },
             {
                 "codepoint": 115,
-                "name": "s",
-                "realCodepoint": 115
+                "glyphName": "s",
+                "realCodepoint": 115,
+                "char": "s",
+                "unicodeHex": "U+0073",
+                "name": "LATIN SMALL LETTER S"
             },
             {
                 "codepoint": 116,
-                "name": "t",
-                "realCodepoint": 116
+                "glyphName": "t",
+                "realCodepoint": 116,
+                "char": "t",
+                "unicodeHex": "U+0074",
+                "name": "LATIN SMALL LETTER T"
             },
             {
                 "codepoint": 117,
-                "name": "u",
-                "realCodepoint": 117
+                "glyphName": "u",
+                "realCodepoint": 117,
+                "char": "u",
+                "unicodeHex": "U+0075",
+                "name": "LATIN SMALL LETTER U"
             },
             {
                 "codepoint": 118,
-                "name": "v",
-                "realCodepoint": 118
+                "glyphName": "v",
+                "realCodepoint": 118,
+                "char": "v",
+                "unicodeHex": "U+0076",
+                "name": "LATIN SMALL LETTER V"
             },
             {
                 "codepoint": 119,
-                "name": "w",
-                "realCodepoint": 119
+                "glyphName": "w",
+                "realCodepoint": 119,
+                "char": "w",
+                "unicodeHex": "U+0077",
+                "name": "LATIN SMALL LETTER W"
             },
             {
                 "codepoint": 120,
-                "name": "x",
-                "realCodepoint": 120
+                "glyphName": "x",
+                "realCodepoint": 120,
+                "char": "x",
+                "unicodeHex": "U+0078",
+                "name": "LATIN SMALL LETTER X"
             },
             {
                 "codepoint": 121,
-                "name": "y",
-                "realCodepoint": 121
+                "glyphName": "y",
+                "realCodepoint": 121,
+                "char": "y",
+                "unicodeHex": "U+0079",
+                "name": "LATIN SMALL LETTER Y"
             },
             {
                 "codepoint": 122,
-                "name": "z",
-                "realCodepoint": 122
+                "glyphName": "z",
+                "realCodepoint": 122,
+                "char": "z",
+                "unicodeHex": "U+007A",
+                "name": "LATIN SMALL LETTER Z"
             },
             {
                 "codepoint": 123,
-                "name": "braceleft",
-                "realCodepoint": 123
+                "glyphName": "braceleft",
+                "realCodepoint": 123,
+                "char": "{",
+                "unicodeHex": "U+007B",
+                "name": "LEFT CURLY BRACKET"
             },
             {
                 "codepoint": 124,
-                "name": "bar",
-                "realCodepoint": 124
+                "glyphName": "bar",
+                "realCodepoint": 124,
+                "char": "|",
+                "unicodeHex": "U+007C",
+                "name": "VERTICAL LINE"
             },
             {
                 "codepoint": 125,
-                "name": "braceright",
-                "realCodepoint": 125
+                "glyphName": "braceright",
+                "realCodepoint": 125,
+                "char": "}",
+                "unicodeHex": "U+007D",
+                "name": "RIGHT CURLY BRACKET"
             },
             {
                 "codepoint": 126,
-                "name": "asciitilde",
-                "realCodepoint": 126
+                "glyphName": "asciitilde",
+                "realCodepoint": 126,
+                "char": "~",
+                "unicodeHex": "U+007E",
+                "name": "TILDE"
             },
             {
                 "codepoint": 160,
-                "name": "uni00A0",
-                "realCodepoint": 160
+                "glyphName": "uni00A0",
+                "realCodepoint": 160,
+                "char": "\u00a0",
+                "unicodeHex": "U+00A0",
+                "name": "NO-BREAK SPACE"
             },
             {
                 "codepoint": 161,
-                "name": "exclamdown",
-                "realCodepoint": 161
+                "glyphName": "exclamdown",
+                "realCodepoint": 161,
+                "char": "\u00a1",
+                "unicodeHex": "U+00A1",
+                "name": "INVERTED EXCLAMATION MARK"
             },
             {
                 "codepoint": 162,
-                "name": "cent",
-                "realCodepoint": 162
+                "glyphName": "cent",
+                "realCodepoint": 162,
+                "char": "\u00a2",
+                "unicodeHex": "U+00A2",
+                "name": "CENT SIGN"
             },
             {
                 "codepoint": 163,
-                "name": "sterling",
-                "realCodepoint": 163
+                "glyphName": "sterling",
+                "realCodepoint": 163,
+                "char": "\u00a3",
+                "unicodeHex": "U+00A3",
+                "name": "POUND SIGN"
             },
             {
                 "codepoint": 164,
-                "name": "currency",
-                "realCodepoint": 164
+                "glyphName": "currency",
+                "realCodepoint": 164,
+                "char": "\u00a4",
+                "unicodeHex": "U+00A4",
+                "name": "CURRENCY SIGN"
             },
             {
                 "codepoint": 165,
-                "name": "yen",
-                "realCodepoint": 165
+                "glyphName": "yen",
+                "realCodepoint": 165,
+                "char": "\u00a5",
+                "unicodeHex": "U+00A5",
+                "name": "YEN SIGN"
             },
             {
                 "codepoint": 166,
-                "name": "brokenbar",
-                "realCodepoint": 166
+                "glyphName": "brokenbar",
+                "realCodepoint": 166,
+                "char": "\u00a6",
+                "unicodeHex": "U+00A6",
+                "name": "BROKEN BAR"
             },
             {
                 "codepoint": 167,
-                "name": "section",
-                "realCodepoint": 167
+                "glyphName": "section",
+                "realCodepoint": 167,
+                "char": "\u00a7",
+                "unicodeHex": "U+00A7",
+                "name": "SECTION SIGN"
             },
             {
                 "codepoint": 168,
-                "name": "dieresis",
-                "realCodepoint": 168
+                "glyphName": "dieresis",
+                "realCodepoint": 168,
+                "char": "\u00a8",
+                "unicodeHex": "U+00A8",
+                "name": "DIAERESIS"
             },
             {
                 "codepoint": 169,
-                "name": "copyright",
-                "realCodepoint": 169
+                "glyphName": "copyright",
+                "realCodepoint": 169,
+                "char": "\u00a9",
+                "unicodeHex": "U+00A9",
+                "name": "COPYRIGHT SIGN"
             },
             {
                 "codepoint": 170,
-                "name": "ordfeminine",
-                "realCodepoint": 170
+                "glyphName": "ordfeminine",
+                "realCodepoint": 170,
+                "char": "\u00aa",
+                "unicodeHex": "U+00AA",
+                "name": "FEMININE ORDINAL INDICATOR"
             },
             {
                 "codepoint": 171,
-                "name": "guillemotleft",
-                "realCodepoint": 171
+                "glyphName": "guillemotleft",
+                "realCodepoint": 171,
+                "char": "\u00ab",
+                "unicodeHex": "U+00AB",
+                "name": "LEFT-POINTING DOUBLE ANGLE QUOTATION MARK"
             },
             {
                 "codepoint": 172,
-                "name": "logicalnot",
-                "realCodepoint": 172
+                "glyphName": "logicalnot",
+                "realCodepoint": 172,
+                "char": "\u00ac",
+                "unicodeHex": "U+00AC",
+                "name": "NOT SIGN"
             },
             {
                 "codepoint": 173,
-                "name": "uni00AD",
-                "realCodepoint": 173
+                "glyphName": "uni00AD",
+                "realCodepoint": 173,
+                "char": "\u00ad",
+                "unicodeHex": "U+00AD",
+                "name": "SOFT HYPHEN"
             },
             {
                 "codepoint": 174,
-                "name": "registered",
-                "realCodepoint": 174
+                "glyphName": "registered",
+                "realCodepoint": 174,
+                "char": "\u00ae",
+                "unicodeHex": "U+00AE",
+                "name": "REGISTERED SIGN"
             },
             {
                 "codepoint": 175,
-                "name": "macron",
-                "realCodepoint": 175
+                "glyphName": "macron",
+                "realCodepoint": 175,
+                "char": "\u00af",
+                "unicodeHex": "U+00AF",
+                "name": "MACRON"
             },
             {
                 "codepoint": 176,
-                "name": "degree",
-                "realCodepoint": 176
+                "glyphName": "degree",
+                "realCodepoint": 176,
+                "char": "\u00b0",
+                "unicodeHex": "U+00B0",
+                "name": "DEGREE SIGN"
             },
             {
                 "codepoint": 177,
-                "name": "plusminus",
-                "realCodepoint": 177
+                "glyphName": "plusminus",
+                "realCodepoint": 177,
+                "char": "\u00b1",
+                "unicodeHex": "U+00B1",
+                "name": "PLUS-MINUS SIGN"
             },
             {
                 "codepoint": 178,
-                "name": "uni00B2",
-                "realCodepoint": 178
+                "glyphName": "uni00B2",
+                "realCodepoint": 178,
+                "char": "\u00b2",
+                "unicodeHex": "U+00B2",
+                "name": "SUPERSCRIPT TWO"
             },
             {
                 "codepoint": 179,
-                "name": "uni00B3",
-                "realCodepoint": 179
+                "glyphName": "uni00B3",
+                "realCodepoint": 179,
+                "char": "\u00b3",
+                "unicodeHex": "U+00B3",
+                "name": "SUPERSCRIPT THREE"
             },
             {
                 "codepoint": 180,
-                "name": "acute",
-                "realCodepoint": 180
+                "glyphName": "acute",
+                "realCodepoint": 180,
+                "char": "\u00b4",
+                "unicodeHex": "U+00B4",
+                "name": "ACUTE ACCENT"
             },
             {
                 "codepoint": 181,
-                "name": "uni00B5",
-                "realCodepoint": 181
+                "glyphName": "uni00B5",
+                "realCodepoint": 181,
+                "char": "\u00b5",
+                "unicodeHex": "U+00B5",
+                "name": "MICRO SIGN"
             },
             {
                 "codepoint": 182,
-                "name": "paragraph",
-                "realCodepoint": 182
+                "glyphName": "paragraph",
+                "realCodepoint": 182,
+                "char": "\u00b6",
+                "unicodeHex": "U+00B6",
+                "name": "PILCROW SIGN"
             },
             {
                 "codepoint": 183,
-                "name": "periodcentered",
-                "realCodepoint": 183
+                "glyphName": "periodcentered",
+                "realCodepoint": 183,
+                "char": "\u00b7",
+                "unicodeHex": "U+00B7",
+                "name": "MIDDLE DOT"
             },
             {
                 "codepoint": 184,
-                "name": "cedilla",
-                "realCodepoint": 184
+                "glyphName": "cedilla",
+                "realCodepoint": 184,
+                "char": "\u00b8",
+                "unicodeHex": "U+00B8",
+                "name": "CEDILLA"
             },
             {
                 "codepoint": 185,
-                "name": "uni00B9",
-                "realCodepoint": 185
+                "glyphName": "uni00B9",
+                "realCodepoint": 185,
+                "char": "\u00b9",
+                "unicodeHex": "U+00B9",
+                "name": "SUPERSCRIPT ONE"
             },
             {
                 "codepoint": 186,
-                "name": "ordmasculine",
-                "realCodepoint": 186
+                "glyphName": "ordmasculine",
+                "realCodepoint": 186,
+                "char": "\u00ba",
+                "unicodeHex": "U+00BA",
+                "name": "MASCULINE ORDINAL INDICATOR"
             },
             {
                 "codepoint": 187,
-                "name": "guillemotright",
-                "realCodepoint": 187
+                "glyphName": "guillemotright",
+                "realCodepoint": 187,
+                "char": "\u00bb",
+                "unicodeHex": "U+00BB",
+                "name": "RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK"
             },
             {
                 "codepoint": 188,
-                "name": "onequarter",
-                "realCodepoint": 188
+                "glyphName": "onequarter",
+                "realCodepoint": 188,
+                "char": "\u00bc",
+                "unicodeHex": "U+00BC",
+                "name": "VULGAR FRACTION ONE QUARTER"
             },
             {
                 "codepoint": 189,
-                "name": "onehalf",
-                "realCodepoint": 189
+                "glyphName": "onehalf",
+                "realCodepoint": 189,
+                "char": "\u00bd",
+                "unicodeHex": "U+00BD",
+                "name": "VULGAR FRACTION ONE HALF"
             },
             {
                 "codepoint": 190,
-                "name": "threequarters",
-                "realCodepoint": 190
+                "glyphName": "threequarters",
+                "realCodepoint": 190,
+                "char": "\u00be",
+                "unicodeHex": "U+00BE",
+                "name": "VULGAR FRACTION THREE QUARTERS"
             },
             {
                 "codepoint": 191,
-                "name": "questiondown",
-                "realCodepoint": 191
+                "glyphName": "questiondown",
+                "realCodepoint": 191,
+                "char": "\u00bf",
+                "unicodeHex": "U+00BF",
+                "name": "INVERTED QUESTION MARK"
             },
             {
                 "codepoint": 192,
-                "name": "Agrave",
-                "realCodepoint": 192
+                "glyphName": "Agrave",
+                "realCodepoint": 192,
+                "char": "\u00c0",
+                "unicodeHex": "U+00C0",
+                "name": "LATIN CAPITAL LETTER A WITH GRAVE"
             },
             {
                 "codepoint": 193,
-                "name": "Aacute",
-                "realCodepoint": 193
+                "glyphName": "Aacute",
+                "realCodepoint": 193,
+                "char": "\u00c1",
+                "unicodeHex": "U+00C1",
+                "name": "LATIN CAPITAL LETTER A WITH ACUTE"
             },
             {
                 "codepoint": 194,
-                "name": "Acircumflex",
-                "realCodepoint": 194
+                "glyphName": "Acircumflex",
+                "realCodepoint": 194,
+                "char": "\u00c2",
+                "unicodeHex": "U+00C2",
+                "name": "LATIN CAPITAL LETTER A WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 195,
-                "name": "Atilde",
-                "realCodepoint": 195
+                "glyphName": "Atilde",
+                "realCodepoint": 195,
+                "char": "\u00c3",
+                "unicodeHex": "U+00C3",
+                "name": "LATIN CAPITAL LETTER A WITH TILDE"
             },
             {
                 "codepoint": 196,
-                "name": "Adieresis",
-                "realCodepoint": 196
+                "glyphName": "Adieresis",
+                "realCodepoint": 196,
+                "char": "\u00c4",
+                "unicodeHex": "U+00C4",
+                "name": "LATIN CAPITAL LETTER A WITH DIAERESIS"
             },
             {
                 "codepoint": 197,
-                "name": "Aring",
-                "realCodepoint": 197
+                "glyphName": "Aring",
+                "realCodepoint": 197,
+                "char": "\u00c5",
+                "unicodeHex": "U+00C5",
+                "name": "LATIN CAPITAL LETTER A WITH RING ABOVE"
             },
             {
                 "codepoint": 198,
-                "name": "AE",
-                "realCodepoint": 198
+                "glyphName": "AE",
+                "realCodepoint": 198,
+                "char": "\u00c6",
+                "unicodeHex": "U+00C6",
+                "name": "LATIN CAPITAL LETTER AE"
             },
             {
                 "codepoint": 199,
-                "name": "Ccedilla",
-                "realCodepoint": 199
+                "glyphName": "Ccedilla",
+                "realCodepoint": 199,
+                "char": "\u00c7",
+                "unicodeHex": "U+00C7",
+                "name": "LATIN CAPITAL LETTER C WITH CEDILLA"
             },
             {
                 "codepoint": 200,
-                "name": "Egrave",
-                "realCodepoint": 200
+                "glyphName": "Egrave",
+                "realCodepoint": 200,
+                "char": "\u00c8",
+                "unicodeHex": "U+00C8",
+                "name": "LATIN CAPITAL LETTER E WITH GRAVE"
             },
             {
                 "codepoint": 201,
-                "name": "Eacute",
-                "realCodepoint": 201
+                "glyphName": "Eacute",
+                "realCodepoint": 201,
+                "char": "\u00c9",
+                "unicodeHex": "U+00C9",
+                "name": "LATIN CAPITAL LETTER E WITH ACUTE"
             },
             {
                 "codepoint": 202,
-                "name": "Ecircumflex",
-                "realCodepoint": 202
+                "glyphName": "Ecircumflex",
+                "realCodepoint": 202,
+                "char": "\u00ca",
+                "unicodeHex": "U+00CA",
+                "name": "LATIN CAPITAL LETTER E WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 203,
-                "name": "Edieresis",
-                "realCodepoint": 203
+                "glyphName": "Edieresis",
+                "realCodepoint": 203,
+                "char": "\u00cb",
+                "unicodeHex": "U+00CB",
+                "name": "LATIN CAPITAL LETTER E WITH DIAERESIS"
             },
             {
                 "codepoint": 204,
-                "name": "Igrave",
-                "realCodepoint": 204
+                "glyphName": "Igrave",
+                "realCodepoint": 204,
+                "char": "\u00cc",
+                "unicodeHex": "U+00CC",
+                "name": "LATIN CAPITAL LETTER I WITH GRAVE"
             },
             {
                 "codepoint": 205,
-                "name": "Iacute",
-                "realCodepoint": 205
+                "glyphName": "Iacute",
+                "realCodepoint": 205,
+                "char": "\u00cd",
+                "unicodeHex": "U+00CD",
+                "name": "LATIN CAPITAL LETTER I WITH ACUTE"
             },
             {
                 "codepoint": 206,
-                "name": "Icircumflex",
-                "realCodepoint": 206
+                "glyphName": "Icircumflex",
+                "realCodepoint": 206,
+                "char": "\u00ce",
+                "unicodeHex": "U+00CE",
+                "name": "LATIN CAPITAL LETTER I WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 207,
-                "name": "Idieresis",
-                "realCodepoint": 207
+                "glyphName": "Idieresis",
+                "realCodepoint": 207,
+                "char": "\u00cf",
+                "unicodeHex": "U+00CF",
+                "name": "LATIN CAPITAL LETTER I WITH DIAERESIS"
             },
             {
                 "codepoint": 208,
-                "name": "Eth",
-                "realCodepoint": 208
+                "glyphName": "Eth",
+                "realCodepoint": 208,
+                "char": "\u00d0",
+                "unicodeHex": "U+00D0",
+                "name": "LATIN CAPITAL LETTER ETH"
             },
             {
                 "codepoint": 209,
-                "name": "Ntilde",
-                "realCodepoint": 209
+                "glyphName": "Ntilde",
+                "realCodepoint": 209,
+                "char": "\u00d1",
+                "unicodeHex": "U+00D1",
+                "name": "LATIN CAPITAL LETTER N WITH TILDE"
             },
             {
                 "codepoint": 210,
-                "name": "Ograve",
-                "realCodepoint": 210
+                "glyphName": "Ograve",
+                "realCodepoint": 210,
+                "char": "\u00d2",
+                "unicodeHex": "U+00D2",
+                "name": "LATIN CAPITAL LETTER O WITH GRAVE"
             },
             {
                 "codepoint": 211,
-                "name": "Oacute",
-                "realCodepoint": 211
+                "glyphName": "Oacute",
+                "realCodepoint": 211,
+                "char": "\u00d3",
+                "unicodeHex": "U+00D3",
+                "name": "LATIN CAPITAL LETTER O WITH ACUTE"
             },
             {
                 "codepoint": 212,
-                "name": "Ocircumflex",
-                "realCodepoint": 212
+                "glyphName": "Ocircumflex",
+                "realCodepoint": 212,
+                "char": "\u00d4",
+                "unicodeHex": "U+00D4",
+                "name": "LATIN CAPITAL LETTER O WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 213,
-                "name": "Otilde",
-                "realCodepoint": 213
+                "glyphName": "Otilde",
+                "realCodepoint": 213,
+                "char": "\u00d5",
+                "unicodeHex": "U+00D5",
+                "name": "LATIN CAPITAL LETTER O WITH TILDE"
             },
             {
                 "codepoint": 214,
-                "name": "Odieresis",
-                "realCodepoint": 214
+                "glyphName": "Odieresis",
+                "realCodepoint": 214,
+                "char": "\u00d6",
+                "unicodeHex": "U+00D6",
+                "name": "LATIN CAPITAL LETTER O WITH DIAERESIS"
             },
             {
                 "codepoint": 215,
-                "name": "multiply",
-                "realCodepoint": 215
+                "glyphName": "multiply",
+                "realCodepoint": 215,
+                "char": "\u00d7",
+                "unicodeHex": "U+00D7",
+                "name": "MULTIPLICATION SIGN"
             },
             {
                 "codepoint": 216,
-                "name": "Oslash",
-                "realCodepoint": 216
+                "glyphName": "Oslash",
+                "realCodepoint": 216,
+                "char": "\u00d8",
+                "unicodeHex": "U+00D8",
+                "name": "LATIN CAPITAL LETTER O WITH STROKE"
             },
             {
                 "codepoint": 217,
-                "name": "Ugrave",
-                "realCodepoint": 217
+                "glyphName": "Ugrave",
+                "realCodepoint": 217,
+                "char": "\u00d9",
+                "unicodeHex": "U+00D9",
+                "name": "LATIN CAPITAL LETTER U WITH GRAVE"
             },
             {
                 "codepoint": 218,
-                "name": "Uacute",
-                "realCodepoint": 218
+                "glyphName": "Uacute",
+                "realCodepoint": 218,
+                "char": "\u00da",
+                "unicodeHex": "U+00DA",
+                "name": "LATIN CAPITAL LETTER U WITH ACUTE"
             },
             {
                 "codepoint": 219,
-                "name": "Ucircumflex",
-                "realCodepoint": 219
+                "glyphName": "Ucircumflex",
+                "realCodepoint": 219,
+                "char": "\u00db",
+                "unicodeHex": "U+00DB",
+                "name": "LATIN CAPITAL LETTER U WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 220,
-                "name": "Udieresis",
-                "realCodepoint": 220
+                "glyphName": "Udieresis",
+                "realCodepoint": 220,
+                "char": "\u00dc",
+                "unicodeHex": "U+00DC",
+                "name": "LATIN CAPITAL LETTER U WITH DIAERESIS"
             },
             {
                 "codepoint": 221,
-                "name": "Yacute",
-                "realCodepoint": 221
+                "glyphName": "Yacute",
+                "realCodepoint": 221,
+                "char": "\u00dd",
+                "unicodeHex": "U+00DD",
+                "name": "LATIN CAPITAL LETTER Y WITH ACUTE"
             },
             {
                 "codepoint": 222,
-                "name": "Thorn",
-                "realCodepoint": 222
+                "glyphName": "Thorn",
+                "realCodepoint": 222,
+                "char": "\u00de",
+                "unicodeHex": "U+00DE",
+                "name": "LATIN CAPITAL LETTER THORN"
             },
             {
                 "codepoint": 223,
-                "name": "germandbls",
-                "realCodepoint": 223
+                "glyphName": "germandbls",
+                "realCodepoint": 223,
+                "char": "\u00df",
+                "unicodeHex": "U+00DF",
+                "name": "LATIN SMALL LETTER SHARP S"
             },
             {
                 "codepoint": 224,
-                "name": "agrave",
-                "realCodepoint": 224
+                "glyphName": "agrave",
+                "realCodepoint": 224,
+                "char": "\u00e0",
+                "unicodeHex": "U+00E0",
+                "name": "LATIN SMALL LETTER A WITH GRAVE"
             },
             {
                 "codepoint": 225,
-                "name": "aacute",
-                "realCodepoint": 225
+                "glyphName": "aacute",
+                "realCodepoint": 225,
+                "char": "\u00e1",
+                "unicodeHex": "U+00E1",
+                "name": "LATIN SMALL LETTER A WITH ACUTE"
             },
             {
                 "codepoint": 226,
-                "name": "acircumflex",
-                "realCodepoint": 226
+                "glyphName": "acircumflex",
+                "realCodepoint": 226,
+                "char": "\u00e2",
+                "unicodeHex": "U+00E2",
+                "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 227,
-                "name": "atilde",
-                "realCodepoint": 227
+                "glyphName": "atilde",
+                "realCodepoint": 227,
+                "char": "\u00e3",
+                "unicodeHex": "U+00E3",
+                "name": "LATIN SMALL LETTER A WITH TILDE"
             },
             {
                 "codepoint": 228,
-                "name": "adieresis",
-                "realCodepoint": 228
+                "glyphName": "adieresis",
+                "realCodepoint": 228,
+                "char": "\u00e4",
+                "unicodeHex": "U+00E4",
+                "name": "LATIN SMALL LETTER A WITH DIAERESIS"
             },
             {
                 "codepoint": 229,
-                "name": "aring",
-                "realCodepoint": 229
+                "glyphName": "aring",
+                "realCodepoint": 229,
+                "char": "\u00e5",
+                "unicodeHex": "U+00E5",
+                "name": "LATIN SMALL LETTER A WITH RING ABOVE"
             },
             {
                 "codepoint": 230,
-                "name": "ae",
-                "realCodepoint": 230
+                "glyphName": "ae",
+                "realCodepoint": 230,
+                "char": "\u00e6",
+                "unicodeHex": "U+00E6",
+                "name": "LATIN SMALL LETTER AE"
             },
             {
                 "codepoint": 231,
-                "name": "ccedilla",
-                "realCodepoint": 231
+                "glyphName": "ccedilla",
+                "realCodepoint": 231,
+                "char": "\u00e7",
+                "unicodeHex": "U+00E7",
+                "name": "LATIN SMALL LETTER C WITH CEDILLA"
             },
             {
                 "codepoint": 232,
-                "name": "egrave",
-                "realCodepoint": 232
+                "glyphName": "egrave",
+                "realCodepoint": 232,
+                "char": "\u00e8",
+                "unicodeHex": "U+00E8",
+                "name": "LATIN SMALL LETTER E WITH GRAVE"
             },
             {
                 "codepoint": 233,
-                "name": "eacute",
-                "realCodepoint": 233
+                "glyphName": "eacute",
+                "realCodepoint": 233,
+                "char": "\u00e9",
+                "unicodeHex": "U+00E9",
+                "name": "LATIN SMALL LETTER E WITH ACUTE"
             },
             {
                 "codepoint": 234,
-                "name": "ecircumflex",
-                "realCodepoint": 234
+                "glyphName": "ecircumflex",
+                "realCodepoint": 234,
+                "char": "\u00ea",
+                "unicodeHex": "U+00EA",
+                "name": "LATIN SMALL LETTER E WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 235,
-                "name": "edieresis",
-                "realCodepoint": 235
+                "glyphName": "edieresis",
+                "realCodepoint": 235,
+                "char": "\u00eb",
+                "unicodeHex": "U+00EB",
+                "name": "LATIN SMALL LETTER E WITH DIAERESIS"
             },
             {
                 "codepoint": 236,
-                "name": "igrave",
-                "realCodepoint": 236
+                "glyphName": "igrave",
+                "realCodepoint": 236,
+                "char": "\u00ec",
+                "unicodeHex": "U+00EC",
+                "name": "LATIN SMALL LETTER I WITH GRAVE"
             },
             {
                 "codepoint": 237,
-                "name": "iacute",
-                "realCodepoint": 237
+                "glyphName": "iacute",
+                "realCodepoint": 237,
+                "char": "\u00ed",
+                "unicodeHex": "U+00ED",
+                "name": "LATIN SMALL LETTER I WITH ACUTE"
             },
             {
                 "codepoint": 238,
-                "name": "icircumflex",
-                "realCodepoint": 238
+                "glyphName": "icircumflex",
+                "realCodepoint": 238,
+                "char": "\u00ee",
+                "unicodeHex": "U+00EE",
+                "name": "LATIN SMALL LETTER I WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 239,
-                "name": "idieresis",
-                "realCodepoint": 239
+                "glyphName": "idieresis",
+                "realCodepoint": 239,
+                "char": "\u00ef",
+                "unicodeHex": "U+00EF",
+                "name": "LATIN SMALL LETTER I WITH DIAERESIS"
             },
             {
                 "codepoint": 240,
-                "name": "eth",
-                "realCodepoint": 240
+                "glyphName": "eth",
+                "realCodepoint": 240,
+                "char": "\u00f0",
+                "unicodeHex": "U+00F0",
+                "name": "LATIN SMALL LETTER ETH"
             },
             {
                 "codepoint": 241,
-                "name": "ntilde",
-                "realCodepoint": 241
+                "glyphName": "ntilde",
+                "realCodepoint": 241,
+                "char": "\u00f1",
+                "unicodeHex": "U+00F1",
+                "name": "LATIN SMALL LETTER N WITH TILDE"
             },
             {
                 "codepoint": 242,
-                "name": "ograve",
-                "realCodepoint": 242
+                "glyphName": "ograve",
+                "realCodepoint": 242,
+                "char": "\u00f2",
+                "unicodeHex": "U+00F2",
+                "name": "LATIN SMALL LETTER O WITH GRAVE"
             },
             {
                 "codepoint": 243,
-                "name": "oacute",
-                "realCodepoint": 243
+                "glyphName": "oacute",
+                "realCodepoint": 243,
+                "char": "\u00f3",
+                "unicodeHex": "U+00F3",
+                "name": "LATIN SMALL LETTER O WITH ACUTE"
             },
             {
                 "codepoint": 244,
-                "name": "ocircumflex",
-                "realCodepoint": 244
+                "glyphName": "ocircumflex",
+                "realCodepoint": 244,
+                "char": "\u00f4",
+                "unicodeHex": "U+00F4",
+                "name": "LATIN SMALL LETTER O WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 245,
-                "name": "otilde",
-                "realCodepoint": 245
+                "glyphName": "otilde",
+                "realCodepoint": 245,
+                "char": "\u00f5",
+                "unicodeHex": "U+00F5",
+                "name": "LATIN SMALL LETTER O WITH TILDE"
             },
             {
                 "codepoint": 246,
-                "name": "odieresis",
-                "realCodepoint": 246
+                "glyphName": "odieresis",
+                "realCodepoint": 246,
+                "char": "\u00f6",
+                "unicodeHex": "U+00F6",
+                "name": "LATIN SMALL LETTER O WITH DIAERESIS"
             },
             {
                 "codepoint": 247,
-                "name": "divide",
-                "realCodepoint": 247
+                "glyphName": "divide",
+                "realCodepoint": 247,
+                "char": "\u00f7",
+                "unicodeHex": "U+00F7",
+                "name": "DIVISION SIGN"
             },
             {
                 "codepoint": 248,
-                "name": "oslash",
-                "realCodepoint": 248
+                "glyphName": "oslash",
+                "realCodepoint": 248,
+                "char": "\u00f8",
+                "unicodeHex": "U+00F8",
+                "name": "LATIN SMALL LETTER O WITH STROKE"
             },
             {
                 "codepoint": 249,
-                "name": "ugrave",
-                "realCodepoint": 249
+                "glyphName": "ugrave",
+                "realCodepoint": 249,
+                "char": "\u00f9",
+                "unicodeHex": "U+00F9",
+                "name": "LATIN SMALL LETTER U WITH GRAVE"
             },
             {
                 "codepoint": 250,
-                "name": "uacute",
-                "realCodepoint": 250
+                "glyphName": "uacute",
+                "realCodepoint": 250,
+                "char": "\u00fa",
+                "unicodeHex": "U+00FA",
+                "name": "LATIN SMALL LETTER U WITH ACUTE"
             },
             {
                 "codepoint": 251,
-                "name": "ucircumflex",
-                "realCodepoint": 251
+                "glyphName": "ucircumflex",
+                "realCodepoint": 251,
+                "char": "\u00fb",
+                "unicodeHex": "U+00FB",
+                "name": "LATIN SMALL LETTER U WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 252,
-                "name": "udieresis",
-                "realCodepoint": 252
+                "glyphName": "udieresis",
+                "realCodepoint": 252,
+                "char": "\u00fc",
+                "unicodeHex": "U+00FC",
+                "name": "LATIN SMALL LETTER U WITH DIAERESIS"
             },
             {
                 "codepoint": 253,
-                "name": "yacute",
-                "realCodepoint": 253
+                "glyphName": "yacute",
+                "realCodepoint": 253,
+                "char": "\u00fd",
+                "unicodeHex": "U+00FD",
+                "name": "LATIN SMALL LETTER Y WITH ACUTE"
             },
             {
                 "codepoint": 254,
-                "name": "thorn",
-                "realCodepoint": 254
+                "glyphName": "thorn",
+                "realCodepoint": 254,
+                "char": "\u00fe",
+                "unicodeHex": "U+00FE",
+                "name": "LATIN SMALL LETTER THORN"
             },
             {
                 "codepoint": 255,
-                "name": "ydieresis",
-                "realCodepoint": 255
+                "glyphName": "ydieresis",
+                "realCodepoint": 255,
+                "char": "\u00ff",
+                "unicodeHex": "U+00FF",
+                "name": "LATIN SMALL LETTER Y WITH DIAERESIS"
             },
             {
                 "codepoint": 256,
-                "name": "Amacron",
-                "realCodepoint": 256
+                "glyphName": "Amacron",
+                "realCodepoint": 256,
+                "char": "\u0100",
+                "unicodeHex": "U+0100",
+                "name": "LATIN CAPITAL LETTER A WITH MACRON"
             },
             {
                 "codepoint": 257,
-                "name": "amacron",
-                "realCodepoint": 257
+                "glyphName": "amacron",
+                "realCodepoint": 257,
+                "char": "\u0101",
+                "unicodeHex": "U+0101",
+                "name": "LATIN SMALL LETTER A WITH MACRON"
             },
             {
                 "codepoint": 258,
-                "name": "Abreve",
-                "realCodepoint": 258
+                "glyphName": "Abreve",
+                "realCodepoint": 258,
+                "char": "\u0102",
+                "unicodeHex": "U+0102",
+                "name": "LATIN CAPITAL LETTER A WITH BREVE"
             },
             {
                 "codepoint": 259,
-                "name": "abreve",
-                "realCodepoint": 259
+                "glyphName": "abreve",
+                "realCodepoint": 259,
+                "char": "\u0103",
+                "unicodeHex": "U+0103",
+                "name": "LATIN SMALL LETTER A WITH BREVE"
             },
             {
                 "codepoint": 262,
-                "name": "Cacute",
-                "realCodepoint": 262
+                "glyphName": "Cacute",
+                "realCodepoint": 262,
+                "char": "\u0106",
+                "unicodeHex": "U+0106",
+                "name": "LATIN CAPITAL LETTER C WITH ACUTE"
             },
             {
                 "codepoint": 263,
-                "name": "cacute",
-                "realCodepoint": 263
+                "glyphName": "cacute",
+                "realCodepoint": 263,
+                "char": "\u0107",
+                "unicodeHex": "U+0107",
+                "name": "LATIN SMALL LETTER C WITH ACUTE"
             },
             {
                 "codepoint": 264,
-                "name": "Ccircumflex",
-                "realCodepoint": 264
+                "glyphName": "Ccircumflex",
+                "realCodepoint": 264,
+                "char": "\u0108",
+                "unicodeHex": "U+0108",
+                "name": "LATIN CAPITAL LETTER C WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 265,
-                "name": "ccircumflex",
-                "realCodepoint": 265
+                "glyphName": "ccircumflex",
+                "realCodepoint": 265,
+                "char": "\u0109",
+                "unicodeHex": "U+0109",
+                "name": "LATIN SMALL LETTER C WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 266,
-                "name": "Cdotaccent",
-                "realCodepoint": 266
+                "glyphName": "Cdotaccent",
+                "realCodepoint": 266,
+                "char": "\u010a",
+                "unicodeHex": "U+010A",
+                "name": "LATIN CAPITAL LETTER C WITH DOT ABOVE"
             },
             {
                 "codepoint": 267,
-                "name": "cdotaccent",
-                "realCodepoint": 267
+                "glyphName": "cdotaccent",
+                "realCodepoint": 267,
+                "char": "\u010b",
+                "unicodeHex": "U+010B",
+                "name": "LATIN SMALL LETTER C WITH DOT ABOVE"
             },
             {
                 "codepoint": 268,
-                "name": "Ccaron",
-                "realCodepoint": 268
+                "glyphName": "Ccaron",
+                "realCodepoint": 268,
+                "char": "\u010c",
+                "unicodeHex": "U+010C",
+                "name": "LATIN CAPITAL LETTER C WITH CARON"
             },
             {
                 "codepoint": 269,
-                "name": "ccaron",
-                "realCodepoint": 269
+                "glyphName": "ccaron",
+                "realCodepoint": 269,
+                "char": "\u010d",
+                "unicodeHex": "U+010D",
+                "name": "LATIN SMALL LETTER C WITH CARON"
             },
             {
                 "codepoint": 270,
-                "name": "Dcaron",
-                "realCodepoint": 270
+                "glyphName": "Dcaron",
+                "realCodepoint": 270,
+                "char": "\u010e",
+                "unicodeHex": "U+010E",
+                "name": "LATIN CAPITAL LETTER D WITH CARON"
             },
             {
                 "codepoint": 274,
-                "name": "Emacron",
-                "realCodepoint": 274
+                "glyphName": "Emacron",
+                "realCodepoint": 274,
+                "char": "\u0112",
+                "unicodeHex": "U+0112",
+                "name": "LATIN CAPITAL LETTER E WITH MACRON"
             },
             {
                 "codepoint": 275,
-                "name": "emacron",
-                "realCodepoint": 275
+                "glyphName": "emacron",
+                "realCodepoint": 275,
+                "char": "\u0113",
+                "unicodeHex": "U+0113",
+                "name": "LATIN SMALL LETTER E WITH MACRON"
             },
             {
                 "codepoint": 276,
-                "name": "Ebreve",
-                "realCodepoint": 276
+                "glyphName": "Ebreve",
+                "realCodepoint": 276,
+                "char": "\u0114",
+                "unicodeHex": "U+0114",
+                "name": "LATIN CAPITAL LETTER E WITH BREVE"
             },
             {
                 "codepoint": 277,
-                "name": "ebreve",
-                "realCodepoint": 277
+                "glyphName": "ebreve",
+                "realCodepoint": 277,
+                "char": "\u0115",
+                "unicodeHex": "U+0115",
+                "name": "LATIN SMALL LETTER E WITH BREVE"
             },
             {
                 "codepoint": 278,
-                "name": "Edotaccent",
-                "realCodepoint": 278
+                "glyphName": "Edotaccent",
+                "realCodepoint": 278,
+                "char": "\u0116",
+                "unicodeHex": "U+0116",
+                "name": "LATIN CAPITAL LETTER E WITH DOT ABOVE"
             },
             {
                 "codepoint": 279,
-                "name": "edotaccent",
-                "realCodepoint": 279
+                "glyphName": "edotaccent",
+                "realCodepoint": 279,
+                "char": "\u0117",
+                "unicodeHex": "U+0117",
+                "name": "LATIN SMALL LETTER E WITH DOT ABOVE"
             },
             {
                 "codepoint": 282,
-                "name": "Ecaron",
-                "realCodepoint": 282
+                "glyphName": "Ecaron",
+                "realCodepoint": 282,
+                "char": "\u011a",
+                "unicodeHex": "U+011A",
+                "name": "LATIN CAPITAL LETTER E WITH CARON"
             },
             {
                 "codepoint": 283,
-                "name": "ecaron",
-                "realCodepoint": 283
+                "glyphName": "ecaron",
+                "realCodepoint": 283,
+                "char": "\u011b",
+                "unicodeHex": "U+011B",
+                "name": "LATIN SMALL LETTER E WITH CARON"
             },
             {
                 "codepoint": 284,
-                "name": "Gcircumflex",
-                "realCodepoint": 284
+                "glyphName": "Gcircumflex",
+                "realCodepoint": 284,
+                "char": "\u011c",
+                "unicodeHex": "U+011C",
+                "name": "LATIN CAPITAL LETTER G WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 285,
-                "name": "gcircumflex",
-                "realCodepoint": 285
+                "glyphName": "gcircumflex",
+                "realCodepoint": 285,
+                "char": "\u011d",
+                "unicodeHex": "U+011D",
+                "name": "LATIN SMALL LETTER G WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 286,
-                "name": "Gbreve",
-                "realCodepoint": 286
+                "glyphName": "Gbreve",
+                "realCodepoint": 286,
+                "char": "\u011e",
+                "unicodeHex": "U+011E",
+                "name": "LATIN CAPITAL LETTER G WITH BREVE"
             },
             {
                 "codepoint": 287,
-                "name": "gbreve",
-                "realCodepoint": 287
+                "glyphName": "gbreve",
+                "realCodepoint": 287,
+                "char": "\u011f",
+                "unicodeHex": "U+011F",
+                "name": "LATIN SMALL LETTER G WITH BREVE"
             },
             {
                 "codepoint": 288,
-                "name": "Gdotaccent",
-                "realCodepoint": 288
+                "glyphName": "Gdotaccent",
+                "realCodepoint": 288,
+                "char": "\u0120",
+                "unicodeHex": "U+0120",
+                "name": "LATIN CAPITAL LETTER G WITH DOT ABOVE"
             },
             {
                 "codepoint": 289,
-                "name": "gdotaccent",
-                "realCodepoint": 289
+                "glyphName": "gdotaccent",
+                "realCodepoint": 289,
+                "char": "\u0121",
+                "unicodeHex": "U+0121",
+                "name": "LATIN SMALL LETTER G WITH DOT ABOVE"
             },
             {
                 "codepoint": 292,
-                "name": "Hcircumflex",
-                "realCodepoint": 292
+                "glyphName": "Hcircumflex",
+                "realCodepoint": 292,
+                "char": "\u0124",
+                "unicodeHex": "U+0124",
+                "name": "LATIN CAPITAL LETTER H WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 293,
-                "name": "hcircumflex",
-                "realCodepoint": 293
+                "glyphName": "hcircumflex",
+                "realCodepoint": 293,
+                "char": "\u0125",
+                "unicodeHex": "U+0125",
+                "name": "LATIN SMALL LETTER H WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 296,
-                "name": "Itilde",
-                "realCodepoint": 296
+                "glyphName": "Itilde",
+                "realCodepoint": 296,
+                "char": "\u0128",
+                "unicodeHex": "U+0128",
+                "name": "LATIN CAPITAL LETTER I WITH TILDE"
             },
             {
                 "codepoint": 297,
-                "name": "itilde",
-                "realCodepoint": 297
+                "glyphName": "itilde",
+                "realCodepoint": 297,
+                "char": "\u0129",
+                "unicodeHex": "U+0129",
+                "name": "LATIN SMALL LETTER I WITH TILDE"
             },
             {
                 "codepoint": 298,
-                "name": "Imacron",
-                "realCodepoint": 298
+                "glyphName": "Imacron",
+                "realCodepoint": 298,
+                "char": "\u012a",
+                "unicodeHex": "U+012A",
+                "name": "LATIN CAPITAL LETTER I WITH MACRON"
             },
             {
                 "codepoint": 299,
-                "name": "imacron",
-                "realCodepoint": 299
+                "glyphName": "imacron",
+                "realCodepoint": 299,
+                "char": "\u012b",
+                "unicodeHex": "U+012B",
+                "name": "LATIN SMALL LETTER I WITH MACRON"
             },
             {
                 "codepoint": 300,
-                "name": "Ibreve",
-                "realCodepoint": 300
+                "glyphName": "Ibreve",
+                "realCodepoint": 300,
+                "char": "\u012c",
+                "unicodeHex": "U+012C",
+                "name": "LATIN CAPITAL LETTER I WITH BREVE"
             },
             {
                 "codepoint": 301,
-                "name": "ibreve",
-                "realCodepoint": 301
+                "glyphName": "ibreve",
+                "realCodepoint": 301,
+                "char": "\u012d",
+                "unicodeHex": "U+012D",
+                "name": "LATIN SMALL LETTER I WITH BREVE"
             },
             {
                 "codepoint": 304,
-                "name": "Idotaccent",
-                "realCodepoint": 304
+                "glyphName": "Idotaccent",
+                "realCodepoint": 304,
+                "char": "\u0130",
+                "unicodeHex": "U+0130",
+                "name": "LATIN CAPITAL LETTER I WITH DOT ABOVE"
             },
             {
                 "codepoint": 305,
-                "name": "dotlessi",
-                "realCodepoint": 305
+                "glyphName": "dotlessi",
+                "realCodepoint": 305,
+                "char": "\u0131",
+                "unicodeHex": "U+0131",
+                "name": "LATIN SMALL LETTER DOTLESS I"
             },
             {
                 "codepoint": 308,
-                "name": "Jcircumflex",
-                "realCodepoint": 308
+                "glyphName": "Jcircumflex",
+                "realCodepoint": 308,
+                "char": "\u0134",
+                "unicodeHex": "U+0134",
+                "name": "LATIN CAPITAL LETTER J WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 309,
-                "name": "jcircumflex",
-                "realCodepoint": 309
+                "glyphName": "jcircumflex",
+                "realCodepoint": 309,
+                "char": "\u0135",
+                "unicodeHex": "U+0135",
+                "name": "LATIN SMALL LETTER J WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 313,
-                "name": "Lacute",
-                "realCodepoint": 313
+                "glyphName": "Lacute",
+                "realCodepoint": 313,
+                "char": "\u0139",
+                "unicodeHex": "U+0139",
+                "name": "LATIN CAPITAL LETTER L WITH ACUTE"
             },
             {
                 "codepoint": 314,
-                "name": "lacute",
-                "realCodepoint": 314
+                "glyphName": "lacute",
+                "realCodepoint": 314,
+                "char": "\u013a",
+                "unicodeHex": "U+013A",
+                "name": "LATIN SMALL LETTER L WITH ACUTE"
             },
             {
                 "codepoint": 319,
-                "name": "Ldot",
-                "realCodepoint": 319
+                "glyphName": "Ldot",
+                "realCodepoint": 319,
+                "char": "\u013f",
+                "unicodeHex": "U+013F",
+                "name": "LATIN CAPITAL LETTER L WITH MIDDLE DOT"
             },
             {
                 "codepoint": 320,
-                "name": "ldot",
-                "realCodepoint": 320
+                "glyphName": "ldot",
+                "realCodepoint": 320,
+                "char": "\u0140",
+                "unicodeHex": "U+0140",
+                "name": "LATIN SMALL LETTER L WITH MIDDLE DOT"
             },
             {
                 "codepoint": 323,
-                "name": "Nacute",
-                "realCodepoint": 323
+                "glyphName": "Nacute",
+                "realCodepoint": 323,
+                "char": "\u0143",
+                "unicodeHex": "U+0143",
+                "name": "LATIN CAPITAL LETTER N WITH ACUTE"
             },
             {
                 "codepoint": 324,
-                "name": "nacute",
-                "realCodepoint": 324
+                "glyphName": "nacute",
+                "realCodepoint": 324,
+                "char": "\u0144",
+                "unicodeHex": "U+0144",
+                "name": "LATIN SMALL LETTER N WITH ACUTE"
             },
             {
                 "codepoint": 327,
-                "name": "Ncaron",
-                "realCodepoint": 327
+                "glyphName": "Ncaron",
+                "realCodepoint": 327,
+                "char": "\u0147",
+                "unicodeHex": "U+0147",
+                "name": "LATIN CAPITAL LETTER N WITH CARON"
             },
             {
                 "codepoint": 328,
-                "name": "ncaron",
-                "realCodepoint": 328
+                "glyphName": "ncaron",
+                "realCodepoint": 328,
+                "char": "\u0148",
+                "unicodeHex": "U+0148",
+                "name": "LATIN SMALL LETTER N WITH CARON"
             },
             {
                 "codepoint": 332,
-                "name": "Omacron",
-                "realCodepoint": 332
+                "glyphName": "Omacron",
+                "realCodepoint": 332,
+                "char": "\u014c",
+                "unicodeHex": "U+014C",
+                "name": "LATIN CAPITAL LETTER O WITH MACRON"
             },
             {
                 "codepoint": 333,
-                "name": "omacron",
-                "realCodepoint": 333
+                "glyphName": "omacron",
+                "realCodepoint": 333,
+                "char": "\u014d",
+                "unicodeHex": "U+014D",
+                "name": "LATIN SMALL LETTER O WITH MACRON"
             },
             {
                 "codepoint": 334,
-                "name": "Obreve",
-                "realCodepoint": 334
+                "glyphName": "Obreve",
+                "realCodepoint": 334,
+                "char": "\u014e",
+                "unicodeHex": "U+014E",
+                "name": "LATIN CAPITAL LETTER O WITH BREVE"
             },
             {
                 "codepoint": 335,
-                "name": "obreve",
-                "realCodepoint": 335
+                "glyphName": "obreve",
+                "realCodepoint": 335,
+                "char": "\u014f",
+                "unicodeHex": "U+014F",
+                "name": "LATIN SMALL LETTER O WITH BREVE"
             },
             {
                 "codepoint": 340,
-                "name": "Racute",
-                "realCodepoint": 340
+                "glyphName": "Racute",
+                "realCodepoint": 340,
+                "char": "\u0154",
+                "unicodeHex": "U+0154",
+                "name": "LATIN CAPITAL LETTER R WITH ACUTE"
             },
             {
                 "codepoint": 341,
-                "name": "racute",
-                "realCodepoint": 341
+                "glyphName": "racute",
+                "realCodepoint": 341,
+                "char": "\u0155",
+                "unicodeHex": "U+0155",
+                "name": "LATIN SMALL LETTER R WITH ACUTE"
             },
             {
                 "codepoint": 344,
-                "name": "Rcaron",
-                "realCodepoint": 344
+                "glyphName": "Rcaron",
+                "realCodepoint": 344,
+                "char": "\u0158",
+                "unicodeHex": "U+0158",
+                "name": "LATIN CAPITAL LETTER R WITH CARON"
             },
             {
                 "codepoint": 345,
-                "name": "rcaron",
-                "realCodepoint": 345
+                "glyphName": "rcaron",
+                "realCodepoint": 345,
+                "char": "\u0159",
+                "unicodeHex": "U+0159",
+                "name": "LATIN SMALL LETTER R WITH CARON"
             },
             {
                 "codepoint": 346,
-                "name": "Sacute",
-                "realCodepoint": 346
+                "glyphName": "Sacute",
+                "realCodepoint": 346,
+                "char": "\u015a",
+                "unicodeHex": "U+015A",
+                "name": "LATIN CAPITAL LETTER S WITH ACUTE"
             },
             {
                 "codepoint": 347,
-                "name": "sacute",
-                "realCodepoint": 347
+                "glyphName": "sacute",
+                "realCodepoint": 347,
+                "char": "\u015b",
+                "unicodeHex": "U+015B",
+                "name": "LATIN SMALL LETTER S WITH ACUTE"
             },
             {
                 "codepoint": 348,
-                "name": "Scircumflex",
-                "realCodepoint": 348
+                "glyphName": "Scircumflex",
+                "realCodepoint": 348,
+                "char": "\u015c",
+                "unicodeHex": "U+015C",
+                "name": "LATIN CAPITAL LETTER S WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 349,
-                "name": "scircumflex",
-                "realCodepoint": 349
+                "glyphName": "scircumflex",
+                "realCodepoint": 349,
+                "char": "\u015d",
+                "unicodeHex": "U+015D",
+                "name": "LATIN SMALL LETTER S WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 350,
-                "name": "Scedilla",
-                "realCodepoint": 350
+                "glyphName": "Scedilla",
+                "realCodepoint": 350,
+                "char": "\u015e",
+                "unicodeHex": "U+015E",
+                "name": "LATIN CAPITAL LETTER S WITH CEDILLA"
             },
             {
                 "codepoint": 351,
-                "name": "scedilla",
-                "realCodepoint": 351
+                "glyphName": "scedilla",
+                "realCodepoint": 351,
+                "char": "\u015f",
+                "unicodeHex": "U+015F",
+                "name": "LATIN SMALL LETTER S WITH CEDILLA"
             },
             {
                 "codepoint": 352,
-                "name": "Scaron",
-                "realCodepoint": 352
+                "glyphName": "Scaron",
+                "realCodepoint": 352,
+                "char": "\u0160",
+                "unicodeHex": "U+0160",
+                "name": "LATIN CAPITAL LETTER S WITH CARON"
             },
             {
                 "codepoint": 353,
-                "name": "scaron",
-                "realCodepoint": 353
+                "glyphName": "scaron",
+                "realCodepoint": 353,
+                "char": "\u0161",
+                "unicodeHex": "U+0161",
+                "name": "LATIN SMALL LETTER S WITH CARON"
             },
             {
                 "codepoint": 354,
-                "name": "Tcommaaccent",
-                "realCodepoint": 354
+                "glyphName": "Tcommaaccent",
+                "realCodepoint": 354,
+                "char": "\u0162",
+                "unicodeHex": "U+0162",
+                "name": "LATIN CAPITAL LETTER T WITH CEDILLA"
             },
             {
                 "codepoint": 355,
-                "name": "tcommaaccent",
-                "realCodepoint": 355
+                "glyphName": "tcommaaccent",
+                "realCodepoint": 355,
+                "char": "\u0163",
+                "unicodeHex": "U+0163",
+                "name": "LATIN SMALL LETTER T WITH CEDILLA"
             },
             {
                 "codepoint": 356,
-                "name": "Tcaron",
-                "realCodepoint": 356
+                "glyphName": "Tcaron",
+                "realCodepoint": 356,
+                "char": "\u0164",
+                "unicodeHex": "U+0164",
+                "name": "LATIN CAPITAL LETTER T WITH CARON"
             },
             {
                 "codepoint": 360,
-                "name": "Utilde",
-                "realCodepoint": 360
+                "glyphName": "Utilde",
+                "realCodepoint": 360,
+                "char": "\u0168",
+                "unicodeHex": "U+0168",
+                "name": "LATIN CAPITAL LETTER U WITH TILDE"
             },
             {
                 "codepoint": 361,
-                "name": "utilde",
-                "realCodepoint": 361
+                "glyphName": "utilde",
+                "realCodepoint": 361,
+                "char": "\u0169",
+                "unicodeHex": "U+0169",
+                "name": "LATIN SMALL LETTER U WITH TILDE"
             },
             {
                 "codepoint": 362,
-                "name": "Umacron",
-                "realCodepoint": 362
+                "glyphName": "Umacron",
+                "realCodepoint": 362,
+                "char": "\u016a",
+                "unicodeHex": "U+016A",
+                "name": "LATIN CAPITAL LETTER U WITH MACRON"
             },
             {
                 "codepoint": 363,
-                "name": "umacron",
-                "realCodepoint": 363
+                "glyphName": "umacron",
+                "realCodepoint": 363,
+                "char": "\u016b",
+                "unicodeHex": "U+016B",
+                "name": "LATIN SMALL LETTER U WITH MACRON"
             },
             {
                 "codepoint": 364,
-                "name": "Ubreve",
-                "realCodepoint": 364
+                "glyphName": "Ubreve",
+                "realCodepoint": 364,
+                "char": "\u016c",
+                "unicodeHex": "U+016C",
+                "name": "LATIN CAPITAL LETTER U WITH BREVE"
             },
             {
                 "codepoint": 365,
-                "name": "ubreve",
-                "realCodepoint": 365
+                "glyphName": "ubreve",
+                "realCodepoint": 365,
+                "char": "\u016d",
+                "unicodeHex": "U+016D",
+                "name": "LATIN SMALL LETTER U WITH BREVE"
             },
             {
                 "codepoint": 366,
-                "name": "Uring",
-                "realCodepoint": 366
+                "glyphName": "Uring",
+                "realCodepoint": 366,
+                "char": "\u016e",
+                "unicodeHex": "U+016E",
+                "name": "LATIN CAPITAL LETTER U WITH RING ABOVE"
             },
             {
                 "codepoint": 367,
-                "name": "uring",
-                "realCodepoint": 367
+                "glyphName": "uring",
+                "realCodepoint": 367,
+                "char": "\u016f",
+                "unicodeHex": "U+016F",
+                "name": "LATIN SMALL LETTER U WITH RING ABOVE"
             },
             {
                 "codepoint": 372,
-                "name": "Wcircumflex",
-                "realCodepoint": 372
+                "glyphName": "Wcircumflex",
+                "realCodepoint": 372,
+                "char": "\u0174",
+                "unicodeHex": "U+0174",
+                "name": "LATIN CAPITAL LETTER W WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 373,
-                "name": "wcircumflex",
-                "realCodepoint": 373
+                "glyphName": "wcircumflex",
+                "realCodepoint": 373,
+                "char": "\u0175",
+                "unicodeHex": "U+0175",
+                "name": "LATIN SMALL LETTER W WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 374,
-                "name": "Ycircumflex",
-                "realCodepoint": 374
+                "glyphName": "Ycircumflex",
+                "realCodepoint": 374,
+                "char": "\u0176",
+                "unicodeHex": "U+0176",
+                "name": "LATIN CAPITAL LETTER Y WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 375,
-                "name": "ycircumflex",
-                "realCodepoint": 375
+                "glyphName": "ycircumflex",
+                "realCodepoint": 375,
+                "char": "\u0177",
+                "unicodeHex": "U+0177",
+                "name": "LATIN SMALL LETTER Y WITH CIRCUMFLEX"
             },
             {
                 "codepoint": 376,
-                "name": "Ydieresis",
-                "realCodepoint": 376
+                "glyphName": "Ydieresis",
+                "realCodepoint": 376,
+                "char": "\u0178",
+                "unicodeHex": "U+0178",
+                "name": "LATIN CAPITAL LETTER Y WITH DIAERESIS"
             },
             {
                 "codepoint": 377,
-                "name": "Zacute",
-                "realCodepoint": 377
+                "glyphName": "Zacute",
+                "realCodepoint": 377,
+                "char": "\u0179",
+                "unicodeHex": "U+0179",
+                "name": "LATIN CAPITAL LETTER Z WITH ACUTE"
             },
             {
                 "codepoint": 378,
-                "name": "zacute",
-                "realCodepoint": 378
+                "glyphName": "zacute",
+                "realCodepoint": 378,
+                "char": "\u017a",
+                "unicodeHex": "U+017A",
+                "name": "LATIN SMALL LETTER Z WITH ACUTE"
             },
             {
                 "codepoint": 379,
-                "name": "Zdotaccent",
-                "realCodepoint": 379
+                "glyphName": "Zdotaccent",
+                "realCodepoint": 379,
+                "char": "\u017b",
+                "unicodeHex": "U+017B",
+                "name": "LATIN CAPITAL LETTER Z WITH DOT ABOVE"
             },
             {
                 "codepoint": 380,
-                "name": "zdotaccent",
-                "realCodepoint": 380
+                "glyphName": "zdotaccent",
+                "realCodepoint": 380,
+                "char": "\u017c",
+                "unicodeHex": "U+017C",
+                "name": "LATIN SMALL LETTER Z WITH DOT ABOVE"
             },
             {
                 "codepoint": 381,
-                "name": "Zcaron",
-                "realCodepoint": 381
+                "glyphName": "Zcaron",
+                "realCodepoint": 381,
+                "char": "\u017d",
+                "unicodeHex": "U+017D",
+                "name": "LATIN CAPITAL LETTER Z WITH CARON"
             },
             {
                 "codepoint": 382,
-                "name": "zcaron",
-                "realCodepoint": 382
+                "glyphName": "zcaron",
+                "realCodepoint": 382,
+                "char": "\u017e",
+                "unicodeHex": "U+017E",
+                "name": "LATIN SMALL LETTER Z WITH CARON"
             },
             {
                 "codepoint": 416,
-                "name": "Ohorn",
-                "realCodepoint": 416
+                "glyphName": "Ohorn",
+                "realCodepoint": 416,
+                "char": "\u01a0",
+                "unicodeHex": "U+01A0",
+                "name": "LATIN CAPITAL LETTER O WITH HORN"
             },
             {
                 "codepoint": 417,
-                "name": "ohorn",
-                "realCodepoint": 417
+                "glyphName": "ohorn",
+                "realCodepoint": 417,
+                "char": "\u01a1",
+                "unicodeHex": "U+01A1",
+                "name": "LATIN SMALL LETTER O WITH HORN"
             },
             {
                 "codepoint": 431,
-                "name": "Uhorn",
-                "realCodepoint": 431
+                "glyphName": "Uhorn",
+                "realCodepoint": 431,
+                "char": "\u01af",
+                "unicodeHex": "U+01AF",
+                "name": "LATIN CAPITAL LETTER U WITH HORN"
             },
             {
                 "codepoint": 432,
-                "name": "uhorn",
-                "realCodepoint": 432
+                "glyphName": "uhorn",
+                "realCodepoint": 432,
+                "char": "\u01b0",
+                "unicodeHex": "U+01B0",
+                "name": "LATIN SMALL LETTER U WITH HORN"
             },
             {
                 "codepoint": 461,
-                "name": "uni01CD",
-                "realCodepoint": 461
+                "glyphName": "uni01CD",
+                "realCodepoint": 461,
+                "char": "\u01cd",
+                "unicodeHex": "U+01CD",
+                "name": "LATIN CAPITAL LETTER A WITH CARON"
             },
             {
                 "codepoint": 462,
-                "name": "uni01CE",
-                "realCodepoint": 462
+                "glyphName": "uni01CE",
+                "realCodepoint": 462,
+                "char": "\u01ce",
+                "unicodeHex": "U+01CE",
+                "name": "LATIN SMALL LETTER A WITH CARON"
             },
             {
                 "codepoint": 463,
-                "name": "uni01CF",
-                "realCodepoint": 463
+                "glyphName": "uni01CF",
+                "realCodepoint": 463,
+                "char": "\u01cf",
+                "unicodeHex": "U+01CF",
+                "name": "LATIN CAPITAL LETTER I WITH CARON"
             },
             {
                 "codepoint": 464,
-                "name": "uni01D0",
-                "realCodepoint": 464
+                "glyphName": "uni01D0",
+                "realCodepoint": 464,
+                "char": "\u01d0",
+                "unicodeHex": "U+01D0",
+                "name": "LATIN SMALL LETTER I WITH CARON"
             },
             {
                 "codepoint": 465,
-                "name": "uni01D1",
-                "realCodepoint": 465
+                "glyphName": "uni01D1",
+                "realCodepoint": 465,
+                "char": "\u01d1",
+                "unicodeHex": "U+01D1",
+                "name": "LATIN CAPITAL LETTER O WITH CARON"
             },
             {
                 "codepoint": 466,
-                "name": "uni01D2",
-                "realCodepoint": 466
+                "glyphName": "uni01D2",
+                "realCodepoint": 466,
+                "char": "\u01d2",
+                "unicodeHex": "U+01D2",
+                "name": "LATIN SMALL LETTER O WITH CARON"
             },
             {
                 "codepoint": 467,
-                "name": "uni01D3",
-                "realCodepoint": 467
+                "glyphName": "uni01D3",
+                "realCodepoint": 467,
+                "char": "\u01d3",
+                "unicodeHex": "U+01D3",
+                "name": "LATIN CAPITAL LETTER U WITH CARON"
             },
             {
                 "codepoint": 468,
-                "name": "uni01D4",
-                "realCodepoint": 468
+                "glyphName": "uni01D4",
+                "realCodepoint": 468,
+                "char": "\u01d4",
+                "unicodeHex": "U+01D4",
+                "name": "LATIN SMALL LETTER U WITH CARON"
             },
             {
                 "codepoint": 469,
-                "name": "uni01D5",
-                "realCodepoint": 469
+                "glyphName": "uni01D5",
+                "realCodepoint": 469,
+                "char": "\u01d5",
+                "unicodeHex": "U+01D5",
+                "name": "LATIN CAPITAL LETTER U WITH DIAERESIS AND MACRON"
             },
             {
                 "codepoint": 470,
-                "name": "uni01D6",
-                "realCodepoint": 470
+                "glyphName": "uni01D6",
+                "realCodepoint": 470,
+                "char": "\u01d6",
+                "unicodeHex": "U+01D6",
+                "name": "LATIN SMALL LETTER U WITH DIAERESIS AND MACRON"
             },
             {
                 "codepoint": 471,
-                "name": "uni01D7",
-                "realCodepoint": 471
+                "glyphName": "uni01D7",
+                "realCodepoint": 471,
+                "char": "\u01d7",
+                "unicodeHex": "U+01D7",
+                "name": "LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE"
             },
             {
                 "codepoint": 472,
-                "name": "uni01D8",
-                "realCodepoint": 472
+                "glyphName": "uni01D8",
+                "realCodepoint": 472,
+                "char": "\u01d8",
+                "unicodeHex": "U+01D8",
+                "name": "LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE"
             },
             {
                 "codepoint": 473,
-                "name": "uni01D9",
-                "realCodepoint": 473
+                "glyphName": "uni01D9",
+                "realCodepoint": 473,
+                "char": "\u01d9",
+                "unicodeHex": "U+01D9",
+                "name": "LATIN CAPITAL LETTER U WITH DIAERESIS AND CARON"
             },
             {
                 "codepoint": 474,
-                "name": "uni01DA",
-                "realCodepoint": 474
+                "glyphName": "uni01DA",
+                "realCodepoint": 474,
+                "char": "\u01da",
+                "unicodeHex": "U+01DA",
+                "name": "LATIN SMALL LETTER U WITH DIAERESIS AND CARON"
             },
             {
                 "codepoint": 475,
-                "name": "uni01DB",
-                "realCodepoint": 475
+                "glyphName": "uni01DB",
+                "realCodepoint": 475,
+                "char": "\u01db",
+                "unicodeHex": "U+01DB",
+                "name": "LATIN CAPITAL LETTER U WITH DIAERESIS AND GRAVE"
             },
             {
                 "codepoint": 476,
-                "name": "uni01DC",
-                "realCodepoint": 476
+                "glyphName": "uni01DC",
+                "realCodepoint": 476,
+                "char": "\u01dc",
+                "unicodeHex": "U+01DC",
+                "name": "LATIN SMALL LETTER U WITH DIAERESIS AND GRAVE"
             },
             {
                 "codepoint": 478,
-                "name": "uni01DE",
-                "realCodepoint": 478
+                "glyphName": "uni01DE",
+                "realCodepoint": 478,
+                "char": "\u01de",
+                "unicodeHex": "U+01DE",
+                "name": "LATIN CAPITAL LETTER A WITH DIAERESIS AND MACRON"
             },
             {
                 "codepoint": 479,
-                "name": "uni01DF",
-                "realCodepoint": 479
+                "glyphName": "uni01DF",
+                "realCodepoint": 479,
+                "char": "\u01df",
+                "unicodeHex": "U+01DF",
+                "name": "LATIN SMALL LETTER A WITH DIAERESIS AND MACRON"
             },
             {
                 "codepoint": 480,
-                "name": "uni01E0",
-                "realCodepoint": 480
+                "glyphName": "uni01E0",
+                "realCodepoint": 480,
+                "char": "\u01e0",
+                "unicodeHex": "U+01E0",
+                "name": "LATIN CAPITAL LETTER A WITH DOT ABOVE AND MACRON"
             },
             {
                 "codepoint": 481,
-                "name": "uni01E1",
-                "realCodepoint": 481
+                "glyphName": "uni01E1",
+                "realCodepoint": 481,
+                "char": "\u01e1",
+                "unicodeHex": "U+01E1",
+                "name": "LATIN SMALL LETTER A WITH DOT ABOVE AND MACRON"
             },
             {
                 "codepoint": 482,
-                "name": "uni01E2",
-                "realCodepoint": 482
+                "glyphName": "uni01E2",
+                "realCodepoint": 482,
+                "char": "\u01e2",
+                "unicodeHex": "U+01E2",
+                "name": "LATIN CAPITAL LETTER AE WITH MACRON"
             },
             {
                 "codepoint": 483,
-                "name": "uni01E3",
-                "realCodepoint": 483
+                "glyphName": "uni01E3",
+                "realCodepoint": 483,
+                "char": "\u01e3",
+                "unicodeHex": "U+01E3",
+                "name": "LATIN SMALL LETTER AE WITH MACRON"
             },
             {
                 "codepoint": 486,
-                "name": "Gcaron",
-                "realCodepoint": 486
+                "glyphName": "Gcaron",
+                "realCodepoint": 486,
+                "char": "\u01e6",
+                "unicodeHex": "U+01E6",
+                "name": "LATIN CAPITAL LETTER G WITH CARON"
             },
             {
                 "codepoint": 487,
-                "name": "gcaron",
-                "realCodepoint": 487
+                "glyphName": "gcaron",
+                "realCodepoint": 487,
+                "char": "\u01e7",
+                "unicodeHex": "U+01E7",
+                "name": "LATIN SMALL LETTER G WITH CARON"
             },
             {
                 "codepoint": 488,
-                "name": "uni01E8",
-                "realCodepoint": 488
+                "glyphName": "uni01E8",
+                "realCodepoint": 488,
+                "char": "\u01e8",
+                "unicodeHex": "U+01E8",
+                "name": "LATIN CAPITAL LETTER K WITH CARON"
             },
             {
                 "codepoint": 489,
-                "name": "uni01E9",
-                "realCodepoint": 489
+                "glyphName": "uni01E9",
+                "realCodepoint": 489,
+                "char": "\u01e9",
+                "unicodeHex": "U+01E9",
+                "name": "LATIN SMALL LETTER K WITH CARON"
             },
             {
                 "codepoint": 496,
-                "name": "uni01F0",
-                "realCodepoint": 496
+                "glyphName": "uni01F0",
+                "realCodepoint": 496,
+                "char": "\u01f0",
+                "unicodeHex": "U+01F0",
+                "name": "LATIN SMALL LETTER J WITH CARON"
             },
             {
                 "codepoint": 500,
-                "name": "uni01F4",
-                "realCodepoint": 500
+                "glyphName": "uni01F4",
+                "realCodepoint": 500,
+                "char": "\u01f4",
+                "unicodeHex": "U+01F4",
+                "name": "LATIN CAPITAL LETTER G WITH ACUTE"
             },
             {
                 "codepoint": 501,
-                "name": "uni01F5",
-                "realCodepoint": 501
+                "glyphName": "uni01F5",
+                "realCodepoint": 501,
+                "char": "\u01f5",
+                "unicodeHex": "U+01F5",
+                "name": "LATIN SMALL LETTER G WITH ACUTE"
             },
             {
                 "codepoint": 504,
-                "name": "uni01F8",
-                "realCodepoint": 504
+                "glyphName": "uni01F8",
+                "realCodepoint": 504,
+                "char": "\u01f8",
+                "unicodeHex": "U+01F8",
+                "name": "LATIN CAPITAL LETTER N WITH GRAVE"
             },
             {
                 "codepoint": 505,
-                "name": "uni01F9",
-                "realCodepoint": 505
+                "glyphName": "uni01F9",
+                "realCodepoint": 505,
+                "char": "\u01f9",
+                "unicodeHex": "U+01F9",
+                "name": "LATIN SMALL LETTER N WITH GRAVE"
             },
             {
                 "codepoint": 506,
-                "name": "Aringacute",
-                "realCodepoint": 506
+                "glyphName": "Aringacute",
+                "realCodepoint": 506,
+                "char": "\u01fa",
+                "unicodeHex": "U+01FA",
+                "name": "LATIN CAPITAL LETTER A WITH RING ABOVE AND ACUTE"
             },
             {
                 "codepoint": 507,
-                "name": "aringacute",
-                "realCodepoint": 507
+                "glyphName": "aringacute",
+                "realCodepoint": 507,
+                "char": "\u01fb",
+                "unicodeHex": "U+01FB",
+                "name": "LATIN SMALL LETTER A WITH RING ABOVE AND ACUTE"
             },
             {
                 "codepoint": 508,
-                "name": "AEacute",
-                "realCodepoint": 508
+                "glyphName": "AEacute",
+                "realCodepoint": 508,
+                "char": "\u01fc",
+                "unicodeHex": "U+01FC",
+                "name": "LATIN CAPITAL LETTER AE WITH ACUTE"
             },
             {
                 "codepoint": 509,
-                "name": "aeacute",
-                "realCodepoint": 509
+                "glyphName": "aeacute",
+                "realCodepoint": 509,
+                "char": "\u01fd",
+                "unicodeHex": "U+01FD",
+                "name": "LATIN SMALL LETTER AE WITH ACUTE"
             },
             {
                 "codepoint": 510,
-                "name": "Oslashacute",
-                "realCodepoint": 510
+                "glyphName": "Oslashacute",
+                "realCodepoint": 510,
+                "char": "\u01fe",
+                "unicodeHex": "U+01FE",
+                "name": "LATIN CAPITAL LETTER O WITH STROKE AND ACUTE"
             },
             {
                 "codepoint": 511,
-                "name": "oslashacute",
-                "realCodepoint": 511
+                "glyphName": "oslashacute",
+                "realCodepoint": 511,
+                "char": "\u01ff",
+                "unicodeHex": "U+01FF",
+                "name": "LATIN SMALL LETTER O WITH STROKE AND ACUTE"
             },
             {
                 "codepoint": 514,
-                "name": "uni0202",
-                "realCodepoint": 514
+                "glyphName": "uni0202",
+                "realCodepoint": 514,
+                "char": "\u0202",
+                "unicodeHex": "U+0202",
+                "name": "LATIN CAPITAL LETTER A WITH INVERTED BREVE"
             },
             {
                 "codepoint": 515,
-                "name": "uni0203",
-                "realCodepoint": 515
+                "glyphName": "uni0203",
+                "realCodepoint": 515,
+                "char": "\u0203",
+                "unicodeHex": "U+0203",
+                "name": "LATIN SMALL LETTER A WITH INVERTED BREVE"
             },
             {
                 "codepoint": 518,
-                "name": "uni0206",
-                "realCodepoint": 518
+                "glyphName": "uni0206",
+                "realCodepoint": 518,
+                "char": "\u0206",
+                "unicodeHex": "U+0206",
+                "name": "LATIN CAPITAL LETTER E WITH INVERTED BREVE"
             },
             {
                 "codepoint": 519,
-                "name": "uni0207",
-                "realCodepoint": 519
+                "glyphName": "uni0207",
+                "realCodepoint": 519,
+                "char": "\u0207",
+                "unicodeHex": "U+0207",
+                "name": "LATIN SMALL LETTER E WITH INVERTED BREVE"
             },
             {
                 "codepoint": 522,
-                "name": "uni020A",
-                "realCodepoint": 522
+                "glyphName": "uni020A",
+                "realCodepoint": 522,
+                "char": "\u020a",
+                "unicodeHex": "U+020A",
+                "name": "LATIN CAPITAL LETTER I WITH INVERTED BREVE"
             },
             {
                 "codepoint": 523,
-                "name": "uni020B",
-                "realCodepoint": 523
+                "glyphName": "uni020B",
+                "realCodepoint": 523,
+                "char": "\u020b",
+                "unicodeHex": "U+020B",
+                "name": "LATIN SMALL LETTER I WITH INVERTED BREVE"
             },
             {
                 "codepoint": 526,
-                "name": "uni020E",
-                "realCodepoint": 526
+                "glyphName": "uni020E",
+                "realCodepoint": 526,
+                "char": "\u020e",
+                "unicodeHex": "U+020E",
+                "name": "LATIN CAPITAL LETTER O WITH INVERTED BREVE"
             },
             {
                 "codepoint": 527,
-                "name": "uni020F",
-                "realCodepoint": 527
+                "glyphName": "uni020F",
+                "realCodepoint": 527,
+                "char": "\u020f",
+                "unicodeHex": "U+020F",
+                "name": "LATIN SMALL LETTER O WITH INVERTED BREVE"
             },
             {
                 "codepoint": 530,
-                "name": "uni0212",
-                "realCodepoint": 530
+                "glyphName": "uni0212",
+                "realCodepoint": 530,
+                "char": "\u0212",
+                "unicodeHex": "U+0212",
+                "name": "LATIN CAPITAL LETTER R WITH INVERTED BREVE"
             },
             {
                 "codepoint": 531,
-                "name": "uni0213",
-                "realCodepoint": 531
+                "glyphName": "uni0213",
+                "realCodepoint": 531,
+                "char": "\u0213",
+                "unicodeHex": "U+0213",
+                "name": "LATIN SMALL LETTER R WITH INVERTED BREVE"
             },
             {
                 "codepoint": 534,
-                "name": "uni0216",
-                "realCodepoint": 534
+                "glyphName": "uni0216",
+                "realCodepoint": 534,
+                "char": "\u0216",
+                "unicodeHex": "U+0216",
+                "name": "LATIN CAPITAL LETTER U WITH INVERTED BREVE"
             },
             {
                 "codepoint": 535,
-                "name": "uni0217",
-                "realCodepoint": 535
+                "glyphName": "uni0217",
+                "realCodepoint": 535,
+                "char": "\u0217",
+                "unicodeHex": "U+0217",
+                "name": "LATIN SMALL LETTER U WITH INVERTED BREVE"
             },
             {
                 "codepoint": 542,
-                "name": "uni021E",
-                "realCodepoint": 542
+                "glyphName": "uni021E",
+                "realCodepoint": 542,
+                "char": "\u021e",
+                "unicodeHex": "U+021E",
+                "name": "LATIN CAPITAL LETTER H WITH CARON"
             },
             {
                 "codepoint": 543,
-                "name": "uni021F",
-                "realCodepoint": 543
+                "glyphName": "uni021F",
+                "realCodepoint": 543,
+                "char": "\u021f",
+                "unicodeHex": "U+021F",
+                "name": "LATIN SMALL LETTER H WITH CARON"
             },
             {
                 "codepoint": 550,
-                "name": "uni0226",
-                "realCodepoint": 550
+                "glyphName": "uni0226",
+                "realCodepoint": 550,
+                "char": "\u0226",
+                "unicodeHex": "U+0226",
+                "name": "LATIN CAPITAL LETTER A WITH DOT ABOVE"
             },
             {
                 "codepoint": 551,
-                "name": "uni0227",
-                "realCodepoint": 551
+                "glyphName": "uni0227",
+                "realCodepoint": 551,
+                "char": "\u0227",
+                "unicodeHex": "U+0227",
+                "name": "LATIN SMALL LETTER A WITH DOT ABOVE"
             },
             {
                 "codepoint": 552,
-                "name": "uni0228",
-                "realCodepoint": 552
+                "glyphName": "uni0228",
+                "realCodepoint": 552,
+                "char": "\u0228",
+                "unicodeHex": "U+0228",
+                "name": "LATIN CAPITAL LETTER E WITH CEDILLA"
             },
             {
                 "codepoint": 553,
-                "name": "uni0229",
-                "realCodepoint": 553
+                "glyphName": "uni0229",
+                "realCodepoint": 553,
+                "char": "\u0229",
+                "unicodeHex": "U+0229",
+                "name": "LATIN SMALL LETTER E WITH CEDILLA"
             },
             {
                 "codepoint": 554,
-                "name": "uni022A",
-                "realCodepoint": 554
+                "glyphName": "uni022A",
+                "realCodepoint": 554,
+                "char": "\u022a",
+                "unicodeHex": "U+022A",
+                "name": "LATIN CAPITAL LETTER O WITH DIAERESIS AND MACRON"
             },
             {
                 "codepoint": 555,
-                "name": "uni022B",
-                "realCodepoint": 555
+                "glyphName": "uni022B",
+                "realCodepoint": 555,
+                "char": "\u022b",
+                "unicodeHex": "U+022B",
+                "name": "LATIN SMALL LETTER O WITH DIAERESIS AND MACRON"
             },
             {
                 "codepoint": 556,
-                "name": "uni022C",
-                "realCodepoint": 556
+                "glyphName": "uni022C",
+                "realCodepoint": 556,
+                "char": "\u022c",
+                "unicodeHex": "U+022C",
+                "name": "LATIN CAPITAL LETTER O WITH TILDE AND MACRON"
             },
             {
                 "codepoint": 557,
-                "name": "uni022D",
-                "realCodepoint": 557
+                "glyphName": "uni022D",
+                "realCodepoint": 557,
+                "char": "\u022d",
+                "unicodeHex": "U+022D",
+                "name": "LATIN SMALL LETTER O WITH TILDE AND MACRON"
             },
             {
                 "codepoint": 558,
-                "name": "uni022E",
-                "realCodepoint": 558
+                "glyphName": "uni022E",
+                "realCodepoint": 558,
+                "char": "\u022e",
+                "unicodeHex": "U+022E",
+                "name": "LATIN CAPITAL LETTER O WITH DOT ABOVE"
             },
             {
                 "codepoint": 559,
-                "name": "uni022F",
-                "realCodepoint": 559
+                "glyphName": "uni022F",
+                "realCodepoint": 559,
+                "char": "\u022f",
+                "unicodeHex": "U+022F",
+                "name": "LATIN SMALL LETTER O WITH DOT ABOVE"
             },
             {
                 "codepoint": 560,
-                "name": "uni0230",
-                "realCodepoint": 560
+                "glyphName": "uni0230",
+                "realCodepoint": 560,
+                "char": "\u0230",
+                "unicodeHex": "U+0230",
+                "name": "LATIN CAPITAL LETTER O WITH DOT ABOVE AND MACRON"
             },
             {
                 "codepoint": 561,
-                "name": "uni0231",
-                "realCodepoint": 561
+                "glyphName": "uni0231",
+                "realCodepoint": 561,
+                "char": "\u0231",
+                "unicodeHex": "U+0231",
+                "name": "LATIN SMALL LETTER O WITH DOT ABOVE AND MACRON"
             },
             {
                 "codepoint": 562,
-                "name": "uni0232",
-                "realCodepoint": 562
+                "glyphName": "uni0232",
+                "realCodepoint": 562,
+                "char": "\u0232",
+                "unicodeHex": "U+0232",
+                "name": "LATIN CAPITAL LETTER Y WITH MACRON"
             },
             {
                 "codepoint": 563,
-                "name": "uni0233",
-                "realCodepoint": 563
+                "glyphName": "uni0233",
+                "realCodepoint": 563,
+                "char": "\u0233",
+                "unicodeHex": "U+0233",
+                "name": "LATIN SMALL LETTER Y WITH MACRON"
             },
             {
                 "codepoint": 567,
-                "name": "uni0237",
-                "realCodepoint": 567
+                "glyphName": "uni0237",
+                "realCodepoint": 567,
+                "char": "\u0237",
+                "unicodeHex": "U+0237",
+                "name": "LATIN SMALL LETTER DOTLESS J"
             },
             {
                 "codepoint": 728,
-                "name": "breve",
-                "realCodepoint": 728
+                "glyphName": "breve",
+                "realCodepoint": 728,
+                "char": "\u02d8",
+                "unicodeHex": "U+02D8",
+                "name": "BREVE"
             },
             {
                 "codepoint": 729,
-                "name": "dotaccent",
-                "realCodepoint": 729
+                "glyphName": "dotaccent",
+                "realCodepoint": 729,
+                "char": "\u02d9",
+                "unicodeHex": "U+02D9",
+                "name": "DOT ABOVE"
             },
             {
                 "codepoint": 730,
-                "name": "ring",
-                "realCodepoint": 730
+                "glyphName": "ring",
+                "realCodepoint": 730,
+                "char": "\u02da",
+                "unicodeHex": "U+02DA",
+                "name": "RING ABOVE"
             },
             {
                 "codepoint": 732,
-                "name": "tilde",
-                "realCodepoint": 732
+                "glyphName": "tilde",
+                "realCodepoint": 732,
+                "char": "\u02dc",
+                "unicodeHex": "U+02DC",
+                "name": "SMALL TILDE"
             },
             {
                 "codepoint": 768,
-                "name": "gravecomb",
-                "realCodepoint": 768
+                "glyphName": "gravecomb",
+                "realCodepoint": 768,
+                "char": "\u0300",
+                "unicodeHex": "U+0300",
+                "name": "COMBINING GRAVE ACCENT"
             },
             {
                 "codepoint": 769,
-                "name": "acutecomb",
-                "realCodepoint": 769
+                "glyphName": "acutecomb",
+                "realCodepoint": 769,
+                "char": "\u0301",
+                "unicodeHex": "U+0301",
+                "name": "COMBINING ACUTE ACCENT"
             },
             {
                 "codepoint": 770,
-                "name": "uni0302",
-                "realCodepoint": 770
+                "glyphName": "uni0302",
+                "realCodepoint": 770,
+                "char": "\u0302",
+                "unicodeHex": "U+0302",
+                "name": "COMBINING CIRCUMFLEX ACCENT"
             },
             {
                 "codepoint": 771,
-                "name": "tildecomb",
-                "realCodepoint": 771
+                "glyphName": "tildecomb",
+                "realCodepoint": 771,
+                "char": "\u0303",
+                "unicodeHex": "U+0303",
+                "name": "COMBINING TILDE"
             },
             {
                 "codepoint": 772,
-                "name": "uni0304",
-                "realCodepoint": 772
+                "glyphName": "uni0304",
+                "realCodepoint": 772,
+                "char": "\u0304",
+                "unicodeHex": "U+0304",
+                "name": "COMBINING MACRON"
             },
             {
                 "codepoint": 773,
-                "name": "uni0305",
-                "realCodepoint": 773
+                "glyphName": "uni0305",
+                "realCodepoint": 773,
+                "char": "\u0305",
+                "unicodeHex": "U+0305",
+                "name": "COMBINING OVERLINE"
             },
             {
                 "codepoint": 774,
-                "name": "uni0306",
-                "realCodepoint": 774
+                "glyphName": "uni0306",
+                "realCodepoint": 774,
+                "char": "\u0306",
+                "unicodeHex": "U+0306",
+                "name": "COMBINING BREVE"
             },
             {
                 "codepoint": 775,
-                "name": "uni0307",
-                "realCodepoint": 775
+                "glyphName": "uni0307",
+                "realCodepoint": 775,
+                "char": "\u0307",
+                "unicodeHex": "U+0307",
+                "name": "COMBINING DOT ABOVE"
             },
             {
                 "codepoint": 776,
-                "name": "uni0308",
-                "realCodepoint": 776
+                "glyphName": "uni0308",
+                "realCodepoint": 776,
+                "char": "\u0308",
+                "unicodeHex": "U+0308",
+                "name": "COMBINING DIAERESIS"
             },
             {
                 "codepoint": 778,
-                "name": "uni030A",
-                "realCodepoint": 778
+                "glyphName": "uni030A",
+                "realCodepoint": 778,
+                "char": "\u030a",
+                "unicodeHex": "U+030A",
+                "name": "COMBINING RING ABOVE"
             },
             {
                 "codepoint": 780,
-                "name": "uni030C",
-                "realCodepoint": 780
+                "glyphName": "uni030C",
+                "realCodepoint": 780,
+                "char": "\u030c",
+                "unicodeHex": "U+030C",
+                "name": "COMBINING CARON"
             },
             {
                 "codepoint": 807,
-                "name": "uni0327",
-                "realCodepoint": 807
+                "glyphName": "uni0327",
+                "realCodepoint": 807,
+                "char": "\u0327",
+                "unicodeHex": "U+0327",
+                "name": "COMBINING CEDILLA"
             },
             {
                 "codepoint": 8192,
-                "name": "uni2000",
-                "realCodepoint": 8192
+                "glyphName": "uni2000",
+                "realCodepoint": 8192,
+                "char": "\u2000",
+                "unicodeHex": "U+2000",
+                "name": "EN QUAD"
             },
             {
                 "codepoint": 8193,
-                "name": "uni2001",
-                "realCodepoint": 8193
+                "glyphName": "uni2001",
+                "realCodepoint": 8193,
+                "char": "\u2001",
+                "unicodeHex": "U+2001",
+                "name": "EM QUAD"
             },
             {
                 "codepoint": 8194,
-                "name": "uni2002",
-                "realCodepoint": 8194
+                "glyphName": "uni2002",
+                "realCodepoint": 8194,
+                "char": "\u2002",
+                "unicodeHex": "U+2002",
+                "name": "EN SPACE"
             },
             {
                 "codepoint": 8195,
-                "name": "uni2003",
-                "realCodepoint": 8195
+                "glyphName": "uni2003",
+                "realCodepoint": 8195,
+                "char": "\u2003",
+                "unicodeHex": "U+2003",
+                "name": "EM SPACE"
             },
             {
                 "codepoint": 8196,
-                "name": "uni2004",
-                "realCodepoint": 8196
+                "glyphName": "uni2004",
+                "realCodepoint": 8196,
+                "char": "\u2004",
+                "unicodeHex": "U+2004",
+                "name": "THREE-PER-EM SPACE"
             },
             {
                 "codepoint": 8197,
-                "name": "uni2005",
-                "realCodepoint": 8197
+                "glyphName": "uni2005",
+                "realCodepoint": 8197,
+                "char": "\u2005",
+                "unicodeHex": "U+2005",
+                "name": "FOUR-PER-EM SPACE"
             },
             {
                 "codepoint": 8198,
-                "name": "uni2006",
-                "realCodepoint": 8198
+                "glyphName": "uni2006",
+                "realCodepoint": 8198,
+                "char": "\u2006",
+                "unicodeHex": "U+2006",
+                "name": "SIX-PER-EM SPACE"
             },
             {
                 "codepoint": 8199,
-                "name": "uni2007",
-                "realCodepoint": 8199
+                "glyphName": "uni2007",
+                "realCodepoint": 8199,
+                "char": "\u2007",
+                "unicodeHex": "U+2007",
+                "name": "FIGURE SPACE"
             },
             {
                 "codepoint": 8200,
-                "name": "uni2008",
-                "realCodepoint": 8200
+                "glyphName": "uni2008",
+                "realCodepoint": 8200,
+                "char": "\u2008",
+                "unicodeHex": "U+2008",
+                "name": "PUNCTUATION SPACE"
             },
             {
                 "codepoint": 8201,
-                "name": "uni2009",
-                "realCodepoint": 8201
+                "glyphName": "uni2009",
+                "realCodepoint": 8201,
+                "char": "\u2009",
+                "unicodeHex": "U+2009",
+                "name": "THIN SPACE"
             },
             {
                 "codepoint": 8202,
-                "name": "uni200A",
-                "realCodepoint": 8202
+                "glyphName": "uni200A",
+                "realCodepoint": 8202,
+                "char": "\u200a",
+                "unicodeHex": "U+200A",
+                "name": "HAIR SPACE"
             },
             {
                 "codepoint": 8203,
-                "name": "uni200B",
-                "realCodepoint": 8203
+                "glyphName": "uni200B",
+                "realCodepoint": 8203,
+                "char": "\u200b",
+                "unicodeHex": "U+200B",
+                "name": "ZERO WIDTH SPACE"
             },
             {
                 "codepoint": 8204,
-                "name": "afii61664",
-                "realCodepoint": 8204
+                "glyphName": "afii61664",
+                "realCodepoint": 8204,
+                "char": "\u200c",
+                "unicodeHex": "U+200C",
+                "name": "ZERO WIDTH NON-JOINER"
             },
             {
                 "codepoint": 8205,
-                "name": "afii301",
-                "realCodepoint": 8205
+                "glyphName": "afii301",
+                "realCodepoint": 8205,
+                "char": "\u200d",
+                "unicodeHex": "U+200D",
+                "name": "ZERO WIDTH JOINER"
             },
             {
                 "codepoint": 8208,
-                "name": "uni2010",
-                "realCodepoint": 8208
+                "glyphName": "uni2010",
+                "realCodepoint": 8208,
+                "char": "\u2010",
+                "unicodeHex": "U+2010",
+                "name": "HYPHEN"
             },
             {
                 "codepoint": 8209,
-                "name": "uni2011",
-                "realCodepoint": 8209
+                "glyphName": "uni2011",
+                "realCodepoint": 8209,
+                "char": "\u2011",
+                "unicodeHex": "U+2011",
+                "name": "NON-BREAKING HYPHEN"
             },
             {
                 "codepoint": 8210,
-                "name": "figuredash",
-                "realCodepoint": 8210
+                "glyphName": "figuredash",
+                "realCodepoint": 8210,
+                "char": "\u2012",
+                "unicodeHex": "U+2012",
+                "name": "FIGURE DASH"
             },
             {
                 "codepoint": 8211,
-                "name": "endash",
-                "realCodepoint": 8211
+                "glyphName": "endash",
+                "realCodepoint": 8211,
+                "char": "\u2013",
+                "unicodeHex": "U+2013",
+                "name": "EN DASH"
             },
             {
                 "codepoint": 8212,
-                "name": "emdash",
-                "realCodepoint": 8212
+                "glyphName": "emdash",
+                "realCodepoint": 8212,
+                "char": "\u2014",
+                "unicodeHex": "U+2014",
+                "name": "EM DASH"
             },
             {
                 "codepoint": 8213,
-                "name": "afii00208",
-                "realCodepoint": 8213
+                "glyphName": "afii00208",
+                "realCodepoint": 8213,
+                "char": "\u2015",
+                "unicodeHex": "U+2015",
+                "name": "HORIZONTAL BAR"
             },
             {
                 "codepoint": 8214,
-                "name": "uni2016",
-                "realCodepoint": 8214
+                "glyphName": "uni2016",
+                "realCodepoint": 8214,
+                "char": "\u2016",
+                "unicodeHex": "U+2016",
+                "name": "DOUBLE VERTICAL LINE"
             },
             {
                 "codepoint": 8215,
-                "name": "underscoredbl",
-                "realCodepoint": 8215
+                "glyphName": "underscoredbl",
+                "realCodepoint": 8215,
+                "char": "\u2017",
+                "unicodeHex": "U+2017",
+                "name": "DOUBLE LOW LINE"
             },
             {
                 "codepoint": 8216,
-                "name": "quoteleft",
-                "realCodepoint": 8216
+                "glyphName": "quoteleft",
+                "realCodepoint": 8216,
+                "char": "\u2018",
+                "unicodeHex": "U+2018",
+                "name": "LEFT SINGLE QUOTATION MARK"
             },
             {
                 "codepoint": 8217,
-                "name": "quoteright",
-                "realCodepoint": 8217
+                "glyphName": "quoteright",
+                "realCodepoint": 8217,
+                "char": "\u2019",
+                "unicodeHex": "U+2019",
+                "name": "RIGHT SINGLE QUOTATION MARK"
             },
             {
                 "codepoint": 8218,
-                "name": "quotesinglbase",
-                "realCodepoint": 8218
+                "glyphName": "quotesinglbase",
+                "realCodepoint": 8218,
+                "char": "\u201a",
+                "unicodeHex": "U+201A",
+                "name": "SINGLE LOW-9 QUOTATION MARK"
             },
             {
                 "codepoint": 8219,
-                "name": "quotereversed",
-                "realCodepoint": 8219
+                "glyphName": "quotereversed",
+                "realCodepoint": 8219,
+                "char": "\u201b",
+                "unicodeHex": "U+201B",
+                "name": "SINGLE HIGH-REVERSED-9 QUOTATION MARK"
             },
             {
                 "codepoint": 8220,
-                "name": "quotedblleft",
-                "realCodepoint": 8220
+                "glyphName": "quotedblleft",
+                "realCodepoint": 8220,
+                "char": "\u201c",
+                "unicodeHex": "U+201C",
+                "name": "LEFT DOUBLE QUOTATION MARK"
             },
             {
                 "codepoint": 8221,
-                "name": "quotedblright",
-                "realCodepoint": 8221
+                "glyphName": "quotedblright",
+                "realCodepoint": 8221,
+                "char": "\u201d",
+                "unicodeHex": "U+201D",
+                "name": "RIGHT DOUBLE QUOTATION MARK"
             },
             {
                 "codepoint": 8222,
-                "name": "quotedblbase",
-                "realCodepoint": 8222
+                "glyphName": "quotedblbase",
+                "realCodepoint": 8222,
+                "char": "\u201e",
+                "unicodeHex": "U+201E",
+                "name": "DOUBLE LOW-9 QUOTATION MARK"
             },
             {
                 "codepoint": 8223,
-                "name": "uni201F",
-                "realCodepoint": 8223
+                "glyphName": "uni201F",
+                "realCodepoint": 8223,
+                "char": "\u201f",
+                "unicodeHex": "U+201F",
+                "name": "DOUBLE HIGH-REVERSED-9 QUOTATION MARK"
             },
             {
                 "codepoint": 8224,
-                "name": "dagger",
-                "realCodepoint": 8224
+                "glyphName": "dagger",
+                "realCodepoint": 8224,
+                "char": "\u2020",
+                "unicodeHex": "U+2020",
+                "name": "DAGGER"
             },
             {
                 "codepoint": 8225,
-                "name": "daggerdbl",
-                "realCodepoint": 8225
+                "glyphName": "daggerdbl",
+                "realCodepoint": 8225,
+                "char": "\u2021",
+                "unicodeHex": "U+2021",
+                "name": "DOUBLE DAGGER"
             },
             {
                 "codepoint": 8226,
-                "name": "bullet",
-                "realCodepoint": 8226
+                "glyphName": "bullet",
+                "realCodepoint": 8226,
+                "char": "\u2022",
+                "unicodeHex": "U+2022",
+                "name": "BULLET"
             },
             {
                 "codepoint": 8227,
-                "name": "uni2023",
-                "realCodepoint": 8227
+                "glyphName": "uni2023",
+                "realCodepoint": 8227,
+                "char": "\u2023",
+                "unicodeHex": "U+2023",
+                "name": "TRIANGULAR BULLET"
             },
             {
                 "codepoint": 8240,
-                "name": "perthousand",
-                "realCodepoint": 8240
+                "glyphName": "perthousand",
+                "realCodepoint": 8240,
+                "char": "\u2030",
+                "unicodeHex": "U+2030",
+                "name": "PER MILLE SIGN"
             },
             {
                 "codepoint": 8241,
-                "name": "uni2031",
-                "realCodepoint": 8241
+                "glyphName": "uni2031",
+                "realCodepoint": 8241,
+                "char": "\u2031",
+                "unicodeHex": "U+2031",
+                "name": "PER TEN THOUSAND SIGN"
             },
             {
                 "codepoint": 8242,
-                "name": "minute",
-                "realCodepoint": 8242
+                "glyphName": "minute",
+                "realCodepoint": 8242,
+                "char": "\u2032",
+                "unicodeHex": "U+2032",
+                "name": "PRIME"
             },
             {
                 "codepoint": 8243,
-                "name": "second",
-                "realCodepoint": 8243
+                "glyphName": "second",
+                "realCodepoint": 8243,
+                "char": "\u2033",
+                "unicodeHex": "U+2033",
+                "name": "DOUBLE PRIME"
             },
             {
                 "codepoint": 8244,
-                "name": "uni2034",
-                "realCodepoint": 8244
+                "glyphName": "uni2034",
+                "realCodepoint": 8244,
+                "char": "\u2034",
+                "unicodeHex": "U+2034",
+                "name": "TRIPLE PRIME"
             },
             {
                 "codepoint": 8245,
-                "name": "uni2035",
-                "realCodepoint": 8245
+                "glyphName": "uni2035",
+                "realCodepoint": 8245,
+                "char": "\u2035",
+                "unicodeHex": "U+2035",
+                "name": "REVERSED PRIME"
             },
             {
                 "codepoint": 8246,
-                "name": "uni2036",
-                "realCodepoint": 8246
+                "glyphName": "uni2036",
+                "realCodepoint": 8246,
+                "char": "\u2036",
+                "unicodeHex": "U+2036",
+                "name": "REVERSED DOUBLE PRIME"
             },
             {
                 "codepoint": 8247,
-                "name": "uni2037",
-                "realCodepoint": 8247
+                "glyphName": "uni2037",
+                "realCodepoint": 8247,
+                "char": "\u2037",
+                "unicodeHex": "U+2037",
+                "name": "REVERSED TRIPLE PRIME"
             },
             {
                 "codepoint": 8252,
-                "name": "exclamdbl",
-                "realCodepoint": 8252
+                "glyphName": "exclamdbl",
+                "realCodepoint": 8252,
+                "char": "\u203c",
+                "unicodeHex": "U+203C",
+                "name": "DOUBLE EXCLAMATION MARK"
             },
             {
                 "codepoint": 8253,
-                "name": "uni203D",
-                "realCodepoint": 8253
+                "glyphName": "uni203D",
+                "realCodepoint": 8253,
+                "char": "\u203d",
+                "unicodeHex": "U+203D",
+                "name": "INTERROBANG"
             },
             {
                 "codepoint": 8260,
-                "name": "fraction",
-                "realCodepoint": 8260
+                "glyphName": "fraction",
+                "realCodepoint": 8260,
+                "char": "\u2044",
+                "unicodeHex": "U+2044",
+                "name": "FRACTION SLASH"
             },
             {
                 "codepoint": 8279,
-                "name": "uni2057",
-                "realCodepoint": 8279
+                "glyphName": "uni2057",
+                "realCodepoint": 8279,
+                "char": "\u2057",
+                "unicodeHex": "U+2057",
+                "name": "QUADRUPLE PRIME"
             },
             {
                 "codepoint": 8304,
-                "name": "uni2070",
-                "realCodepoint": 8304
+                "glyphName": "uni2070",
+                "realCodepoint": 8304,
+                "char": "\u2070",
+                "unicodeHex": "U+2070",
+                "name": "SUPERSCRIPT ZERO"
             },
             {
                 "codepoint": 8305,
-                "name": "uni2071",
-                "realCodepoint": 8305
+                "glyphName": "uni2071",
+                "realCodepoint": 8305,
+                "char": "\u2071",
+                "unicodeHex": "U+2071",
+                "name": "SUPERSCRIPT LATIN SMALL LETTER I"
             },
             {
                 "codepoint": 8308,
-                "name": "uni2074",
-                "realCodepoint": 8308
+                "glyphName": "uni2074",
+                "realCodepoint": 8308,
+                "char": "\u2074",
+                "unicodeHex": "U+2074",
+                "name": "SUPERSCRIPT FOUR"
             },
             {
                 "codepoint": 8309,
-                "name": "uni2075",
-                "realCodepoint": 8309
+                "glyphName": "uni2075",
+                "realCodepoint": 8309,
+                "char": "\u2075",
+                "unicodeHex": "U+2075",
+                "name": "SUPERSCRIPT FIVE"
             },
             {
                 "codepoint": 8310,
-                "name": "uni2076",
-                "realCodepoint": 8310
+                "glyphName": "uni2076",
+                "realCodepoint": 8310,
+                "char": "\u2076",
+                "unicodeHex": "U+2076",
+                "name": "SUPERSCRIPT SIX"
             },
             {
                 "codepoint": 8311,
-                "name": "uni2077",
-                "realCodepoint": 8311
+                "glyphName": "uni2077",
+                "realCodepoint": 8311,
+                "char": "\u2077",
+                "unicodeHex": "U+2077",
+                "name": "SUPERSCRIPT SEVEN"
             },
             {
                 "codepoint": 8312,
-                "name": "uni2078",
-                "realCodepoint": 8312
+                "glyphName": "uni2078",
+                "realCodepoint": 8312,
+                "char": "\u2078",
+                "unicodeHex": "U+2078",
+                "name": "SUPERSCRIPT EIGHT"
             },
             {
                 "codepoint": 8313,
-                "name": "uni2079",
-                "realCodepoint": 8313
+                "glyphName": "uni2079",
+                "realCodepoint": 8313,
+                "char": "\u2079",
+                "unicodeHex": "U+2079",
+                "name": "SUPERSCRIPT NINE"
             },
             {
                 "codepoint": 8314,
-                "name": "uni207A",
-                "realCodepoint": 8314
+                "glyphName": "uni207A",
+                "realCodepoint": 8314,
+                "char": "\u207a",
+                "unicodeHex": "U+207A",
+                "name": "SUPERSCRIPT PLUS SIGN"
             },
             {
                 "codepoint": 8315,
-                "name": "uni207B",
-                "realCodepoint": 8315
+                "glyphName": "uni207B",
+                "realCodepoint": 8315,
+                "char": "\u207b",
+                "unicodeHex": "U+207B",
+                "name": "SUPERSCRIPT MINUS"
             },
             {
                 "codepoint": 8316,
-                "name": "uni207C",
-                "realCodepoint": 8316
+                "glyphName": "uni207C",
+                "realCodepoint": 8316,
+                "char": "\u207c",
+                "unicodeHex": "U+207C",
+                "name": "SUPERSCRIPT EQUALS SIGN"
             },
             {
                 "codepoint": 8317,
-                "name": "uni207D",
-                "realCodepoint": 8317
+                "glyphName": "uni207D",
+                "realCodepoint": 8317,
+                "char": "\u207d",
+                "unicodeHex": "U+207D",
+                "name": "SUPERSCRIPT LEFT PARENTHESIS"
             },
             {
                 "codepoint": 8318,
-                "name": "uni207E",
-                "realCodepoint": 8318
+                "glyphName": "uni207E",
+                "realCodepoint": 8318,
+                "char": "\u207e",
+                "unicodeHex": "U+207E",
+                "name": "SUPERSCRIPT RIGHT PARENTHESIS"
             },
             {
                 "codepoint": 8319,
-                "name": "uni207F",
-                "realCodepoint": 8319
+                "glyphName": "uni207F",
+                "realCodepoint": 8319,
+                "char": "\u207f",
+                "unicodeHex": "U+207F",
+                "name": "SUPERSCRIPT LATIN SMALL LETTER N"
             },
             {
                 "codepoint": 8320,
-                "name": "uni2080",
-                "realCodepoint": 8320
+                "glyphName": "uni2080",
+                "realCodepoint": 8320,
+                "char": "\u2080",
+                "unicodeHex": "U+2080",
+                "name": "SUBSCRIPT ZERO"
             },
             {
                 "codepoint": 8321,
-                "name": "uni2081",
-                "realCodepoint": 8321
+                "glyphName": "uni2081",
+                "realCodepoint": 8321,
+                "char": "\u2081",
+                "unicodeHex": "U+2081",
+                "name": "SUBSCRIPT ONE"
             },
             {
                 "codepoint": 8322,
-                "name": "uni2082",
-                "realCodepoint": 8322
+                "glyphName": "uni2082",
+                "realCodepoint": 8322,
+                "char": "\u2082",
+                "unicodeHex": "U+2082",
+                "name": "SUBSCRIPT TWO"
             },
             {
                 "codepoint": 8323,
-                "name": "uni2083",
-                "realCodepoint": 8323
+                "glyphName": "uni2083",
+                "realCodepoint": 8323,
+                "char": "\u2083",
+                "unicodeHex": "U+2083",
+                "name": "SUBSCRIPT THREE"
             },
             {
                 "codepoint": 8324,
-                "name": "uni2084",
-                "realCodepoint": 8324
+                "glyphName": "uni2084",
+                "realCodepoint": 8324,
+                "char": "\u2084",
+                "unicodeHex": "U+2084",
+                "name": "SUBSCRIPT FOUR"
             },
             {
                 "codepoint": 8325,
-                "name": "uni2085",
-                "realCodepoint": 8325
+                "glyphName": "uni2085",
+                "realCodepoint": 8325,
+                "char": "\u2085",
+                "unicodeHex": "U+2085",
+                "name": "SUBSCRIPT FIVE"
             },
             {
                 "codepoint": 8326,
-                "name": "uni2086",
-                "realCodepoint": 8326
+                "glyphName": "uni2086",
+                "realCodepoint": 8326,
+                "char": "\u2086",
+                "unicodeHex": "U+2086",
+                "name": "SUBSCRIPT SIX"
             },
             {
                 "codepoint": 8327,
-                "name": "uni2087",
-                "realCodepoint": 8327
+                "glyphName": "uni2087",
+                "realCodepoint": 8327,
+                "char": "\u2087",
+                "unicodeHex": "U+2087",
+                "name": "SUBSCRIPT SEVEN"
             },
             {
                 "codepoint": 8328,
-                "name": "uni2088",
-                "realCodepoint": 8328
+                "glyphName": "uni2088",
+                "realCodepoint": 8328,
+                "char": "\u2088",
+                "unicodeHex": "U+2088",
+                "name": "SUBSCRIPT EIGHT"
             },
             {
                 "codepoint": 8329,
-                "name": "uni2089",
-                "realCodepoint": 8329
+                "glyphName": "uni2089",
+                "realCodepoint": 8329,
+                "char": "\u2089",
+                "unicodeHex": "U+2089",
+                "name": "SUBSCRIPT NINE"
             },
             {
                 "codepoint": 8330,
-                "name": "uni208A",
-                "realCodepoint": 8330
+                "glyphName": "uni208A",
+                "realCodepoint": 8330,
+                "char": "\u208a",
+                "unicodeHex": "U+208A",
+                "name": "SUBSCRIPT PLUS SIGN"
             },
             {
                 "codepoint": 8331,
-                "name": "uni208B",
-                "realCodepoint": 8331
+                "glyphName": "uni208B",
+                "realCodepoint": 8331,
+                "char": "\u208b",
+                "unicodeHex": "U+208B",
+                "name": "SUBSCRIPT MINUS"
             },
             {
                 "codepoint": 8332,
-                "name": "uni208C",
-                "realCodepoint": 8332
+                "glyphName": "uni208C",
+                "realCodepoint": 8332,
+                "char": "\u208c",
+                "unicodeHex": "U+208C",
+                "name": "SUBSCRIPT EQUALS SIGN"
             },
             {
                 "codepoint": 8333,
-                "name": "uni208D",
-                "realCodepoint": 8333
+                "glyphName": "uni208D",
+                "realCodepoint": 8333,
+                "char": "\u208d",
+                "unicodeHex": "U+208D",
+                "name": "SUBSCRIPT LEFT PARENTHESIS"
             },
             {
                 "codepoint": 8334,
-                "name": "uni208E",
-                "realCodepoint": 8334
+                "glyphName": "uni208E",
+                "realCodepoint": 8334,
+                "char": "\u208e",
+                "unicodeHex": "U+208E",
+                "name": "SUBSCRIPT RIGHT PARENTHESIS"
             },
             {
                 "codepoint": 8452,
-                "name": "uni2104",
-                "realCodepoint": 8452
+                "glyphName": "uni2104",
+                "realCodepoint": 8452,
+                "char": "\u2104",
+                "unicodeHex": "U+2104",
+                "name": "CENTRE LINE SYMBOL"
             },
             {
                 "codepoint": 8528,
-                "name": "uni2150",
-                "realCodepoint": 8528
+                "glyphName": "uni2150",
+                "realCodepoint": 8528,
+                "char": "\u2150",
+                "unicodeHex": "U+2150",
+                "name": "VULGAR FRACTION ONE SEVENTH"
             },
             {
                 "codepoint": 8531,
-                "name": "onethird",
-                "realCodepoint": 8531
+                "glyphName": "onethird",
+                "realCodepoint": 8531,
+                "char": "\u2153",
+                "unicodeHex": "U+2153",
+                "name": "VULGAR FRACTION ONE THIRD"
             },
             {
                 "codepoint": 8532,
-                "name": "twothirds",
-                "realCodepoint": 8532
+                "glyphName": "twothirds",
+                "realCodepoint": 8532,
+                "char": "\u2154",
+                "unicodeHex": "U+2154",
+                "name": "VULGAR FRACTION TWO THIRDS"
             },
             {
                 "codepoint": 8533,
-                "name": "uni2155",
-                "realCodepoint": 8533
+                "glyphName": "uni2155",
+                "realCodepoint": 8533,
+                "char": "\u2155",
+                "unicodeHex": "U+2155",
+                "name": "VULGAR FRACTION ONE FIFTH"
             },
             {
                 "codepoint": 8534,
-                "name": "uni2156",
-                "realCodepoint": 8534
+                "glyphName": "uni2156",
+                "realCodepoint": 8534,
+                "char": "\u2156",
+                "unicodeHex": "U+2156",
+                "name": "VULGAR FRACTION TWO FIFTHS"
             },
             {
                 "codepoint": 8535,
-                "name": "uni2157",
-                "realCodepoint": 8535
+                "glyphName": "uni2157",
+                "realCodepoint": 8535,
+                "char": "\u2157",
+                "unicodeHex": "U+2157",
+                "name": "VULGAR FRACTION THREE FIFTHS"
             },
             {
                 "codepoint": 8536,
-                "name": "uni2158",
-                "realCodepoint": 8536
+                "glyphName": "uni2158",
+                "realCodepoint": 8536,
+                "char": "\u2158",
+                "unicodeHex": "U+2158",
+                "name": "VULGAR FRACTION FOUR FIFTHS"
             },
             {
                 "codepoint": 8537,
-                "name": "uni2159",
-                "realCodepoint": 8537
+                "glyphName": "uni2159",
+                "realCodepoint": 8537,
+                "char": "\u2159",
+                "unicodeHex": "U+2159",
+                "name": "VULGAR FRACTION ONE SIXTH"
             },
             {
                 "codepoint": 8538,
-                "name": "uni215A",
-                "realCodepoint": 8538
+                "glyphName": "uni215A",
+                "realCodepoint": 8538,
+                "char": "\u215a",
+                "unicodeHex": "U+215A",
+                "name": "VULGAR FRACTION FIVE SIXTHS"
             },
             {
                 "codepoint": 8539,
-                "name": "oneeighth",
-                "realCodepoint": 8539
+                "glyphName": "oneeighth",
+                "realCodepoint": 8539,
+                "char": "\u215b",
+                "unicodeHex": "U+215B",
+                "name": "VULGAR FRACTION ONE EIGHTH"
             },
             {
                 "codepoint": 8540,
-                "name": "threeeighths",
-                "realCodepoint": 8540
+                "glyphName": "threeeighths",
+                "realCodepoint": 8540,
+                "char": "\u215c",
+                "unicodeHex": "U+215C",
+                "name": "VULGAR FRACTION THREE EIGHTHS"
             },
             {
                 "codepoint": 8541,
-                "name": "fiveeighths",
-                "realCodepoint": 8541
+                "glyphName": "fiveeighths",
+                "realCodepoint": 8541,
+                "char": "\u215d",
+                "unicodeHex": "U+215D",
+                "name": "VULGAR FRACTION FIVE EIGHTHS"
             },
             {
                 "codepoint": 8542,
-                "name": "seveneighths",
-                "realCodepoint": 8542
+                "glyphName": "seveneighths",
+                "realCodepoint": 8542,
+                "char": "\u215e",
+                "unicodeHex": "U+215E",
+                "name": "VULGAR FRACTION SEVEN EIGHTHS"
             },
             {
                 "codepoint": 8592,
-                "name": "arrowleft",
-                "realCodepoint": 8592
+                "glyphName": "arrowleft",
+                "realCodepoint": 8592,
+                "char": "\u2190",
+                "unicodeHex": "U+2190",
+                "name": "LEFTWARDS ARROW"
             },
             {
                 "codepoint": 8593,
-                "name": "arrowup",
-                "realCodepoint": 8593
+                "glyphName": "arrowup",
+                "realCodepoint": 8593,
+                "char": "\u2191",
+                "unicodeHex": "U+2191",
+                "name": "UPWARDS ARROW"
             },
             {
                 "codepoint": 8594,
-                "name": "arrowright",
-                "realCodepoint": 8594
+                "glyphName": "arrowright",
+                "realCodepoint": 8594,
+                "char": "\u2192",
+                "unicodeHex": "U+2192",
+                "name": "RIGHTWARDS ARROW"
             },
             {
                 "codepoint": 8595,
-                "name": "arrowdown",
-                "realCodepoint": 8595
+                "glyphName": "arrowdown",
+                "realCodepoint": 8595,
+                "char": "\u2193",
+                "unicodeHex": "U+2193",
+                "name": "DOWNWARDS ARROW"
             },
             {
                 "codepoint": 8596,
-                "name": "arrowboth",
-                "realCodepoint": 8596
+                "glyphName": "arrowboth",
+                "realCodepoint": 8596,
+                "char": "\u2194",
+                "unicodeHex": "U+2194",
+                "name": "LEFT RIGHT ARROW"
             },
             {
                 "codepoint": 8597,
-                "name": "arrowupdn",
-                "realCodepoint": 8597
+                "glyphName": "arrowupdn",
+                "realCodepoint": 8597,
+                "char": "\u2195",
+                "unicodeHex": "U+2195",
+                "name": "UP DOWN ARROW"
             },
             {
                 "codepoint": 8722,
-                "name": "minus",
-                "realCodepoint": 8722
+                "glyphName": "minus",
+                "realCodepoint": 8722,
+                "char": "\u2212",
+                "unicodeHex": "U+2212",
+                "name": "MINUS SIGN"
             },
             {
                 "codepoint": 8960,
-                "name": "uni2300",
-                "realCodepoint": 8960
+                "glyphName": "uni2300",
+                "realCodepoint": 8960,
+                "char": "\u2300",
+                "unicodeHex": "U+2300",
+                "name": "DIAMETER SIGN"
             },
             {
                 "codepoint": 10229,
-                "name": "uni27F5",
-                "realCodepoint": 10229
+                "glyphName": "uni27F5",
+                "realCodepoint": 10229,
+                "char": "\u27f5",
+                "unicodeHex": "U+27F5",
+                "name": "LONG LEFTWARDS ARROW"
             },
             {
                 "codepoint": 10230,
-                "name": "uni27F6",
-                "realCodepoint": 10230
+                "glyphName": "uni27F6",
+                "realCodepoint": 10230,
+                "char": "\u27f6",
+                "unicodeHex": "U+27F6",
+                "name": "LONG RIGHTWARDS ARROW"
             },
             {
                 "codepoint": 10231,
-                "name": "uni27F7",
-                "realCodepoint": 10231
+                "glyphName": "uni27F7",
+                "realCodepoint": 10231,
+                "char": "\u27f7",
+                "unicodeHex": "U+27F7",
+                "name": "LONG LEFT RIGHT ARROW"
             },
             {
                 "codepoint": 57344,
-                "name": "uniE000",
-                "realCodepoint": 57344
+                "glyphName": "uniE000",
+                "realCodepoint": 57344,
+                "char": "\ue000",
+                "unicodeHex": "U+E000"
             },
             {
                 "codepoint": 57345,
-                "name": "uniE001",
-                "realCodepoint": 57345
+                "glyphName": "uniE001",
+                "realCodepoint": 57345,
+                "char": "\ue001",
+                "unicodeHex": "U+E001"
             },
             {
                 "codepoint": 57346,
-                "name": "uniE002",
-                "realCodepoint": 57346
+                "glyphName": "uniE002",
+                "realCodepoint": 57346,
+                "char": "\ue002",
+                "unicodeHex": "U+E002"
             },
             {
                 "codepoint": 57347,
-                "name": "uniE003",
-                "realCodepoint": 57347
+                "glyphName": "uniE003",
+                "realCodepoint": 57347,
+                "char": "\ue003",
+                "unicodeHex": "U+E003"
             },
             {
                 "codepoint": 57348,
-                "name": "uniE004",
-                "realCodepoint": 57348
+                "glyphName": "uniE004",
+                "realCodepoint": 57348,
+                "char": "\ue004",
+                "unicodeHex": "U+E004"
             },
             {
                 "codepoint": 57350,
-                "name": "uniE006",
-                "realCodepoint": 57350
+                "glyphName": "uniE006",
+                "realCodepoint": 57350,
+                "char": "\ue006",
+                "unicodeHex": "U+E006"
             },
             {
                 "codepoint": 57367,
-                "name": "uniE017",
-                "realCodepoint": 57367
+                "glyphName": "uniE017",
+                "realCodepoint": 57367,
+                "char": "\ue017",
+                "unicodeHex": "U+E017"
             },
             {
                 "codepoint": 57368,
-                "name": "uniE018",
-                "realCodepoint": 57368
+                "glyphName": "uniE018",
+                "realCodepoint": 57368,
+                "char": "\ue018",
+                "unicodeHex": "U+E018"
             },
             {
                 "codepoint": 57369,
-                "name": "uniE019",
-                "realCodepoint": 57369
+                "glyphName": "uniE019",
+                "realCodepoint": 57369,
+                "char": "\ue019",
+                "unicodeHex": "U+E019"
             },
             {
                 "codepoint": 57370,
-                "name": "uniE01A",
-                "realCodepoint": 57370
+                "glyphName": "uniE01A",
+                "realCodepoint": 57370,
+                "char": "\ue01a",
+                "unicodeHex": "U+E01A"
             },
             {
                 "codepoint": 57371,
-                "name": "uniE01B",
-                "realCodepoint": 57371
+                "glyphName": "uniE01B",
+                "realCodepoint": 57371,
+                "char": "\ue01b",
+                "unicodeHex": "U+E01B"
             },
             {
                 "codepoint": 57600,
-                "name": "uniE100",
-                "realCodepoint": 57600
+                "glyphName": "uniE100",
+                "realCodepoint": 57600,
+                "char": "\ue100",
+                "unicodeHex": "U+E100"
             },
             {
                 "codepoint": 57601,
-                "name": "uniE101",
-                "realCodepoint": 57601
+                "glyphName": "uniE101",
+                "realCodepoint": 57601,
+                "char": "\ue101",
+                "unicodeHex": "U+E101"
             },
             {
                 "codepoint": 57602,
-                "name": "uniE102",
-                "realCodepoint": 57602
+                "glyphName": "uniE102",
+                "realCodepoint": 57602,
+                "char": "\ue102",
+                "unicodeHex": "U+E102"
             },
             {
                 "codepoint": 57603,
-                "name": "uniE103",
-                "realCodepoint": 57603
+                "glyphName": "uniE103",
+                "realCodepoint": 57603,
+                "char": "\ue103",
+                "unicodeHex": "U+E103"
             },
             {
                 "codepoint": 57616,
-                "name": "uniE110",
-                "realCodepoint": 57616
+                "glyphName": "uniE110",
+                "realCodepoint": 57616,
+                "char": "\ue110",
+                "unicodeHex": "U+E110"
             },
             {
                 "codepoint": 57617,
-                "name": "uniE111",
-                "realCodepoint": 57617
+                "glyphName": "uniE111",
+                "realCodepoint": 57617,
+                "char": "\ue111",
+                "unicodeHex": "U+E111"
             },
             {
                 "codepoint": 57618,
-                "name": "uniE112",
-                "realCodepoint": 57618
+                "glyphName": "uniE112",
+                "realCodepoint": 57618,
+                "char": "\ue112",
+                "unicodeHex": "U+E112"
             },
             {
                 "codepoint": 57619,
-                "name": "uniE113",
-                "realCodepoint": 57619
+                "glyphName": "uniE113",
+                "realCodepoint": 57619,
+                "char": "\ue113",
+                "unicodeHex": "U+E113"
             },
             {
                 "codepoint": 57620,
-                "name": "uniE114",
-                "realCodepoint": 57620
+                "glyphName": "uniE114",
+                "realCodepoint": 57620,
+                "char": "\ue114",
+                "unicodeHex": "U+E114"
             },
             {
                 "codepoint": 57712,
-                "name": "uniE170",
-                "realCodepoint": 57712
+                "glyphName": "uniE170",
+                "realCodepoint": 57712,
+                "char": "\ue170",
+                "unicodeHex": "U+E170"
             },
             {
                 "codepoint": 57713,
-                "name": "uniE171",
-                "realCodepoint": 57713
+                "glyphName": "uniE171",
+                "realCodepoint": 57713,
+                "char": "\ue171",
+                "unicodeHex": "U+E171"
             },
             {
                 "codepoint": 128169,
-                "name": "u1F4A9",
-                "realCodepoint": 128169
+                "glyphName": "u1F4A9",
+                "realCodepoint": 128169,
+                "char": "\ud83d\udca9",
+                "unicodeHex": "U+1F4A9",
+                "name": "PILE OF POO"
             }
-        ]
-    },
-    "filename": "dist/ttf/routed-gothic.ttf",
-    "isCollection": false
+        ],
+        "filename": "dist/ttf/routed-gothic.ttf",
+        "isCollection": false
+    }
 }
