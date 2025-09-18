@@ -1,3 +1,6 @@
+.PHONY: default
+default: ttf zip web
+
 SRC_BASEFONT			= src
 DIST_TTF			= dist/ttf
 SUPPORT_BIN			= bin
@@ -29,9 +32,6 @@ GENERATE_SCRIPT			= $(SUPPORT_BIN)/generate-fonts.py
 GLYPH_LIST_SCRIPT		= $(SUPPORT_BIN)/make-character-list
 
 FONTS				= $(TTF_FONTS)
-
-.PHONY: default
-default: ttf zip web
 
 .PHONY: dist
 dist: fonts zip
