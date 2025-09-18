@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>{{ pageTitle }}</title>
+        <link rel="stylesheet" href="css/app.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+    </head>
+    <body>
+        {% include "_components/site-header.njk" %}
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell">
+                    <main>
+                        {% block main %}
+                        {% endblock %}
+                    </main>
+                </div>
+            </div>
+        </div>
+        {% include "_components/site-footer.njk" %}
+    </body>
+</html>
