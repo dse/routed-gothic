@@ -34,16 +34,16 @@ function sass(options) {
             autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
         ]))
         .pipe(renamePipe)
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('public/css'))
         .pipe(browserSync.stream());
 }
 
 function serve() {
     browserSync.init({
-        server: "./"
+        server: "./public/"
     });
     gulp.watch("src/scss//*.scss", sass);
-    gulp.watch(".//*.html").on('change', browserSync.reload);
+    gulp.watch("./public//*.html").on('change', browserSync.reload);
 }
 
 gulp.task('sassDev', sassDev);
