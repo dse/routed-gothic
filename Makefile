@@ -13,7 +13,7 @@ VENDOR				= DARN
 COPYRIGHT_OWNER			= Darren Embry
 COPYRIGHT_EMAIL			= dsembry@gmail.com
 
-SOURCE				= $(SRC_BASEFONT)routed-gothic-stroke-source.sfd
+SOURCE				= $(SRC_BASEFONT)/routed-gothic-stroke-source.sfd
 ZIP_FILE			= $(DIST_ZIP)/routed-gothic-ttf.zip
 TTF_FONTS			= $(DIST_TTF)/routed-gothic.ttf \
 				  $(DIST_TTF)/routed-gothic-half-italic.ttf \
@@ -25,8 +25,8 @@ TTF_FONTS			= $(DIST_TTF)/routed-gothic.ttf \
 				  $(DIST_TTF)/routed-gothic-wide-half-italic.ttf \
 				  $(DIST_TTF)/routed-gothic-wide-italic.ttf
 GLYPH_LIST			= includes/unicode-coverage.inc.html
-GENERATE_SCRIPT			= $(SUPPORT_BIN)generate-fonts.py
-GLYPH_LIST_SCRIPT		= $(SUPPORT_BIN)make-character-list
+GENERATE_SCRIPT			= $(SUPPORT_BIN)/generate-fonts.py
+GLYPH_LIST_SCRIPT		= $(SUPPORT_BIN)/make-character-list
 
 FONTS				= $(TTF_FONTS)
 
@@ -77,7 +77,7 @@ sass:
 
 .PHONY: downloads
 downloads:
-	$(SUPPORT_BIN)make-downloads
+	$(SUPPORT_BIN)/make-downloads
 
 publish:
 	ssh dse@webonastick.com "bash -c 'cd /www/webonastick.com/htdocs/fonts/routed-gothic && git pull'"
