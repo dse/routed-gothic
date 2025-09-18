@@ -1,28 +1,28 @@
-SRC_BASEFONT =		src
-DIST_TTF =		dist/ttf
-SUPPORT_BIN =		bin
-DIST_ZIP =		dist
+SRC_BASEFONT			= src
+DIST_TTF			= dist/ttf
+SUPPORT_BIN			= bin
+DIST_ZIP			= dist
 
-FONT_PACKAGE_NAME =	RoutedGothic
-COPYRIGHT_OWNER =	Darren Embry
-COPYRIGHT_EMAIL =	dsembry@gmail.com
+FONT_PACKAGE_NAME		= RoutedGothic
+COPYRIGHT_OWNER			= Darren Embry
+COPYRIGHT_EMAIL			= dsembry@gmail.com
 
-SOURCE =		$(SRC_BASEFONT)routed-gothic-stroke-source.sfd
-ZIP_FILE =		$(DIST_ZIP)/routed-gothic-ttf.zip
-TTF_FONTS =		$(DIST_TTF)/routed-gothic.ttf \
-			$(DIST_TTF)/routed-gothic-half-italic.ttf \
-			$(DIST_TTF)/routed-gothic-italic.ttf \
-			$(DIST_TTF)/routed-gothic-narrow.ttf \
-			$(DIST_TTF)/routed-gothic-narrow-half-italic.ttf \
-			$(DIST_TTF)/routed-gothic-narrow-italic.ttf \
-			$(DIST_TTF)/routed-gothic-wide.ttf \
-			$(DIST_TTF)/routed-gothic-wide-half-italic.ttf \
-			$(DIST_TTF)/routed-gothic-wide-italic.ttf
-GLYPH_LIST =		includes/unicode-coverage.inc.html
-GENERATE_SCRIPT =	$(SUPPORT_BIN)generate-fonts.py
-GLYPH_LIST_SCRIPT =	$(SUPPORT_BIN)make-character-list
+SOURCE				= $(SRC_BASEFONT)routed-gothic-stroke-source.sfd
+ZIP_FILE			= $(DIST_ZIP)/routed-gothic-ttf.zip
+TTF_FONTS			= $(DIST_TTF)/routed-gothic.ttf \
+				  $(DIST_TTF)/routed-gothic-half-italic.ttf \
+				  $(DIST_TTF)/routed-gothic-italic.ttf \
+				  $(DIST_TTF)/routed-gothic-narrow.ttf \
+				  $(DIST_TTF)/routed-gothic-narrow-half-italic.ttf \
+				  $(DIST_TTF)/routed-gothic-narrow-italic.ttf \
+				  $(DIST_TTF)/routed-gothic-wide.ttf \
+				  $(DIST_TTF)/routed-gothic-wide-half-italic.ttf \
+				  $(DIST_TTF)/routed-gothic-wide-italic.ttf
+GLYPH_LIST			= includes/unicode-coverage.inc.html
+GENERATE_SCRIPT			= $(SUPPORT_BIN)generate-fonts.py
+GLYPH_LIST_SCRIPT		= $(SUPPORT_BIN)make-character-list
 
-FONTS =			$(TTF_FONTS)
+FONTS				= $(TTF_FONTS)
 
 .PHONY: default
 default: ttf zip web
