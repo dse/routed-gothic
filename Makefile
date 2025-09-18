@@ -27,7 +27,7 @@ TTF_FONTS			= $(DIST_TTF)/routed-gothic.ttf \
 				  $(DIST_TTF)/routed-gothic-wide.ttf \
 				  $(DIST_TTF)/routed-gothic-wide-half-italic.ttf \
 				  $(DIST_TTF)/routed-gothic-wide-italic.ttf
-GLYPH_LIST			= includes/unicode-coverage.inc.html
+GLYPH_LIST			= public/includes/unicode-coverage.inc.html
 GENERATE_SCRIPT			= $(SUPPORT_BIN)/generate-fonts.py
 GLYPH_LIST_SCRIPT		= $(SUPPORT_BIN)/make-character-list
 
