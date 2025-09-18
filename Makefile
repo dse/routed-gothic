@@ -1,19 +1,28 @@
-SOURCE =		src/routed-gothic-stroke-source.sfd
-ZIP_FILE =		dist/routed-gothic-ttf.zip
-TTF_FONTS =		dist/ttf/routed-gothic.ttf \
-			dist/ttf/routed-gothic-half-italic.ttf \
-			dist/ttf/routed-gothic-italic.ttf \
-			dist/ttf/routed-gothic-narrow.ttf \
-			dist/ttf/routed-gothic-narrow-half-italic.ttf \
-			dist/ttf/routed-gothic-narrow-italic.ttf \
-			dist/ttf/routed-gothic-wide.ttf \
-			dist/ttf/routed-gothic-wide-half-italic.ttf \
-			dist/ttf/routed-gothic-wide-italic.ttf
-GLYPH_LIST =		includes/unicode-coverage.inc.html
-GENERATE_SCRIPT =	bin/generate-fonts.py
-GLYPH_LIST_SCRIPT =	bin/make-character-list
+SRC_BASEFONT =		src
+DIST_TTF =		dist/ttf
+SUPPORT_BIN =		bin
+DIST_ZIP =		dist
 
-FONTS = $(TTF_FONTS)
+FONT_PACKAGE_NAME =	RoutedGothic
+COPYRIGHT_OWNER =	Darren Embry
+COPYRIGHT_EMAIL =	dsembry@gmail.com
+
+SOURCE =		$(SRC_BASEFONT)routed-gothic-stroke-source.sfd
+ZIP_FILE =		$(DIST_ZIP)/routed-gothic-ttf.zip
+TTF_FONTS =		$(DIST_TTF)/routed-gothic.ttf \
+			$(DIST_TTF)/routed-gothic-half-italic.ttf \
+			$(DIST_TTF)/routed-gothic-italic.ttf \
+			$(DIST_TTF)/routed-gothic-narrow.ttf \
+			$(DIST_TTF)/routed-gothic-narrow-half-italic.ttf \
+			$(DIST_TTF)/routed-gothic-narrow-italic.ttf \
+			$(DIST_TTF)/routed-gothic-wide.ttf \
+			$(DIST_TTF)/routed-gothic-wide-half-italic.ttf \
+			$(DIST_TTF)/routed-gothic-wide-italic.ttf
+GLYPH_LIST =		includes/unicode-coverage.inc.html
+GENERATE_SCRIPT =	$(SUPPORT_BIN)generate-fonts.py
+GLYPH_LIST_SCRIPT =	$(SUPPORT_BIN)make-character-list
+
+FONTS =			$(TTF_FONTS)
 
 .PHONY: default
 default: ttf zip web
@@ -38,7 +47,7 @@ $(TTF_FONTS): $(SOURCE) Makefile $(GENERATE_SCRIPT)
 
 $(ZIP_FILE): $(TTF_FONTS) Makefile
 	rm $@ || true
-	cd dist && zip $(patsubst dist/%, %, $@) $(patsubst dist/%, %, $(TTF_FONTS))
+	cd $(DIST_ZIP) && zip $(patsubst $(DIST_ZIP)/%, %, $@) $(patsubst $(DIST_ZIP)/%, %, $(TTF_FONTS))
 
 .PHONY: clean
 clean:
@@ -62,7 +71,7 @@ sass:
 
 .PHONY: downloads
 downloads:
-	bin/make-downloads
+	$(SUPPORT_BIN)make-downloads
 
 publish:
 	ssh dse@webonastick.com "bash -c 'cd /www/webonastick.com/htdocs/fonts/routed-gothic && git pull'"
