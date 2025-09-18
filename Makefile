@@ -4,6 +4,12 @@ SUPPORT_BIN			= bin
 DIST_ZIP			= dist
 
 FONT_PACKAGE_NAME		= RoutedGothic
+
+VERSION				= 1.0.0
+SFNT_REVISION			= 001.000
+#				  XXX.YZZ, typically
+
+VENDOR				= DARN
 COPYRIGHT_OWNER			= Darren Embry
 COPYRIGHT_EMAIL			= dsembry@gmail.com
 
