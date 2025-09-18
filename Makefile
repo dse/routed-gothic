@@ -1,10 +1,10 @@
 .PHONY: default
 default: ttf zip web
 
-SRC_BASEFONT			= src
+SRC_BASEFONT			= src/basefont
 DIST_TTF			= dist/ttf
-SUPPORT_BIN			= bin
-DIST_ZIP			= dist
+SUPPORT_BIN			= support/bin
+DIST_ZIP			= dist/zip
 
 FONT_PACKAGE_NAME		= RoutedGothic
 
@@ -53,6 +53,7 @@ $(TTF_FONTS): $(SOURCE) Makefile $(GENERATE_SCRIPT)
 
 $(ZIP_FILE): $(TTF_FONTS) Makefile
 	rm $@ || true
+	mkdir -p $(DIST_ZIP)
 	cd $(DIST_ZIP) && zip $(patsubst $(DIST_ZIP)/%, %, $@) $(patsubst $(DIST_ZIP)/%, %, $(TTF_FONTS))
 
 .PHONY: clean
