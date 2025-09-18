@@ -16,8 +16,10 @@
     "browser-sync": "^3.0.4",
     "foundation-sites": "^6.9.0",
     "gulp": "^4.0.2",
+    "gulp-nunjucks": "^6.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.1",
+    "nunjucks": "^3.2.4",
     "sass": "^1.92.1"
   }
 }
