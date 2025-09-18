@@ -43,7 +43,7 @@ function serve() {
         server: "./public/"
     });
     gulp.watch("src/scss//*.scss", sass);
-    gulp.watch("./public//*.html").on('change', browserSync.reload);
+    gulp.watch("./public/*.html").on('change', browserSync.reload);
 }
 
 gulp.task('sassDev', sassDev);
