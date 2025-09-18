@@ -44,7 +44,7 @@ zip: $(ZIP_FILE)
 
 .PHONY: ttf
 ttf: $(firstword $(TTF_FONTS))
-# single command builds all fonts, only specify first one
+# single command builds all fonts, only specify first font
 
 ###############################################################################
 
