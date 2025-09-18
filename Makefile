@@ -74,13 +74,15 @@ web: coverage sass
 
 .PHONY: sass
 sass:
-	gulp sass
+	npm run build
 
 .PHONY: downloads
 downloads:
 	$(SUPPORT_BIN)/make-downloads
 
 publish:
+	mkdir -p public/fonts/routed-gothic/dist/ttf
+	cp dist/ttf/* public/fonts/routed-gothic/dist/ttf
 	ssh dse@webonastick.com "bash -c 'cd /www/webonastick.com/htdocs/fonts/routed-gothic && git pull'"
 
 .PHONY: coverage

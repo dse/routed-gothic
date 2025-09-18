@@ -1,0 +1,23 @@
+{
+  "name": "routed-gothic",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A clean implementation of a common lettering style found on technical drawings, engraved office signs, computer and typewriter keyboards, and some comic books and avionics from the mid-20th century.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "npx gulp sass"
+  },
+  "keywords": [],
+  "author": "Darren Embry",
+  "license": "SIL-OFL 1.1",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "bootstrap": "^5.3.8",
+    "browser-sync": "^3.0.4",
+    "foundation-sites": "^6.9.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.92.1"
+  }
+}
